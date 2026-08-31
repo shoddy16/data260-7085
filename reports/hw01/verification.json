@@ -1,0 +1,139 @@
+{
+  "assignment": "DATA 260 Homework 1",
+  "status": "PASS",
+  "total_checks": 26,
+  "passed_checks": 26,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "check": "Required file exists: agent_demo.py",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\agent_demo.py"
+    },
+    {
+      "check": "Required file exists: hw1_client.py",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\hw1_client.py"
+    },
+    {
+      "check": "Required file exists: review_sample.py",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\review_sample.py"
+    },
+    {
+      "check": "Required file exists: run_experiment.py",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\run_experiment.py"
+    },
+    {
+      "check": "Required file exists: Dockerfile",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\Dockerfile"
+    },
+    {
+      "check": "Required file exists: DOMAIN_SCHEMA.md",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\DOMAIN_SCHEMA.md"
+    },
+    {
+      "check": "Required file exists: index.html",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\index.html"
+    },
+    {
+      "check": "Required file exists: script.js",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\script.js"
+    },
+    {
+      "check": "Required file exists: AGENT.md",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\AGENT.md"
+    },
+    {
+      "check": "Required file exists: src/model_client.py",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\src\\model_client.py"
+    },
+    {
+      "check": "HW01 artifact exists: reports\\hw01\\cases\\nondeterminism_input.json",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\reports\\hw01\\cases\\nondeterminism_input.json"
+    },
+    {
+      "check": "HW01 artifact exists: reports\\hw01\\raw\\nondeterminism_results.json",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\reports\\hw01\\raw\\nondeterminism_results.json"
+    },
+    {
+      "check": "HW01 artifact exists: reports\\hw01\\raw\\nondeterminism_results.csv",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\reports\\hw01\\raw\\nondeterminism_results.csv"
+    },
+    {
+      "check": "HW01 artifact exists: reports\\hw01\\METRICS.md",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\reports\\hw01\\METRICS.md"
+    },
+    {
+      "check": "HW01 artifact exists: reports\\hw01\\AI_USE.md",
+      "passed": true,
+      "details": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai\\Homeworks\\assignment 1\\data260-7085\\reports\\hw01\\AI_USE.md"
+    },
+    {
+      "check": "Nondeterminism JSON is valid",
+      "passed": true,
+      "details": "Loaded 40 records"
+    },
+    {
+      "check": "Exactly 40 nondeterminism runs",
+      "passed": true,
+      "details": "Found 40 runs"
+    },
+    {
+      "check": "Both temperatures are present",
+      "passed": true,
+      "details": "Temperatures found: [0.0, 0.7]"
+    },
+    {
+      "check": "Each run contains latency",
+      "passed": true,
+      "details": "All runs contain numeric latency_ms"
+    },
+    {
+      "check": "Each run contains final output",
+      "passed": true,
+      "details": "All runs contain final_output"
+    },
+    {
+      "check": "Each final output has exactly 3 tags",
+      "passed": true,
+      "details": "All 40 runs contain exactly 3 tags"
+    },
+    {
+      "check": "Fixed nondeterminism input is valid JSON",
+      "passed": true,
+      "details": "Input is a JSON object"
+    },
+    {
+      "check": "Fixed input contains title and content",
+      "passed": true,
+      "details": "Both title and content are present"
+    },
+    {
+      "check": "METRICS.md contains temperature 0.7 results",
+      "passed": true,
+      "details": "Temperature 0.7 metrics found"
+    },
+    {
+      "check": "METRICS.md contains temperature 0.0 results",
+      "passed": true,
+      "details": "Temperature 0.0 metrics found"
+    },
+    {
+      "check": "METRICS.md documents 40 runs",
+      "passed": true,
+      "details": "40-run experiment documented"
+    }
+  ]
+}

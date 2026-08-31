@@ -1,0 +1,1291 @@
+[
+  {
+    "run": 1,
+    "temperature": 0.7,
+    "latency_ms": 88125.94,
+    "planner_output": {
+      "tags": [
+        "Restaurant Inspection",
+        "Local Business",
+        "Web Application"
+      ],
+      "summary": "Restaurant inspection submission and review web application for local restaurants."
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "Restaurant Inspection",
+        "Local Business",
+        "Web Application"
+      ],
+      "summary": "Restaurant inspection submission and review web application for local restaurants.",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "Restaurant Inspection",
+        "Local Business",
+        "Web Application"
+      ],
+      "summary": "Local restaurant inspection submission and review web application."
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Business\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Restaurant inspection submission and review web application for local restaurants.\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Business\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Restaurant inspection submission and review web application for local restaurants.\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Business\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Local restaurant inspection submission and review web application.\"\n}\n"
+  },
+  {
+    "run": 2,
+    "temperature": 0.7,
+    "latency_ms": 50916.08,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "web application"
+      ],
+      "summary": "Web app for submitting and reviewing local restaurant inspection findings and categories"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "web application"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "web application"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"web application\"\n  ],\n  \"summary\": \"Web app for submitting and reviewing local restaurant inspection findings and categories\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"web application\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"web application\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 3,
+    "temperature": 0.7,
+    "latency_ms": 52985.05,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "restaurant management"
+      ],
+      "summary": "Tool for submitting and reviewing restaurant inspection data and information"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "restaurant management"
+      ],
+      "summary": "Tool for submitting and reviewing restaurant inspection data and information",
+      "issues": [
+        "Summary is more than 25 words"
+      ]
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "restaurant management"
+      ],
+      "summary": "Tool for submitting and reviewing restaurant inspection data and information"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Tool for submitting and reviewing restaurant inspection data and information\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Tool for submitting and reviewing restaurant inspection data and information\",\n  \"issues\": [\n    \"Summary is more than 25 words\"\n  ]\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Tool for submitting and reviewing restaurant inspection data and information\"\n}\n"
+  },
+  {
+    "run": 4,
+    "temperature": 0.7,
+    "latency_ms": 47625.96,
+    "planner_output": {
+      "tags": [
+        "Restaurant Inspection",
+        "Local Government",
+        "Web Application"
+      ],
+      "summary": "Application for submitting and reviewing local restaurant inspection findings online"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "Restaurant Inspection",
+        "Local Restaurant",
+        "Web Application"
+      ],
+      "summary": "Restaurant inspection finding management system",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "Restaurant Inspection",
+        "Local Restaurant",
+        "Web Application"
+      ],
+      "summary": "Online platform for managing local restaurant inspection findings"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Government\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Application for submitting and reviewing local restaurant inspection findings online\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Restaurant\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Restaurant inspection finding management system\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Restaurant\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Online platform for managing local restaurant inspection findings\"\n}\n"
+  },
+  {
+    "run": 5,
+    "temperature": 0.7,
+    "latency_ms": 53580.37,
+    "planner_output": {
+      "tags": [
+        "restaurant inspection",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews with restaurant details and inspection categories"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspection",
+        "local restaurant",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspection",
+        "local restaurant",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews with restaurant details and inspection categories"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews with restaurant details and inspection categories\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local restaurant\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local restaurant\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews with restaurant details and inspection categories\"\n}\n"
+  },
+  {
+    "run": 6,
+    "temperature": 0.7,
+    "latency_ms": 49614.18,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local restaurant",
+        "food safety"
+      ],
+      "summary": "Web application for submitting and reviewing local restaurant inspection findings"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant",
+        "food",
+        "inspections"
+      ],
+      "summary": "Web application for submitting and reviewing local restaurant inspection findings",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local restaurant",
+        "food safety"
+      ],
+      "summary": "Web application for submitting and reviewing local restaurant inspection findings"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurant\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web application for submitting and reviewing local restaurant inspection findings\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant\",\n    \"food\",\n    \"inspections\"\n  ],\n  \"summary\": \"Web application for submitting and reviewing local restaurant inspection findings\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurant\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web application for submitting and reviewing local restaurant inspection findings\"\n}\n"
+  },
+  {
+    "run": 7,
+    "temperature": 0.7,
+    "latency_ms": 49080.55,
+    "planner_output": {
+      "tags": [
+        "restaurant inspection",
+        "local restaurant inspections",
+        "restaurant review"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "restaurant inspection",
+        "local restaurant"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local restaurant",
+        "restaurant review"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local restaurant inspections\",\n    \"restaurant review\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"restaurant inspection\",\n    \"local restaurant\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurant\",\n    \"restaurant review\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 8,
+    "temperature": 0.7,
+    "latency_ms": 48085.86,
+    "planner_output": {
+      "tags": [
+        "Restaurant Inspections",
+        "Local Government",
+        "Web Application"
+      ],
+      "summary": "Submit and review local restaurant inspection findings online"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "Restaurant Inspections",
+        "Web Application",
+        "Local Government"
+      ],
+      "summary": "Restaurant inspection management system",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "Restaurant Inspections",
+        "Web Applications",
+        "Local Government"
+      ],
+      "summary": "Restaurant inspection management online system for local government and public review"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Local Government\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Submit and review local restaurant inspection findings online\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Web Application\",\n    \"Local Government\"\n  ],\n  \"summary\": \"Restaurant inspection management system\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Web Applications\",\n    \"Local Government\"\n  ],\n  \"summary\": \"Restaurant inspection management online system for local government and public review\"\n}\n"
+  },
+  {
+    "run": 9,
+    "temperature": 0.7,
+    "latency_ms": 49266.41,
+    "planner_output": {
+      "tags": [
+        "restaurant inspection",
+        "local restaurant",
+        "restaurant management"
+      ],
+      "summary": "Web app for submitting and reviewing local restaurant inspection findings and details"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspection",
+        "local restaurant",
+        "inspection report"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspection",
+        "local restaurant",
+        "inspection report"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local restaurant\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web app for submitting and reviewing local restaurant inspection findings and details\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local restaurant\",\n    \"inspection report\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local restaurant\",\n    \"inspection report\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 10,
+    "temperature": 0.7,
+    "latency_ms": 48270.39,
+    "planner_output": {
+      "tags": [
+        "Restaurant Inspections",
+        "Local Government",
+        "Web Application"
+      ],
+      "summary": "Submit and review local restaurant inspection findings online"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "Restaurant Inspections",
+        "Web Application",
+        "Local Government"
+      ],
+      "summary": "Submit and review local restaurant inspection findings online",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "Restaurant Inspections",
+        "Web Application",
+        "Local Government"
+      ],
+      "summary": "Submit and review local restaurant inspection findings online"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Local Government\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Submit and review local restaurant inspection findings online\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Web Application\",\n    \"Local Government\"\n  ],\n  \"summary\": \"Submit and review local restaurant inspection findings online\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Web Application\",\n    \"Local Government\"\n  ],\n  \"summary\": \"Submit and review local restaurant inspection findings online\"\n}\n"
+  },
+  {
+    "run": 11,
+    "temperature": 0.7,
+    "latency_ms": 47090.21,
+    "planner_output": {
+      "tags": [
+        "Restaurant Inspection",
+        "Local Government",
+        "Web Application"
+      ],
+      "summary": "Submitting and reviewing local restaurant inspection findings online"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "Restaurant Inspection",
+        "Local Government",
+        "Web Application"
+      ],
+      "summary": "Local restaurant inspection findings and management online",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "Restaurant Inspection",
+        "Local Government",
+        "Web Application"
+      ],
+      "summary": "Submitting and reviewing local restaurant inspection findings online"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Government\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Submitting and reviewing local restaurant inspection findings online\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Government\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Local restaurant inspection findings and management online\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Government\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Submitting and reviewing local restaurant inspection findings online\"\n}\n"
+  },
+  {
+    "run": 12,
+    "temperature": 0.7,
+    "latency_ms": 52611.42,
+    "planner_output": {
+      "tags": [
+        "Restaurant Inspections",
+        "Local Government",
+        "Food Safety"
+      ],
+      "summary": "Web application for submitting and reviewing local restaurant inspection findings and ratings."
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "Restaurant Inspections",
+        "Local Government",
+        "Food Safety"
+      ],
+      "summary": "Web application for submitting and reviewing local restaurant inspection findings and ratings.",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "Restaurant Inspections",
+        "Local Government",
+        "Inspections"
+      ],
+      "summary": "Web application for submitting and reviewing local restaurant inspection findings and ratings."
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Local Government\",\n    \"Food Safety\"\n  ],\n  \"summary\": \"Web application for submitting and reviewing local restaurant inspection findings and ratings.\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Local Government\",\n    \"Food Safety\"\n  ],\n  \"summary\": \"Web application for submitting and reviewing local restaurant inspection findings and ratings.\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Local Government\",\n    \"Inspections\"\n  ],\n  \"summary\": \"Web application for submitting and reviewing local restaurant inspection findings and ratings.\"\n}\n"
+  },
+  {
+    "run": 13,
+    "temperature": 0.7,
+    "latency_ms": 49589.79,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local restaurant inspections",
+        "restaurant reviews"
+      ],
+      "summary": "Application for submitting and reviewing local restaurant inspection findings and ratings"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "restaurant reviews",
+        "local restaurant inspections"
+      ],
+      "summary": "Application for submitting and reviewing local restaurant inspection findings",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local restaurant inspections",
+        "reviews"
+      ],
+      "summary": "Submitting and reviewing local restaurant inspection findings and ratings"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurant inspections\",\n    \"restaurant reviews\"\n  ],\n  \"summary\": \"Application for submitting and reviewing local restaurant inspection findings and ratings\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"restaurant reviews\",\n    \"local restaurant inspections\"\n  ],\n  \"summary\": \"Application for submitting and reviewing local restaurant inspection findings\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurant inspections\",\n    \"reviews\"\n  ],\n  \"summary\": \"Submitting and reviewing local restaurant inspection findings and ratings\"\n}\n"
+  },
+  {
+    "run": 14,
+    "temperature": 0.7,
+    "latency_ms": 51953.24,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "restaurant management"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "restaurant management"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": [
+        "Summary exceeds 25 words"
+      ]
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "restaurant management"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": [\n    \"Summary exceeds 25 words\"\n  ]\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 15,
+    "temperature": 0.7,
+    "latency_ms": 51762.05,
+    "planner_output": {
+      "tags": [
+        "Restaurant Inspections",
+        "Web Application",
+        "Local Government"
+      ],
+      "summary": "Web-based platform for submitting and reviewing local restaurant inspection findings and data"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "Restaurant Inspections",
+        "Local Restaurant",
+        "Inspections and Reviews"
+      ],
+      "summary": "Web application for local restaurant inspections and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "Restaurant Inspections",
+        "Local Restaurant",
+        "Inspections and Reviews"
+      ],
+      "summary": "Platform for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Web Application\",\n    \"Local Government\"\n  ],\n  \"summary\": \"Web-based platform for submitting and reviewing local restaurant inspection findings and data\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Local Restaurant\",\n    \"Inspections and Reviews\"\n  ],\n  \"summary\": \"Web application for local restaurant inspections and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Local Restaurant\",\n    \"Inspections and Reviews\"\n  ],\n  \"summary\": \"Platform for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 16,
+    "temperature": 0.7,
+    "latency_ms": 54182.21,
+    "planner_output": {
+      "tags": [
+        "Restaurant Inspections",
+        "Local Government",
+        "Web Application"
+      ],
+      "summary": "Restaurant inspection data management system for local authorities"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "Restaurant Inspections",
+        "Local Restaurant Inspections",
+        "Restaurant Inspections"
+      ],
+      "summary": "Restaurant inspection data management system",
+      "issues": [
+        "Tags are not unique",
+        "Summary is more than 25 words"
+      ]
+    },
+    "final_output": {
+      "tags": [
+        "Local Restaurant Inspections",
+        "Restaurant Inspections",
+        "Restaurant Inspection Data"
+      ],
+      "summary": "Restaurant inspection data management system for local authorities"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Local Government\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Restaurant inspection data management system for local authorities\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"Restaurant Inspections\",\n    \"Local Restaurant Inspections\",\n    \"Restaurant Inspections\"\n  ],\n  \"summary\": \"Restaurant inspection data management system\",\n  \"issues\": [\n    \"Tags are not unique\",\n    \"Summary is more than 25 words\"\n  ]\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"Local Restaurant Inspections\",\n    \"Restaurant Inspections\",\n    \"Restaurant Inspection Data\"\n  ],\n  \"summary\": \"Restaurant inspection data management system for local authorities\"\n}\n"
+  },
+  {
+    "run": 17,
+    "temperature": 0.7,
+    "latency_ms": 50428.39,
+    "planner_output": {
+      "tags": [
+        "restaurant inspection",
+        "local government",
+        "web application"
+      ],
+      "summary": "Web application for submitting and reviewing local restaurant inspection findings and reports"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspection",
+        "local government",
+        "web application"
+      ],
+      "summary": "Web application for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspection",
+        "local government",
+        "web application"
+      ],
+      "summary": "Web application for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local government\",\n    \"web application\"\n  ],\n  \"summary\": \"Web application for submitting and reviewing local restaurant inspection findings and reports\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local government\",\n    \"web application\"\n  ],\n  \"summary\": \"Web application for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspection\",\n    \"local government\",\n    \"web application\"\n  ],\n  \"summary\": \"Web application for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 18,
+    "temperature": 0.7,
+    "latency_ms": 49594.88,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "restaurant management"
+      ],
+      "summary": "Web app for submitting and reviewing restaurant inspection findings and ratings"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local restaurant",
+        "restaurant management"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local restaurant",
+        "restaurant management"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web app for submitting and reviewing restaurant inspection findings and ratings\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurant\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurant\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 19,
+    "temperature": 0.7,
+    "latency_ms": 50895.2,
+    "planner_output": {
+      "tags": [
+        "Restaurant Inspection",
+        "Local Government",
+        "Web Application"
+      ],
+      "summary": "Online platform for local restaurant inspections and reviews with restaurant details and inspection categories"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "Restaurant Inspection",
+        "Local Restaurant",
+        "Web Application"
+      ],
+      "summary": "Platform for local restaurant inspection and review with detailed information",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "Restaurant Inspection",
+        "Local Restaurant",
+        "Web Application"
+      ],
+      "summary": "Platform for local restaurant inspection and review with detailed information"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Government\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Online platform for local restaurant inspections and reviews with restaurant details and inspection categories\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Restaurant\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Platform for local restaurant inspection and review with detailed information\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"Restaurant Inspection\",\n    \"Local Restaurant\",\n    \"Web Application\"\n  ],\n  \"summary\": \"Platform for local restaurant inspection and review with detailed information\"\n}\n"
+  },
+  {
+    "run": 20,
+    "temperature": 0.7,
+    "latency_ms": 50607.22,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local restaurants",
+        "restaurant management"
+      ],
+      "summary": "Web application for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local restaurants",
+        "restaurant management"
+      ],
+      "summary": "Web application for local restaurant inspection submissions and reviews",
+      "issues": [
+        "Summary exceeds 25 words"
+      ]
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local restaurants",
+        "restaurant management"
+      ],
+      "summary": "Web application for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurants\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web application for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurants\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web application for local restaurant inspection submissions and reviews\",\n  \"issues\": [\n    \"Summary exceeds 25 words\"\n  ]\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local restaurants\",\n    \"restaurant management\"\n  ],\n  \"summary\": \"Web application for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 1,
+    "temperature": 0.0,
+    "latency_ms": 48256.51,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 2,
+    "temperature": 0.0,
+    "latency_ms": 42910.23,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 3,
+    "temperature": 0.0,
+    "latency_ms": 43079.17,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 4,
+    "temperature": 0.0,
+    "latency_ms": 42944.3,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 5,
+    "temperature": 0.0,
+    "latency_ms": 43319.65,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 6,
+    "temperature": 0.0,
+    "latency_ms": 42972.51,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 7,
+    "temperature": 0.0,
+    "latency_ms": 42955.94,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 8,
+    "temperature": 0.0,
+    "latency_ms": 43715.73,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 9,
+    "temperature": 0.0,
+    "latency_ms": 42911.9,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 10,
+    "temperature": 0.0,
+    "latency_ms": 42910.83,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 11,
+    "temperature": 0.0,
+    "latency_ms": 43582.27,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 12,
+    "temperature": 0.0,
+    "latency_ms": 42907.46,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 13,
+    "temperature": 0.0,
+    "latency_ms": 42909.33,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 14,
+    "temperature": 0.0,
+    "latency_ms": 43093.56,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 15,
+    "temperature": 0.0,
+    "latency_ms": 42903.35,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 16,
+    "temperature": 0.0,
+    "latency_ms": 42911.91,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 17,
+    "temperature": 0.0,
+    "latency_ms": 43281.38,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 18,
+    "temperature": 0.0,
+    "latency_ms": 43255.5,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 19,
+    "temperature": 0.0,
+    "latency_ms": 43081.2,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  },
+  {
+    "run": 20,
+    "temperature": 0.0,
+    "latency_ms": 43084.77,
+    "planner_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "reviewer_output": {
+      "approved": true,
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews",
+      "issues": []
+    },
+    "final_output": {
+      "tags": [
+        "restaurant inspections",
+        "local government",
+        "food safety"
+      ],
+      "summary": "Web app for local restaurant inspection submissions and reviews"
+    },
+    "raw_stdout": "\n========== PLANNER OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n\n========== REVIEWER OUTPUT ==========\n{\n  \"approved\": true,\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\",\n  \"issues\": []\n}\n\n========== FINALIZED OUTPUT ==========\n{\n  \"tags\": [\n    \"restaurant inspections\",\n    \"local government\",\n    \"food safety\"\n  ],\n  \"summary\": \"Web app for local restaurant inspection submissions and reviews\"\n}\n"
+  }
+]

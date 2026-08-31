@@ -1,0 +1,405 @@
+DATA 260 – Homework 1
+RUN LOG
+
+Repository:
+data260-7085
+
+Domain:
+Local restaurant inspections
+
+Python:
+3.12
+
+Local model:
+llama3.2:3b
+
+NOTE:
+The PowerShell history used to reconstruct this log records the commands
+executed but does not include command timestamps. Therefore, timestamps
+are not fabricated below. Console screenshots in screenshots/ provide
+visual evidence of the corresponding runs and outputs.
+
+
+============================================================
+1. PROJECT SETUP AND INITIAL FILE CHECK
+============================================================
+
+Command:
+Get-Location
+
+Command:
+Get-ChildItem
+
+Command:
+New-Item -ItemType Directory -Force src
+
+Result:
+Project directory and source directory confirmed.
+
+
+============================================================
+2. MODEL ADAPTER
+============================================================
+
+Command:
+notepad src\model_client.py
+
+Command:
+.\.venv\Scripts\python.exe -m py_compile src\model_client.py
+
+Result:
+No output. Syntax check passed.
+
+
+============================================================
+3. HW1 CLIENT
+============================================================
+
+Command:
+notepad hw1_client.py
+
+Command:
+.\.venv\Scripts\python.exe -m py_compile hw1_client.py
+
+Result:
+No output. Syntax check passed.
+
+
+============================================================
+4. BASIC LOCAL MODEL TEST
+============================================================
+
+Command:
+.\.venv\Scripts\python.exe hw1_client.py --message "Reply with one short sentence explaining what a restaurant inspection is."
+
+Result:
+Model responded successfully using llama3.2:3b.
+
+Example response:
+A restaurant inspection is a thorough evaluation of a restaurant's food
+safety, sanitation, and overall compliance with health and safety regulations.
+
+
+============================================================
+5. AGENT.MD CREATION
+============================================================
+
+Command:
+notepad AGENT.md
+
+Command:
+Get-Content AGENT.md
+
+Result:
+AGENT.md was created with strict bullet-only code-review instructions.
+
+
+============================================================
+6. INITIAL AGENT REVIEW TEST
+============================================================
+
+Command:
+notepad review_sample.py
+
+Command:
+.\.venv\Scripts\python.exe hw1_client.py --message "Review the file review_sample.py using the instructions in AGENT.md. Return only the code review."
+
+Result:
+The model did not correctly follow the requested review constraints.
+It returned unrelated code and did not review the actual submitted sample.
+
+This result was retained as evidence of an unsuitable AI output.
+
+
+============================================================
+7. CORRECTED AGENT REVIEW IMPLEMENTATION
+============================================================
+
+Command:
+notepad hw1_client.py
+
+Command:
+.\.venv\Scripts\python.exe -m py_compile hw1_client.py
+
+Result:
+No output. Syntax check passed.
+
+Command:
+.\.venv\Scripts\python.exe hw1_client.py --message "Review this code for correctness and maintainability." --file review_sample.py
+
+Result:
+The corrected client loaded AGENT.md and review_sample.py and produced
+a bullet-only review of the actual submitted code.
+
+Screenshot:
+screenshots/18_agent_review_verified.jpg
+
+
+============================================================
+8. TOKEN ACCOUNTING TEST
+============================================================
+
+Command:
+.\.venv\Scripts\python.exe -m py_compile hw1_client.py
+
+Result:
+No output. Syntax check passed.
+
+Command:
+.\.venv\Scripts\python.exe hw1_client.py --message "Reply with one short sentence explaining what a restaurant inspection is."
+
+Result:
+Model response returned successfully with token accounting.
+
+Recorded token usage:
+Input tokens: 37
+Output tokens: 26
+Total tokens: 63
+
+Screenshot:
+screenshots/19_token_usage.jpg
+
+
+============================================================
+9. FIVE-TURN CONVERSATION AND /STATS
+============================================================
+
+Command:
+.\.venv\Scripts\python.exe hw1_client.py
+
+Five-turn conversation completed successfully.
+
+Commands used during the conversation:
+
+Turn 1:
+What is a restaurant inspection?
+
+Turn 2:
+What are the main things inspectors check?
+
+Turn 3:
+Why are food-safety violations important?
+
+/stats
+
+Turn 4:
+How can a restaurant prepare for an inspection?
+
+Turn 5:
+What happens if a restaurant fails an inspection?
+
+/stats
+
+/exit
+
+Recorded final five-turn statistics:
+
+Turn count:
+5
+
+Cumulative input tokens:
+4790
+
+Cumulative output tokens:
+2429
+
+Serialized conversation-history length:
+13037 characters
+
+Screenshots:
+screenshots/20_3turn_stats.jpg
+screenshots/21_5turn_stats.jpg
+screenshots/22_prompt1.jpg
+screenshots/23_prompt2.jpg
+screenshots/24_prompt3.jpg
+screenshots/25_prompt4.jpg
+screenshots/26_prompt5.jpg
+
+
+============================================================
+10. NON-DETERMINISM EXPERIMENT
+============================================================
+
+The fixed domain-relevant input was saved as:
+
+reports/hw01/cases/nondeterminism_input.json
+
+The experiment consisted of:
+20 runs at temperature 0.7
+20 runs at temperature 0.0
+
+Total:
+40 runs
+
+Raw results:
+reports/hw01/raw/nondeterminism_results.json
+reports/hw01/raw/nondeterminism_results.csv
+
+Results:
+
+Temperature 0.7:
+Distinct tag sets: 18
+Mean latency: 52313.27 ms
+p50: 50517.81 ms
+p95: 55879.40 ms
+p99: 81676.63 ms
+
+Temperature 0.0:
+Distinct tag sets: 1
+Mean latency: 43349.38 ms
+p50: 43025.84 ms
+p95: 43942.77 ms
+p99: 47393.76 ms
+
+Mean latency difference:
+Temperature 0.7 was 20.68% slower than temperature 0.0.
+
+Tag-frequency analysis:
+
+Temperature 0.7:
+9 tags appeared exactly once.
+
+Temperature 0.0:
+No tags appeared exactly once.
+
+Temperature 0.0 tags appearing in all 20 runs:
+restaurant inspections
+local government
+food safety
+
+Screenshots:
+screenshots/10_temperature_07_test.jpg
+screenshots/11_runs_complete.jpg
+screenshots/12_json_structure.jpg
+screenshots/13_latency_range.jpg
+screenshots/14_latency_percentiles.jpg
+screenshots/15_tag_frequency_analysis.jpg
+screenshots/16_mean_latency.jpg
+
+
+============================================================
+11. REPOSITORY / HARDWARE CHECK
+============================================================
+
+Commands:
+
+git rev-parse HEAD
+
+Get-CimInstance Win32_Processor | Select-Object Name
+
+Result:
+
+CPU:
+Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+
+Initial HEAD observed during development:
+6ba98715f73a4083783d193b806c91bb6cd470
+
+
+============================================================
+12. FINAL ARTIFACT CHECK
+============================================================
+
+Command:
+
+Get-ChildItem reports\hw01 -Recurse | Select-Object FullName,Length
+
+Result:
+Required experiment and documentation directories/files were confirmed.
+
+
+============================================================
+13. METRICS AND AI USE DOCUMENTATION
+============================================================
+
+Commands:
+
+notepad reports\hw01\METRICS.md
+
+notepad reports\hw01\AI_USE.md
+
+Result:
+Metrics and AI-use disclosure documents created.
+
+
+============================================================
+14. FINAL SELF-CHECK
+============================================================
+
+Command:
+
+notepad verify_hw1.py
+
+Command:
+
+.\.venv\Scripts\python.exe verify_hw1.py
+
+Result:
+
+Status:
+PASS
+
+Total checks:
+26
+
+Passed:
+26
+
+Failed:
+0
+
+The self-check confirmed:
+- required project files exist
+- required HW01 artifacts exist
+- 40 nondeterminism records exist
+- both temperatures are present
+- latency values are present
+- final outputs are present
+- every run has exactly 3 tags
+- fixed input is valid
+- metrics contain the reported results
+
+Output:
+reports/hw01/verification.json
+
+Screenshot:
+screenshots/27_verification_check.jpg
+
+
+============================================================
+15. SCREENSHOT EVIDENCE INDEX
+============================================================
+
+01.jpg
+02.jpg
+03.jpg
+04.jpg
+04_console.jpg
+05_docker_localhost.jpg
+06_ecr_repository.jpg
+07_ecsServiceDeploymentComplete.jpg
+08_aws_main_running.jpg
+09_agent_working.jpg
+09_agent_working2.jpg
+10_temperature_07_test.jpg
+11_runs_complete.jpg
+12_json_structure.jpg
+13_latency_range.jpg
+14_latency_percentiles.jpg
+15_tag_frequency_analysis.jpg
+16_mean_latency.jpg
+17_model_client_test.jpg
+18_agent_review_verified.jpg
+19_token_usage.jpg
+20_3turn_stats.jpg
+21_5turn_stats.jpg
+22_prompt1.jpg
+23_prompt2.jpg
+24_prompt3.jpg
+25_prompt4.jpg
+26_prompt5.jpg
+27_verification_check.jpg
+
+Additional screenshots not used as HW1 evidence:
+aws_budget_notforhw.jpg
+securitygrp_notneeded.jpg
