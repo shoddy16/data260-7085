@@ -165,5 +165,152 @@ reports/hw01/ so the reported results can be checked against the original
 runs.
 
 
+ DATA 260 — Homework 2
 
+## Stateful FastAPI and LangGraph Application
+
+This project extends my Homework 1 restaurant inspection application for DATA 260 Homework 2.
+
+The application uses a FastAPI backend for managing restaurant inspection records and a stateful LangGraph workflow for Planner, Reviewer, validation, routing, and self-correction.
+
+## Project Topic
+
+Local Restaurant Inspections
+
+## Configuration
+
+- SID4: 7085
+- PORT_BASE: 8785
+- PREFIX: s7085
+- SEED: 7085
+- VERIFY_SEED: 267085
+- DOMAIN_ID: 5
+- Python: 3.12
+- Local model: llama3.2:3b
+- Ollama URL: http://localhost:11434
+- Hardware: Intel Core i5-6200U @ 2.30GHz
+
+## Part 1 — HTML / CSS
+
+The frontend was extended to:
+
+- Remain usable at a 375px viewport
+- Display restaurant inspection records
+- Provide loading, empty, and error states
+- Submit new inspection records
+- Search inspections by restaurant name or location
+- Update inspection ID 1
+- Delete the inspection with the highest ID
+
+## Part 2 — FastAPI
+
+The FastAPI backend provides endpoints for:
+
+- GET inspection records
+- POST a new inspection
+- PUT an existing inspection
+- DELETE an inspection
+- Search by restaurant name or location
+
+The inspection data is validated using Pydantic.
+
+Start the application with:
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8785
+
+The FastAPI documentation is available at:
+
+http://127.0.0.1:8785/docs
+
+Part 3 — Stateful LangGraph
+
+The Homework 1 sequential Planner → Reviewer → Finalizer workflow was refactored into a stateful LangGraph workflow.
+
+The graph includes:
+
+Shared AgentState
+Planner node
+Reviewer node
+Supervisor node
+Conditional router
+Self-correction loop
+Turn ceiling
+Pydantic validation
+Local Ollama model through src/model_client.py
+
+The graph can be run with:
+
+.\.venv\Scripts\python.exe .\src\agent_graph.py
+Part 4 — Validation and Experiments
+
+The Planner output is validated using Pydantic.
+
+The required output contains:
+
+Exactly 3 string tags
+Each tag between 3 and 30 characters
+A summary of no more than 25 words
+
+The validation error is passed back through the graph so the Planner can retry.
+
+The experiment script performs:
+
+30 frozen-input schema validation runs
+20 runs with a 2-turn ceiling
+20 runs with a 10-turn ceiling
+5 adversarial-input runs
+
+Run the experiments with:
+
+.\.venv\Scripts\python.exe .\reports\hw02\run_experiments.py
+
+Experiment results are stored under:
+
+reports/hw02/
+├── RUN_LOG.txt
+├── METRICS.md
+├── AI_USE.md
+├── verification.json
+├── cases/
+│   └── schema_input.json
+└── raw/
+    ├── schema_30_runs.csv
+    ├── ceiling_comparison.csv
+    └── adversarial_runs.csv
+Verification
+
+The HW2 self-check verifies:
+
+GET inspections
+Search endpoint
+Valid Planner output
+Invalid Planner output rejection
+Normal LangGraph execution
+
+Run verification with:
+
+.\.venv\Scripts\python.exe .\verify_hw2.py
+
+The final verification passed all five checks.
+
+Reproducibility
+
+From the repository root:
+
+.\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8785
+
+In another terminal:
+
+.\.venv\Scripts\python.exe .\src\agent_graph.py
+
+Run the experiments:
+
+.\.venv\Scripts\python.exe .\reports\hw02\run_experiments.py
+
+Run the verification:
+
+.\.venv\Scripts\python.exe .\verify_hw2.py
+
+Ollama must be running locally with the documented llama3.2:3b model available.
 
