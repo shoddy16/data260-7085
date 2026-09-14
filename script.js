@@ -1,28 +1,84 @@
 "use strict";
 
+const form = document.getElementById("inspectionForm");
+const inspectionList = document.getElementById("inspectionList");
+const loadingState = document.getElementById("loadingState");
+const emptyState = document.getElementById("emptyState");
+const errorState = document.getElementById("errorState");
+const searchInput = document.getElementById("searchInput");
+const searchButton = document.getElementById("searchButton");
+const clearSearchButton = document.getElementById("clearSearchButton");
+const updateButton = document.getElementById("updateButton");
+const deleteButton = document.getElementById("deleteButton");
 
-const submissionCounter = (() => {
-    let count = 0;
+const showState = (state) => {
+    loadingState.classList.add("hidden");
+    emptyState.classList.add("hidden");
+    errorState.classList.add("hidden");
+    inspectionList.classList.add("hidden");
 
-    return () => {
-        count++;
-        return count;
-    };
-})();
+    if (state === "loading") {
+        loadingState.classList.remove("hidden");
+    } else if (state === "empty") {
+        emptyState.classList.remove("hidden");
+    } else if (state === "error") {
+        errorState.classList.remove("hidden");
+    } else if (state === "list") {
+        inspectionList.classList.remove("hidden");
+    }
+};
 
+const displayInspections = (inspections) => {
+    if (inspections.length === 0) {
+        showState("empty");
+        return;
+    }
 
-// we use the arrow fnc here
+    inspectionList.innerHTML = inspections.map((inspection) => `
+        <div class="inspection-card">
+            <h3>${inspection.restaurantName}</h3>
+            <p><strong>Location:</strong> ${inspection.location}</p>
+            <p><strong>Email:</strong> ${inspection.email}</p>
+            <p><strong>Description:</strong> ${inspection.description}</p>
+            <p><strong>Category:</strong> ${inspection.category}</p>
+            <p><strong>ID:</strong> ${inspection.id}</p>
+        </div>
+    `).join("");
+
+    showState("list");
+};
+
+const loadInspections = async (search = "") => {
+    showState("loading");
+
+    try {
+        const url = search
+            ? `/api/inspections?search=${encodeURIComponent(search)}`
+            : "/api/inspections";
+
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            throw new Error("Unable to load inspections");
+        }
+
+        const inspections = await response.json();
+        displayInspections(inspections);
+    } catch (error) {
+        console.error(error);
+        showState("error");
+    }
+};
+
 const validateForm = () => {
     const description = document.getElementById("description").value.trim();
     const terms = document.getElementById("terms").checked;
 
-    // The description must contain more than 25 characters.
     if (description.length <= 25) {
         alert("Inspection description must be more than 25 characters.");
         return false;
     }
 
-    // The terms and conditions checkbox must be checked.
     if (!terms) {
         alert("Please agree to the terms and conditions.");
         return false;
@@ -31,67 +87,120 @@ const validateForm = () => {
     return true;
 };
 
-
-
-document.getElementById("inspectionForm").addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    
     if (!validateForm()) {
         return;
     }
 
-    
-    const restaurantName = document.getElementById("restaurantName").value.trim();
-    const location = document.getElementById("location").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const description = document.getElementById("description").value.trim();
-    const category = document.getElementById("category").value;
-
-    
     const inspectionData = {
-        restaurantName,
-        location,
-        email,
-        description,
-        category
+        restaurantName: document.getElementById("restaurantName").value.trim(),
+        location: document.getElementById("location").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        description: document.getElementById("description").value.trim(),
+        category: document.getElementById("category").value
     };
 
-    // We convert the object into a JSON string
-    const jsonString = JSON.stringify(inspectionData);
-    console.log("Form Data as JSON String:", jsonString);
+    try {
+        const response = await fetch("/api/inspections", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(inspectionData)
+        });
 
-    // We again convert the JSON string back into an object
-    const parsedData = JSON.parse(jsonString);
-    console.log("Parsed JSON Object:", parsedData);
+        if (!response.ok) {
+            throw new Error("Unable to submit inspection");
+        }
 
-
-    // we will now extract the primary field and email
-    const {
-        restaurantName: submittedRestaurant,
-        email: submitterEmail
-    } = parsedData;
-
-    console.log("Restaurant Name:", submittedRestaurant);
-    console.log("Submitter Email:", submitterEmail);
-
-
-    // we add current date and time
-    const updatedData = {
-        ...parsedData,
-        submissionDate: new Date().toISOString()
-    };
-
-    console.log("Updated Inspection Data:", updatedData);
-
-
-    
-    const submissionCount = submissionCounter();
-
-    console.log("Successful Submission Count:", submissionCount);
-
-    alert("Inspection submitted successfully!");
-
-    
-    document.getElementById("inspectionForm").reset();
+        alert("Inspection submitted successfully!");
+        form.reset();
+        window.location.href = "/";
+    } catch (error) {
+        console.error(error);
+        alert("Unable to submit inspection.");
+    }
 });
+
+searchButton.addEventListener("click", () => {
+    loadInspections(searchInput.value.trim());
+});
+
+searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        loadInspections(searchInput.value.trim());
+    }
+});
+
+clearSearchButton.addEventListener("click", () => {
+    searchInput.value = "";
+    loadInspections();
+});
+
+updateButton.addEventListener("click", async () => {
+    const updatedInspection = {
+        restaurantName: "Updated Spice House",
+        location: "Santa Clara",
+        email: "updated@example.com",
+        description: "Updated inspection findings after a follow-up restaurant inspection.",
+        category: "Conditional Pass"
+    };
+
+    try {
+        const response = await fetch("/api/inspections/1", {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(updatedInspection)
+        });
+
+        if (!response.ok) {
+            throw new Error("Unable to update inspection");
+        }
+
+        alert("Inspection ID 1 updated successfully!");
+        window.location.href = "/";
+    } catch (error) {
+        console.error(error);
+        alert("Unable to update inspection.");
+    }
+});
+
+deleteButton.addEventListener("click", async () => {
+    try {
+        const response = await fetch("/api/inspections");
+        const inspections = await response.json();
+
+        if (inspections.length === 0) {
+            alert("No inspections to delete.");
+            return;
+        }
+
+        const highestId = Math.max(
+            ...inspections.map((inspection) => inspection.id)
+        );
+
+        const deleteResponse = await fetch(
+            `/api/inspections/${highestId}`,
+            {
+                method: "DELETE"
+            }
+        );
+
+        if (!deleteResponse.ok) {
+            throw new Error("Unable to delete inspection");
+        }
+
+        alert(`Inspection ID ${highestId} deleted successfully!`);
+        window.location.href = "/";
+    } catch (error) {
+        console.error(error);
+        alert("Unable to delete inspection.");
+    }
+});
+
+loadInspections();

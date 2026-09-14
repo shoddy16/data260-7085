@@ -1,0 +1,26 @@
+{
+  "verification": "HW2 self-check",
+  "overall_passed": true,
+  "checks": [
+    {
+      "check": "GET inspections",
+      "passed": true
+    },
+    {
+      "check": "Search endpoint",
+      "passed": true
+    },
+    {
+      "check": "Valid Planner output",
+      "passed": true
+    },
+    {
+      "check": "Invalid Planner output rejected",
+      "passed": true
+    },
+    {
+      "check": "LangGraph normal run",
+      "passed": true
+    }
+  ]
+}

@@ -163,3 +163,7 @@ activated. Ollama must be running locally with the selected model available.
 The fixed experiment input and raw results are preserved in
 reports/hw01/ so the reported results can be checked against the original
 runs.
+
+
+
+

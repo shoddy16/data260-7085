@@ -1,0 +1,984 @@
+HW2 Part 4 Experiment Run Log
+Experiment started: 2026-09-14T02:18:46.555349
+Project root: C:\Users\Bhushan Waingankar\Desktop\sjsu assignments\fall 2026\Agentic ai\Homeworks\assignment 1\data260-7085
+Model: llama3.2:3b
+Ollama URL: http://localhost:11434
+Frozen input: C:\Users\Bhushan Waingankar\Desktop\sjsu assignments\fall 2026\Agentic ai\Homeworks\assignment 1\data260-7085\reports\hw02\cases\schema_input.json
+Title: Local Restaurant Inspection
+Content: A local restaurant inspection checked kitchen conditions, food safety practices, sanitation, and compliance with restaurant inspection requirements.
+
+
+Schema run 1:
+{
+  "timestamp": "2026-09-14T02:19:31.936178",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 45362.02,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 1
+}
+
+Schema run 2:
+{
+  "timestamp": "2026-09-14T02:19:49.842826",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17891.09,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 2
+}
+
+Schema run 3:
+{
+  "timestamp": "2026-09-14T02:20:07.437244",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17592.4,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 3
+}
+
+Schema run 4:
+{
+  "timestamp": "2026-09-14T02:20:25.043113",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17594.07,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 4
+}
+
+Schema run 5:
+{
+  "timestamp": "2026-09-14T02:20:42.479824",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17426.89,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 5
+}
+
+Schema run 6:
+{
+  "timestamp": "2026-09-14T02:20:59.922348",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17435.85,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 6
+}
+
+Schema run 7:
+{
+  "timestamp": "2026-09-14T02:21:17.865450",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17936.02,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 7
+}
+
+Schema run 8:
+{
+  "timestamp": "2026-09-14T02:21:35.639977",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17767.72,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 8
+}
+
+Schema run 9:
+{
+  "timestamp": "2026-09-14T02:21:53.078290",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17429.06,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 9
+}
+
+Schema run 10:
+{
+  "timestamp": "2026-09-14T02:22:10.516247",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17430.65,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 10
+}
+
+Schema run 11:
+{
+  "timestamp": "2026-09-14T02:22:27.957406",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17428.72,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 11
+}
+
+Schema run 12:
+{
+  "timestamp": "2026-09-14T02:22:45.393139",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17427.24,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 12
+}
+
+Schema run 13:
+{
+  "timestamp": "2026-09-14T02:23:03.013218",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17614.39,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 13
+}
+
+Schema run 14:
+{
+  "timestamp": "2026-09-14T02:23:20.771647",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17749.03,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 14
+}
+
+Schema run 15:
+{
+  "timestamp": "2026-09-14T02:23:38.376704",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17597.63,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 15
+}
+
+Schema run 16:
+{
+  "timestamp": "2026-09-14T02:23:55.653561",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17271.89,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 16
+}
+
+Schema run 17:
+{
+  "timestamp": "2026-09-14T02:24:12.919973",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17260.6,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 17
+}
+
+Schema run 18:
+{
+  "timestamp": "2026-09-14T02:24:30.190527",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17259.87,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 18
+}
+
+Schema run 19:
+{
+  "timestamp": "2026-09-14T02:24:47.460693",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17263.6,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 19
+}
+
+Schema run 20:
+{
+  "timestamp": "2026-09-14T02:25:05.070264",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17602.59,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 20
+}
+
+Schema run 21:
+{
+  "timestamp": "2026-09-14T02:25:22.676102",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17597.2,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 21
+}
+
+Schema run 22:
+{
+  "timestamp": "2026-09-14T02:25:39.941080",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17256.95,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 22
+}
+
+Schema run 23:
+{
+  "timestamp": "2026-09-14T02:25:57.395447",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17445.7,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 23
+}
+
+Schema run 24:
+{
+  "timestamp": "2026-09-14T02:26:14.658792",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17254.56,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 24
+}
+
+Schema run 25:
+{
+  "timestamp": "2026-09-14T02:26:31.926322",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17261.43,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 25
+}
+
+Schema run 26:
+{
+  "timestamp": "2026-09-14T02:26:49.367350",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17434.75,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 26
+}
+
+Schema run 27:
+{
+  "timestamp": "2026-09-14T02:27:06.626941",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17256.7,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 27
+}
+
+Schema run 28:
+{
+  "timestamp": "2026-09-14T02:27:24.237055",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17600.72,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 28
+}
+
+Schema run 29:
+{
+  "timestamp": "2026-09-14T02:27:42.194773",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17943.56,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 29
+}
+
+Schema run 30:
+{
+  "timestamp": "2026-09-14T02:27:59.465054",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17263.29,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 30
+}
+
+Ceiling 2, run 1:
+{
+  "timestamp": "2026-09-14T02:28:17.417504",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17930.65,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 1
+}
+
+Ceiling 2, run 2:
+{
+  "timestamp": "2026-09-14T02:28:34.878548",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17457.82,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 2
+}
+
+Ceiling 2, run 3:
+{
+  "timestamp": "2026-09-14T02:28:52.151483",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17263.98,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 3
+}
+
+Ceiling 2, run 4:
+{
+  "timestamp": "2026-09-14T02:29:09.421152",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17264.01,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 4
+}
+
+Ceiling 2, run 5:
+{
+  "timestamp": "2026-09-14T02:29:26.857327",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17432.62,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 5
+}
+
+Ceiling 2, run 6:
+{
+  "timestamp": "2026-09-14T02:29:44.137706",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17271.43,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 6
+}
+
+Ceiling 2, run 7:
+{
+  "timestamp": "2026-09-14T02:30:01.406422",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17262.19,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 7
+}
+
+Ceiling 2, run 8:
+{
+  "timestamp": "2026-09-14T02:30:18.673407",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17260.87,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 8
+}
+
+Ceiling 2, run 9:
+{
+  "timestamp": "2026-09-14T02:30:35.937670",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17257.24,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 9
+}
+
+Ceiling 2, run 10:
+{
+  "timestamp": "2026-09-14T02:30:53.205561",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17261.91,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 10
+}
+
+Ceiling 2, run 11:
+{
+  "timestamp": "2026-09-14T02:31:10.481390",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17269.85,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 11
+}
+
+Ceiling 2, run 12:
+{
+  "timestamp": "2026-09-14T02:31:27.928376",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17439.79,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 12
+}
+
+Ceiling 2, run 13:
+{
+  "timestamp": "2026-09-14T02:31:45.201211",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17266.67,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 13
+}
+
+Ceiling 2, run 14:
+{
+  "timestamp": "2026-09-14T02:32:03.141721",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17932.74,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 14
+}
+
+Ceiling 2, run 15:
+{
+  "timestamp": "2026-09-14T02:32:20.407153",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17257.23,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 15
+}
+
+Ceiling 2, run 16:
+{
+  "timestamp": "2026-09-14T02:32:37.671721",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17258.0,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 16
+}
+
+Ceiling 2, run 17:
+{
+  "timestamp": "2026-09-14T02:32:55.122886",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17445.37,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 17
+}
+
+Ceiling 2, run 18:
+{
+  "timestamp": "2026-09-14T02:33:12.713022",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17579.68,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 18
+}
+
+Ceiling 2, run 19:
+{
+  "timestamp": "2026-09-14T02:33:30.161802",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17442.32,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 19
+}
+
+Ceiling 2, run 20:
+{
+  "timestamp": "2026-09-14T02:33:47.427364",
+  "max_turns": 2,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17259.69,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 20
+}
+
+Ceiling 10, run 1:
+{
+  "timestamp": "2026-09-14T02:34:04.699938",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17268.16,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 1
+}
+
+Ceiling 10, run 2:
+{
+  "timestamp": "2026-09-14T02:34:22.486181",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17777.17,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 2
+}
+
+Ceiling 10, run 3:
+{
+  "timestamp": "2026-09-14T02:34:40.077293",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17580.49,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 3
+}
+
+Ceiling 10, run 4:
+{
+  "timestamp": "2026-09-14T02:34:57.345207",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17261.37,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 4
+}
+
+Ceiling 10, run 5:
+{
+  "timestamp": "2026-09-14T02:35:14.749246",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17398.22,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 5
+}
+
+Ceiling 10, run 6:
+{
+  "timestamp": "2026-09-14T02:35:32.235666",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17479.03,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 6
+}
+
+Ceiling 10, run 7:
+{
+  "timestamp": "2026-09-14T02:35:49.504510",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17261.76,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 7
+}
+
+Ceiling 10, run 8:
+{
+  "timestamp": "2026-09-14T02:36:06.946760",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17435.41,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 8
+}
+
+Ceiling 10, run 9:
+{
+  "timestamp": "2026-09-14T02:36:24.383411",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17430.53,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 9
+}
+
+Ceiling 10, run 10:
+{
+  "timestamp": "2026-09-14T02:36:41.652832",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17263.31,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 10
+}
+
+Ceiling 10, run 11:
+{
+  "timestamp": "2026-09-14T02:36:58.927545",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17268.63,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 11
+}
+
+Ceiling 10, run 12:
+{
+  "timestamp": "2026-09-14T02:37:16.373006",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17437.27,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 12
+}
+
+Ceiling 10, run 13:
+{
+  "timestamp": "2026-09-14T02:37:34.309416",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17921.53,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 13
+}
+
+Ceiling 10, run 14:
+{
+  "timestamp": "2026-09-14T02:37:51.568273",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17253.99,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 14
+}
+
+Ceiling 10, run 15:
+{
+  "timestamp": "2026-09-14T02:38:09.020354",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17448.8,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 15
+}
+
+Ceiling 10, run 16:
+{
+  "timestamp": "2026-09-14T02:38:26.287471",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17253.08,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 16
+}
+
+Ceiling 10, run 17:
+{
+  "timestamp": "2026-09-14T02:38:43.550356",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17256.22,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 17
+}
+
+Ceiling 10, run 18:
+{
+  "timestamp": "2026-09-14T02:39:00.838723",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17280.71,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 18
+}
+
+Ceiling 10, run 19:
+{
+  "timestamp": "2026-09-14T02:39:18.257730",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17405.0,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 19
+}
+
+Ceiling 10, run 20:
+{
+  "timestamp": "2026-09-14T02:39:35.860998",
+  "max_turns": 10,
+  "turn_count": 1,
+  "approved": true,
+  "outcome": "Valid first attempt",
+  "latency_ms": 17595.88,
+  "planner_proposal": "{\"tags\": [\"KitchenCheck\", \"FoodSafety\", \"SanitationCheck\"], \"summary\": \"Local restaurant inspection checks kitchen conditions, food safety practices, and sanitation.\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 20
+}
+
+Adversarial run 1:
+{
+  "timestamp": "2026-09-14T02:40:38.843946",
+  "max_turns": 5,
+  "turn_count": 3,
+  "approved": true,
+  "outcome": "Valid after 2+ retries",
+  "latency_ms": 62974.03,
+  "planner_proposal": "{\"tags\": [\"test\", \"tag\", \"plan\"], \"summary\": \"This is a short summary of the inspection\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 1
+}
+
+Adversarial run 2:
+{
+  "timestamp": "2026-09-14T02:41:33.153274",
+  "max_turns": 5,
+  "turn_count": 3,
+  "approved": true,
+  "outcome": "Valid after 2+ retries",
+  "latency_ms": 54305.73,
+  "planner_proposal": "{\"tags\": [\"test\", \"tag\", \"plan\"], \"summary\": \"This is a short summary of the inspection\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 2
+}
+
+Adversarial run 3:
+{
+  "timestamp": "2026-09-14T02:42:27.444380",
+  "max_turns": 5,
+  "turn_count": 3,
+  "approved": true,
+  "outcome": "Valid after 2+ retries",
+  "latency_ms": 54281.86,
+  "planner_proposal": "{\"tags\": [\"test\", \"tag\", \"plan\"], \"summary\": \"This is a short summary of the inspection\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 3
+}
+
+Adversarial run 4:
+{
+  "timestamp": "2026-09-14T02:43:21.910239",
+  "max_turns": 5,
+  "turn_count": 3,
+  "approved": true,
+  "outcome": "Valid after 2+ retries",
+  "latency_ms": 54459.58,
+  "planner_proposal": "{\"tags\": [\"test\", \"tag\", \"plan\"], \"summary\": \"This is a short summary of the inspection\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 4
+}
+
+Adversarial run 5:
+{
+  "timestamp": "2026-09-14T02:44:16.487605",
+  "max_turns": 5,
+  "turn_count": 3,
+  "approved": true,
+  "outcome": "Valid after 2+ retries",
+  "latency_ms": 54570.14,
+  "planner_proposal": "{\"tags\": [\"test\", \"tag\", \"plan\"], \"summary\": \"This is a short summary of the inspection\"}",
+  "reviewer_feedback": "{\"approved\": true, \"issues\": []}",
+  "run": 5
+}

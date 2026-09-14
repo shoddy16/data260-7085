@@ -1,0 +1,6 @@
+timestamp,max_turns,turn_count,approved,outcome,latency_ms,planner_proposal,reviewer_feedback,run
+2026-09-14T02:40:38.843946,5,3,True,Valid after 2+ retries,62974.03,"{""tags"": [""test"", ""tag"", ""plan""], ""summary"": ""This is a short summary of the inspection""}","{""approved"": true, ""issues"": []}",1
+2026-09-14T02:41:33.153274,5,3,True,Valid after 2+ retries,54305.73,"{""tags"": [""test"", ""tag"", ""plan""], ""summary"": ""This is a short summary of the inspection""}","{""approved"": true, ""issues"": []}",2
+2026-09-14T02:42:27.444380,5,3,True,Valid after 2+ retries,54281.86,"{""tags"": [""test"", ""tag"", ""plan""], ""summary"": ""This is a short summary of the inspection""}","{""approved"": true, ""issues"": []}",3
+2026-09-14T02:43:21.910239,5,3,True,Valid after 2+ retries,54459.58,"{""tags"": [""test"", ""tag"", ""plan""], ""summary"": ""This is a short summary of the inspection""}","{""approved"": true, ""issues"": []}",4
+2026-09-14T02:44:16.487605,5,3,True,Valid after 2+ retries,54570.14,"{""tags"": [""test"", ""tag"", ""plan""], ""summary"": ""This is a short summary of the inspection""}","{""approved"": true, ""issues"": []}",5
