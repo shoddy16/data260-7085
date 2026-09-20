@@ -1,0 +1,47 @@
+﻿[
+    {
+        "filename":  "cdc_inspection_practices.html",
+        "bytes":  449,
+        "sha256":  "EB00387E4F46A10649674544206A7E04CAF4E4332F706C8D94321BB97B20535A"
+    },
+    {
+        "filename":  "cdc_outbreak_contributing_factors.html",
+        "bytes":  479,
+        "sha256":  "50930CE600ED158D6DDDEDD858E2E170AF3CF36C975D2D6598F9B6BAF9B12803"
+    },
+    {
+        "filename":  "fda_food_code_2026.pdf",
+        "bytes":  5215431,
+        "sha256":  "A608605DB1A44D07FC9255DB281175A933B4290597B4DC4CF58E035158FC8E06"
+    },
+    {
+        "filename":  "fda_inspection_standardization_2025.pdf",
+        "bytes":  2402088,
+        "sha256":  "20A65C33C92CC27905AC5A49899989ACE7A533DB8DC0F377D18221299297CA5C"
+    },
+    {
+        "filename":  "fda_retail_program_standards.pdf",
+        "bytes":  14496,
+        "sha256":  "9D99EC65A3B0EDA864818A4B7A68F312FECA814EA17E9B0565EA8C8F7DA03DAE"
+    },
+    {
+        "filename":  "fda_retail_program_standards_2024.pdf",
+        "bytes":  4090869,
+        "sha256":  "464A2340AE7F5F8B2AA021054F10123ACC0C2D34BDDDC2CB333CC621F4FD88AD"
+    },
+    {
+        "filename":  "fda_standard_2_trained_staff.pdf",
+        "bytes":  306326,
+        "sha256":  "EF8EFF038B3E3FFACF475668DDBD7BE0BC84A1249D4B4DF05C0AD4FE1C11DA4F"
+    },
+    {
+        "filename":  "fda_standard_4_uniform_inspection.pdf",
+        "bytes":  1505960,
+        "sha256":  "CBA804A401C95F072ADB0EB0B4029E25E60AF940AE49C4AB44DF2B88794826BB"
+    },
+    {
+        "filename":  "fda_standard_5_foodborne_illness.pdf",
+        "bytes":  288032,
+        "sha256":  "34E5298ED011515541D532DD938BCF48D1F32CC8DA251F12D9EA64BCCAA2318E"
+    }
+]
