@@ -1,0 +1,25 @@
+﻿questions:
+  - id: Q1
+    question: "What is the purpose of the FDA Food Code?"
+    expected_answer: "The FDA Food Code provides science-based model requirements for safeguarding public health and ensuring food is safe and honestly presented in retail and food-service operations."
+    expected_source: "fda_food_code_2026.pdf"
+
+  - id: Q2
+    question: "What is the purpose of Standard 4 in the FDA Retail Program Standards?"
+    expected_answer: "Standard 4 focuses on uniformity in the application of food safety inspections and promotes consistent inspection procedures."
+    expected_source: "fda_standard_4_uniform_inspection.pdf"
+
+  - id: Q3
+    question: "What does Standard 2 address regarding regulatory food safety personnel?"
+    expected_answer: "Standard 2 addresses training and competency requirements for regulatory food safety inspection personnel."
+    expected_source: "fda_standard_2_trained_staff.pdf"
+
+  - id: Q4
+    question: "What does the FDA Food Code say about controlling food safety hazards during food preparation?"
+    expected_answer: "The Food Code establishes controls for preventing contamination and controlling time and temperature during food preparation and handling."
+    expected_source: "fda_food_code_2026.pdf"
+
+  - id: Q5
+    question: "What is the role of Standard 5 in a retail food safety program?"
+    expected_answer: "Standard 5 addresses procedures for identifying, investigating, and responding to foodborne illness and related public-health concerns."
+    expected_source: "fda_standard_5_foodborne_illness.pdf"
