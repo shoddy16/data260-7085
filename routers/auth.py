@@ -1,87 +1,85 @@
-from fastapi import APIRouter, Request, Form
-from fastapi.responses import RedirectResponse
-from fastapi.templating import Jinja2Templates
+from fastapi import APIRouter, Depends, Request, Form
+from fastapi.responses import JSONResponse
+from sqlalchemy.orm import Session
 
-from auth import login_user, logout_user, is_authenticated
+from database.database import get_db
+from auth import (
+    login_user,
+    logout_user,
+    get_current_user,
+    SESSION_TIMEOUT
+)
 
 router = APIRouter()
-templates = Jinja2Templates(directory="templates")
-
-
-@router.get("/")
-def home(request: Request):
-    user = request.session.get("username") if is_authenticated(request) else None
-
-    return templates.TemplateResponse(
-        request,
-        "index.html",
-        {
-            "user": user
-        }
-    )
-
-
-@router.get("/login")
-def login_page(request: Request):
-    if is_authenticated(request):
-        return RedirectResponse(
-            url="/dashboard",
-            status_code=303
-        )
-
-    return templates.TemplateResponse(
-        request,
-        "login.html",
-        {
-            "error": None
-        }
-    )
 
 
 @router.post("/login")
 def login(
     request: Request,
     username: str = Form(...),
-    password: str = Form(...)
+    password: str = Form(...),
+    db: Session = Depends(get_db)
 ):
-    if login_user(request, username, password):
-        return RedirectResponse(
-            url="/dashboard",
-            status_code=303
+    token = login_user(db, request, username, password)
+
+    if not token:
+        return JSONResponse(
+            status_code=401,
+            content={"detail": "Invalid username or password"}
         )
 
-    return templates.TemplateResponse(
-        request,
-        "login.html",
-        {
-            "error": "Invalid username or password."
-        },
-        status_code=401
-    )
-
-
-@router.get("/dashboard")
-def dashboard(request: Request):
-    if not is_authenticated(request):
-        return RedirectResponse(
-            url="/login",
-            status_code=303
-        )
-
-    return templates.TemplateResponse(
-        request,
-        "dashboard.html",
-        {
-            "user": request.session.get("username")
+    response = JSONResponse(
+        content={
+            "message": "Login successful",
+            "username": username
         }
     )
 
-
-@router.get("/logout")
-def logout(request: Request):
-    logout_user(request)
-
-    return RedirectResponse(
-        url="/",
-        status_code=303
+    response.set_cookie(
+        key="session",
+        value=token,
+        httponly=True,
+        samesite="lax",
+        max_age=SESSION_TIMEOUT
     )
+
+    return response
+
+
+@router.post("/logout")
+def logout(
+    request: Request,
+    db: Session = Depends(get_db)
+):
+    token = request.cookies.get("session")
+
+    if token:
+        logout_user(db, token)
+
+    response = JSONResponse(
+        content={"message": "Logged out successfully"}
+    )
+
+    response.delete_cookie("session")
+
+    return response
+
+
+@router.get("/session")
+def session(
+    request: Request,
+    db: Session = Depends(get_db)
+):
+    token = request.cookies.get("session")
+    user = get_current_user(db, token)
+
+    if not user:
+        return JSONResponse(
+            status_code=401,
+            content={"authenticated": False}
+        )
+
+    return {
+        "authenticated": True,
+        "username": user.email
+    }
