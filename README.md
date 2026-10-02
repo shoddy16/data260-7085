@@ -164,6 +164,35 @@ The fixed experiment input and raw results are preserved in
 reports/hw01/ so the reported results can be checked against the original
 runs.
 
+## HW5 Part 1 — Restaurants and Inspections
+
+The HW5 extension keeps the existing FastAPI service and adds a `restaurants`
+entity related to inspection records. Restaurant codes and inspection codes
+are unique; inspection deletion is restricted while a restaurant has linked
+records. Existing inspection field names remain in the API for compatibility.
+
+New API routes include:
+
+- `POST/GET /restaurants/` and `GET/PUT/DELETE /restaurants/{id}`
+- `GET /restaurants/{id}/inspections` for the relationship query
+- Paginated inspection listing with `skip` and `limit`
+
+For an existing HW4 MySQL database, run the idempotent backfill migration from
+the repository root before starting the updated API:
+
+```powershell
+.\.venv\Scripts\python.exe -m migrations.hw5_part1
+```
+
+The migration adds the relationship and required columns, creates restaurant
+rows from the existing inspection names/locations, fills unique inspection
+codes, and retains the legacy columns. It is MySQL-specific and has not been
+run automatically against the configured database.
+
+The React client uses Redux Toolkit async thunks with Axios for restaurant and
+inspection CRUD. The Part 1 API smoke checks use an isolated in-memory SQLite
+database and do not change the configured MySQL data.
+
 
  DATA 260 — Homework 2
 

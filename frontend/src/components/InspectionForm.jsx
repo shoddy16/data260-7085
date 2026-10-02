@@ -1,99 +1,80 @@
 import { useState } from "react";
-import api from "../api";
+import { useDispatch } from "react-redux";
+import { createInspection } from "../features/inspections/inspectionsSlice";
 
-function InspectionForm({ onCreated }) {
-  const [form, setForm] = useState({
-    restaurantName: "",
-    location: "",
-    email: "",
-    description: "",
-    category: "",
-  });
+const emptyForm = {
+  restaurant_id: "",
+  email: "",
+  category: "",
+  description: "",
+  score: 100,
+};
 
+function InspectionForm({ restaurants }) {
+  const dispatch = useDispatch();
+  const [form, setForm] = useState(emptyForm);
   const [message, setMessage] = useState("");
 
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const selectedRestaurant = restaurants.find(
+    (restaurant) => restaurant.id === Number(form.restaurant_id),
+  );
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     setMessage("");
-
+    if (!selectedRestaurant) {
+      setMessage("Choose a restaurant before creating an inspection.");
+      return;
+    }
+    const payload = {
+      restaurant_id: selectedRestaurant.id,
+      restaurantName: selectedRestaurant.name,
+      location: selectedRestaurant.location,
+      email: form.email,
+      category: form.category,
+      description: form.description,
+      score: Number(form.score),
+    };
     try {
-      await api.post("/inspections/", form);
-
-      setMessage("Inspection created successfully!");
-
-      setForm({
-        restaurantName: "",
-        location: "",
-        email: "",
-        description: "",
-        category: "",
-      });
-
-      onCreated();
+      await dispatch(createInspection(payload)).unwrap();
+      setMessage("Inspection created.");
+      setForm(emptyForm);
     } catch (error) {
-      console.error(error);
-      setMessage("Could not create inspection.");
+      setMessage(String(error));
     }
   };
 
   return (
-    <div>
-      <h2>Add Inspection</h2>
-
-      <form onSubmit={handleSubmit}>
-        <input
-          name="restaurantName"
-          placeholder="Restaurant Name"
-          value={form.restaurantName}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="location"
-          placeholder="Location"
-          value={form.location}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="email"
-          type="email"
-          placeholder="Email"
-          value={form.email}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          name="category"
-          placeholder="Category"
-          value={form.category}
-          onChange={handleChange}
-          required
-        />
-
-        <textarea
-          name="description"
-          placeholder="Description"
-          value={form.description}
-          onChange={handleChange}
-          required
-        />
-
-        <button type="submit">Add Inspection</button>
-      </form>
-
-      {message && <p>{message}</p>}
-    </div>
+    <form className="entity-form" onSubmit={handleSubmit}>
+      <label>
+        Restaurant
+        <select value={form.restaurant_id} onChange={(event) => setForm({ ...form, restaurant_id: event.target.value })} required>
+          <option value="">Select a restaurant</option>
+          {restaurants.map((restaurant) => (
+            <option key={restaurant.id} value={restaurant.id}>{restaurant.name} — {restaurant.location}</option>
+          ))}
+        </select>
+      </label>
+      <label>
+        Contact email
+        <input type="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} required maxLength={255} />
+      </label>
+      <label>
+        Inspection category
+        <input value={form.category} onChange={(event) => setForm({ ...form, category: event.target.value })} required maxLength={100} />
+      </label>
+      <label>
+        Score (0–100)
+        <input type="number" min="0" max="100" value={form.score} onChange={(event) => setForm({ ...form, score: event.target.value })} required />
+      </label>
+      <label>
+        Description
+        <textarea value={form.description} onChange={(event) => setForm({ ...form, description: event.target.value })} required />
+      </label>
+      <button type="submit" disabled={restaurants.length === 0}>Add inspection</button>
+      {restaurants.length === 0 ? <p>Add a restaurant first.</p> : null}
+      {message ? <p role="status">{message}</p> : null}
+    </form>
   );
 }
 

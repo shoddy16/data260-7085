@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
 from database.database import get_db
@@ -14,14 +14,18 @@ from crud.crud import (
 router = APIRouter(prefix="/inspections", tags=["inspections"])
 
 
-@router.post("/", response_model=InspectionResponse)
+@router.post("/", response_model=InspectionResponse, status_code=status.HTTP_201_CREATED)
 def create(inspection: InspectionCreate, db: Session = Depends(get_db)):
     return create_inspection(db, inspection)
 
 
 @router.get("/", response_model=list[InspectionResponse])
-def read_all(db: Session = Depends(get_db)):
-    return get_inspections(db)
+def read_all(
+    skip: int = Query(0, ge=0),
+    limit: int = Query(50, ge=1, le=200),
+    db: Session = Depends(get_db),
+):
+    return get_inspections(db, skip=skip, limit=limit)
 
 
 @router.get("/{inspection_id}", response_model=InspectionResponse)
@@ -48,11 +52,11 @@ def update(
     return updated
 
 
-@router.delete("/{inspection_id}")
+@router.delete("/{inspection_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete(inspection_id: int, db: Session = Depends(get_db)):
     deleted = delete_inspection(db, inspection_id)
 
     if not deleted:
         raise HTTPException(status_code=404, detail="Inspection not found")
 
-    return {"message": "Inspection deleted successfully"}
+    return None

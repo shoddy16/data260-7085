@@ -109,3 +109,143 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.dashboard {
+  width: min(100% - 32px, 980px);
+  margin: 0 auto;
+  padding: 32px 0 56px;
+  text-align: left;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.dashboard-header h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin: 8px 0;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.panel {
+  margin: 18px 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.entity-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.entity-form label {
+  display: grid;
+  gap: 6px;
+  color: var(--text-h);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.entity-form input,
+.entity-form select,
+.entity-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+}
+
+.entity-form textarea {
+  min-height: 90px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.entity-list {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entity-list > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.entity-list li div:first-child,
+.inspection-card > div:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.entity-list small {
+  color: var(--text);
+}
+
+.inspection-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.inspection-card h3 {
+  margin: 0;
+  color: var(--text-h);
+}
+
+.error-message {
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: #9f1d24;
+  background: #fff0f0;
+}
+
+@media (max-width: 650px) {
+  .dashboard-header,
+  .entity-list > li,
+  .inspection-card {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .dashboard-header h1 {
+    font-size: 32px;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+}
