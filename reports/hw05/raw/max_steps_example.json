@@ -1,0 +1,6 @@
+{
+  "answer": "The agent stopped because it reached the configured max_steps limit.",
+  "step_count": 2,
+  "tool_call_count": 2,
+  "stop_reason": "max_steps"
+}

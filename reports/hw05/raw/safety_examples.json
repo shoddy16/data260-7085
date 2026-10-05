@@ -1,0 +1,18 @@
+{
+  "allowed": {
+    "ok": true,
+    "data": [
+      {
+        "id": 3,
+        "restaurant": "Juniper",
+        "category": "Routine"
+      }
+    ],
+    "error": null
+  },
+  "blocked": {
+    "ok": false,
+    "data": null,
+    "error": "safety rule blocked requests to evade or falsify restaurant inspections"
+  }
+}

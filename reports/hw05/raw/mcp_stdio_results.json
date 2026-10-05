@@ -1,0 +1,329 @@
+{
+  "verified_at_utc": "2026-10-03T01:03:25.201633+00:00",
+  "transport": "STDIO, MCP Python ClientSession",
+  "results": [
+    {
+      "server_script": "domain_mcp_server.py",
+      "discovered_tools": [
+        "search",
+        "detail_lookup",
+        "aggregate"
+      ],
+      "calls": [
+        {
+          "tool": "search",
+          "input": {
+            "query": "Restaurant 1",
+            "limit": 2
+          },
+          "is_error": false,
+          "content": [
+            "{\n  \"ok\": true,\n  \"data\": [\n    {\n      \"id\": 4,\n      \"inspection_code\": \"s7085-i-00000004\",\n      \"restaurant_id\": 4,\n      \"restaurant\": \"Restaurant 1\",\n      \"location\": \"Mountain View, CA\",\n      \"category\": \"Sanitation\",\n      \"description\": \"Restaurant inspection record 1\",\n      \"score\": 100,\n      \"created_at\": \"2026-10-02T17:29:55\"\n    },\n    {\n      \"id\": 13,\n      \"inspection_code\": \"s7085-i-00000013\",\n      \"restaurant_id\": 13,\n      \"restaurant\": \"Restaurant 10\",\n      \"location\": \"San Jose, CA\",\n      \"category\": \"Sanitation\",\n      \"description\": \"Restaurant inspection record 10\",\n      \"score\": 100,\n      \"created_at\": \"2026-10-02T17:29:55\"\n    }\n  ],\n  \"error\": null\n}"
+          ],
+          "parsed": {
+            "ok": true,
+            "data": [
+              {
+                "id": 4,
+                "inspection_code": "s7085-i-00000004",
+                "restaurant_id": 4,
+                "restaurant": "Restaurant 1",
+                "location": "Mountain View, CA",
+                "category": "Sanitation",
+                "description": "Restaurant inspection record 1",
+                "score": 100,
+                "created_at": "2026-10-02T17:29:55"
+              },
+              {
+                "id": 13,
+                "inspection_code": "s7085-i-00000013",
+                "restaurant_id": 13,
+                "restaurant": "Restaurant 10",
+                "location": "San Jose, CA",
+                "category": "Sanitation",
+                "description": "Restaurant inspection record 10",
+                "score": 100,
+                "created_at": "2026-10-02T17:29:55"
+              }
+            ],
+            "error": null
+          }
+        },
+        {
+          "tool": "search",
+          "input": {
+            "query": " ",
+            "limit": 5
+          },
+          "is_error": false,
+          "content": [
+            "{\n  \"ok\": false,\n  \"data\": null,\n  \"error\": \"query must be a non-empty string\"\n}"
+          ],
+          "parsed": {
+            "ok": false,
+            "data": null,
+            "error": "query must be a non-empty string"
+          }
+        },
+        {
+          "tool": "detail_lookup",
+          "input": {
+            "inspection_id": 4
+          },
+          "is_error": false,
+          "content": [
+            "{\n  \"ok\": true,\n  \"data\": {\n    \"id\": 4,\n    \"inspection_code\": \"s7085-i-00000004\",\n    \"restaurant_id\": 4,\n    \"restaurant\": \"Restaurant 1\",\n    \"location\": \"Mountain View, CA\",\n    \"category\": \"Sanitation\",\n    \"description\": \"Restaurant inspection record 1\",\n    \"score\": 100,\n    \"created_at\": \"2026-10-02T17:29:55\"\n  },\n  \"error\": null\n}"
+          ],
+          "parsed": {
+            "ok": true,
+            "data": {
+              "id": 4,
+              "inspection_code": "s7085-i-00000004",
+              "restaurant_id": 4,
+              "restaurant": "Restaurant 1",
+              "location": "Mountain View, CA",
+              "category": "Sanitation",
+              "description": "Restaurant inspection record 1",
+              "score": 100,
+              "created_at": "2026-10-02T17:29:55"
+            },
+            "error": null
+          }
+        },
+        {
+          "tool": "detail_lookup",
+          "input": {
+            "inspection_id": 0
+          },
+          "is_error": false,
+          "content": [
+            "{\n  \"ok\": false,\n  \"data\": null,\n  \"error\": \"inspection_id must be a positive integer\"\n}"
+          ],
+          "parsed": {
+            "ok": false,
+            "data": null,
+            "error": "inspection_id must be a positive integer"
+          }
+        },
+        {
+          "tool": "aggregate",
+          "input": {
+            "group_by": "category"
+          },
+          "is_error": false,
+          "content": [
+            "{\n  \"ok\": true,\n  \"data\": [\n    {\n      \"group\": \"Food Safety\",\n      \"inspection_count\": 1686,\n      \"average_score\": 100.0\n    },\n    {\n      \"group\": \"Health and Safety\",\n      \"inspection_count\": 1683,\n      \"average_score\": 100.0\n    },\n    {\n      \"group\": \"Sanitation\",\n      \"inspection_count\": 1631,\n      \"average_score\": 100.0\n    }\n  ],\n  \"error\": null\n}"
+          ],
+          "parsed": {
+            "ok": true,
+            "data": [
+              {
+                "group": "Food Safety",
+                "inspection_count": 1686,
+                "average_score": 100.0
+              },
+              {
+                "group": "Health and Safety",
+                "inspection_count": 1683,
+                "average_score": 100.0
+              },
+              {
+                "group": "Sanitation",
+                "inspection_count": 1631,
+                "average_score": 100.0
+              }
+            ],
+            "error": null
+          }
+        },
+        {
+          "tool": "aggregate",
+          "input": {
+            "group_by": "unknown"
+          },
+          "is_error": false,
+          "content": [
+            "{\n  \"ok\": false,\n  \"data\": null,\n  \"error\": \"group_by must be 'category' or 'restaurant'\"\n}"
+          ],
+          "parsed": {
+            "ok": false,
+            "data": null,
+            "error": "group_by must be 'category' or 'restaurant'"
+          }
+        }
+      ]
+    },
+    {
+      "server_script": "meals_server.py",
+      "discovered_tools": [
+        "search_meals_by_name",
+        "meals_by_ingredient",
+        "random_meal",
+        "meal_details"
+      ],
+      "calls": [
+        {
+          "tool": "search_meals_by_name",
+          "input": {
+            "query": "Arrabiata",
+            "limit": 2
+          },
+          "is_error": false,
+          "content": [
+            "{\n  \"meals\": [\n    {\n      \"id\": \"52771\",\n      \"name\": \"Spicy Arrabiata Penne\",\n      \"thumb\": \"https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg\",\n      \"area\": \"Italian\",\n      \"category\": \"Vegetarian\"\n    }\n  ]\n}"
+          ],
+          "parsed": {
+            "meals": [
+              {
+                "id": "52771",
+                "name": "Spicy Arrabiata Penne",
+                "thumb": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg",
+                "area": "Italian",
+                "category": "Vegetarian"
+              }
+            ]
+          }
+        },
+        {
+          "tool": "meals_by_ingredient",
+          "input": {
+            "ingredient": "chicken",
+            "limit": 2
+          },
+          "is_error": false,
+          "content": [
+            "{\n  \"meals\": [\n    {\n      \"id\": \"52940\",\n      \"name\": \"Brown Stew Chicken\",\n      \"thumb\": \"https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg\"\n    },\n    {\n      \"id\": \"53161\",\n      \"name\": \"Chicken & chorizo rice pot\",\n      \"thumb\": \"https://www.themealdb.com/images/media/meals/fk80jp1763280767.jpg\"\n    }\n  ]\n}"
+          ],
+          "parsed": {
+            "meals": [
+              {
+                "id": "52940",
+                "name": "Brown Stew Chicken",
+                "thumb": "https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg"
+              },
+              {
+                "id": "53161",
+                "name": "Chicken & chorizo rice pot",
+                "thumb": "https://www.themealdb.com/images/media/meals/fk80jp1763280767.jpg"
+              }
+            ]
+          }
+        },
+        {
+          "tool": "random_meal",
+          "input": {},
+          "is_error": false,
+          "content": [
+            "{\n  \"id\": \"52851\",\n  \"name\": \"Nutty Chicken Curry\",\n  \"category\": \"Chicken\",\n  \"area\": \"India\",\n  \"instructions\": \"Finely slice a quarter of the chilli, then put the rest in a food processor with the ginger, garlic, coriander stalks and one-third of the leaves. Whizz to a rough paste with a splash of water if needed.\\r\\nHeat the oil in a frying pan, then quickly brown the chicken chunks for 1 min. Stir in the paste for another min, then add the peanut butter, stock and yogurt. When the sauce is gently bubbling, cook for 10 mins until the chicken is just cooked through and sauce thickened. Stir in most of the remaining coriander, then scatter the rest on top with the chilli, if using. Eat with rice or mashed sweet potato.\",\n  \"image\": \"https://www.themealdb.com/images/media/meals/yxsurp1511304301.jpg\",\n  \"source\": \"https://www.bbcgoodfood.com/recipes/11753/nutty-chicken-curry\",\n  \"youtube\": \"https://www.youtube.com/watch?v=nSQNfZxOdeU\",\n  \"ingredients\": [\n    {\n      \"name\": \"Red Chilli\",\n      \"measure\": \"1 large\"\n    },\n    {\n      \"name\": \"Ginger\",\n      \"measure\": \"0.5\"\n    },\n    {\n      \"name\": \"Garlic\",\n      \"measure\": \"1 large\"\n    },\n    {\n      \"name\": \"Coriander\",\n      \"measure\": \"Bunch\"\n    },\n    {\n      \"name\": \"Sunflower Oil\",\n      \"measure\": \"1 tbsp\"\n    },\n    {\n      \"name\": \"Chicken Breasts\",\n      \"measure\": \"4\"\n    },\n    {\n      \"name\": \"Peanut Butter\",\n      \"measure\": \"5 tblsp\"\n    },\n    {\n      \"name\": \"Chicken Stock\",\n      \"measure\": \"150ml\"\n    },\n    {\n      \"name\": \"Greek Yogurt\",\n      \"measure\": \"200g\"\n    }\n  ]\n}"
+          ],
+          "parsed": {
+            "id": "52851",
+            "name": "Nutty Chicken Curry",
+            "category": "Chicken",
+            "area": "India",
+            "instructions": "Finely slice a quarter of the chilli, then put the rest in a food processor with the ginger, garlic, coriander stalks and one-third of the leaves. Whizz to a rough paste with a splash of water if needed.\r\nHeat the oil in a frying pan, then quickly brown the chicken chunks for 1 min. Stir in the paste for another min, then add the peanut butter, stock and yogurt. When the sauce is gently bubbling, cook for 10 mins until the chicken is just cooked through and sauce thickened. Stir in most of the remaining coriander, then scatter the rest on top with the chilli, if using. Eat with rice or mashed sweet potato.",
+            "image": "https://www.themealdb.com/images/media/meals/yxsurp1511304301.jpg",
+            "source": "https://www.bbcgoodfood.com/recipes/11753/nutty-chicken-curry",
+            "youtube": "https://www.youtube.com/watch?v=nSQNfZxOdeU",
+            "ingredients": [
+              {
+                "name": "Red Chilli",
+                "measure": "1 large"
+              },
+              {
+                "name": "Ginger",
+                "measure": "0.5"
+              },
+              {
+                "name": "Garlic",
+                "measure": "1 large"
+              },
+              {
+                "name": "Coriander",
+                "measure": "Bunch"
+              },
+              {
+                "name": "Sunflower Oil",
+                "measure": "1 tbsp"
+              },
+              {
+                "name": "Chicken Breasts",
+                "measure": "4"
+              },
+              {
+                "name": "Peanut Butter",
+                "measure": "5 tblsp"
+              },
+              {
+                "name": "Chicken Stock",
+                "measure": "150ml"
+              },
+              {
+                "name": "Greek Yogurt",
+                "measure": "200g"
+              }
+            ]
+          }
+        },
+        {
+          "tool": "meal_details",
+          "input": {
+            "id": 52772
+          },
+          "is_error": false,
+          "content": [
+            "{\n  \"id\": \"52772\",\n  \"name\": \"Teriyaki Chicken Casserole\",\n  \"category\": \"Chicken\",\n  \"area\": \"Japanese\",\n  \"instructions\": \"Preheat oven to 350° F. Spray a 9x13-inch baking pan with non-stick spray.\\r\\nCombine soy sauce, ½ cup water, brown sugar, ginger and garlic in a small saucepan and cover. Bring to a boil over medium heat. Remove lid and cook for one minute once boiling.\\r\\nMeanwhile, stir together the corn starch and 2 tablespoons of water in a separate dish until smooth. Once sauce is boiling, add mixture to the saucepan and stir to combine. Cook until the sauce starts to thicken then remove from heat.\\r\\nPlace the chicken breasts in the prepared pan. Pour one cup of the sauce over top of chicken. Place chicken in oven and bake 35 minutes or until cooked through. Remove from oven and shred chicken in the dish using two forks.\\r\\n*Meanwhile, steam or cook the vegetables according to package directions.\\r\\nAdd the cooked vegetables and rice to the casserole dish with the chicken. Add most of the remaining sauce, reserving a bit to drizzle over the top when serving. Gently toss everything together in the casserole dish until combined. Return to oven and cook 15 minutes. Remove from oven and let stand 5 minutes before serving. Drizzle each serving with remaining sauce. Enjoy!\",\n  \"image\": \"https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg\",\n  \"source\": \"\",\n  \"youtube\": \"https://www.youtube.com/watch?v=4aZr5hZXP_s\",\n  \"ingredients\": [\n    {\n      \"name\": \"soy sauce\",\n      \"measure\": \"3/4 cup\"\n    },\n    {\n      \"name\": \"water\",\n      \"measure\": \"1/2 cup\"\n    },\n    {\n      \"name\": \"brown sugar\",\n      \"measure\": \"1/4 cup\"\n    },\n    {\n      \"name\": \"ground ginger\",\n      \"measure\": \"1/2 teaspoon\"\n    },\n    {\n      \"name\": \"minced garlic\",\n      \"measure\": \"1/2 teaspoon\"\n    },\n    {\n      \"name\": \"cornstarch\",\n      \"measure\": \"4 Tablespoons\"\n    },\n    {\n      \"name\": \"chicken breasts\",\n      \"measure\": \"2\"\n    },\n    {\n      \"name\": \"stir-fry vegetables\",\n      \"measure\": \"1 (12 oz.)\"\n    },\n    {\n      \"name\": \"brown rice\",\n      \"measure\": \"3 cups\"\n    }\n  ]\n}"
+          ],
+          "parsed": {
+            "id": "52772",
+            "name": "Teriyaki Chicken Casserole",
+            "category": "Chicken",
+            "area": "Japanese",
+            "instructions": "Preheat oven to 350° F. Spray a 9x13-inch baking pan with non-stick spray.\r\nCombine soy sauce, ½ cup water, brown sugar, ginger and garlic in a small saucepan and cover. Bring to a boil over medium heat. Remove lid and cook for one minute once boiling.\r\nMeanwhile, stir together the corn starch and 2 tablespoons of water in a separate dish until smooth. Once sauce is boiling, add mixture to the saucepan and stir to combine. Cook until the sauce starts to thicken then remove from heat.\r\nPlace the chicken breasts in the prepared pan. Pour one cup of the sauce over top of chicken. Place chicken in oven and bake 35 minutes or until cooked through. Remove from oven and shred chicken in the dish using two forks.\r\n*Meanwhile, steam or cook the vegetables according to package directions.\r\nAdd the cooked vegetables and rice to the casserole dish with the chicken. Add most of the remaining sauce, reserving a bit to drizzle over the top when serving. Gently toss everything together in the casserole dish until combined. Return to oven and cook 15 minutes. Remove from oven and let stand 5 minutes before serving. Drizzle each serving with remaining sauce. Enjoy!",
+            "image": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
+            "source": "",
+            "youtube": "https://www.youtube.com/watch?v=4aZr5hZXP_s",
+            "ingredients": [
+              {
+                "name": "soy sauce",
+                "measure": "3/4 cup"
+              },
+              {
+                "name": "water",
+                "measure": "1/2 cup"
+              },
+              {
+                "name": "brown sugar",
+                "measure": "1/4 cup"
+              },
+              {
+                "name": "ground ginger",
+                "measure": "1/2 teaspoon"
+              },
+              {
+                "name": "minced garlic",
+                "measure": "1/2 teaspoon"
+              },
+              {
+                "name": "cornstarch",
+                "measure": "4 Tablespoons"
+              },
+              {
+                "name": "chicken breasts",
+                "measure": "2"
+              },
+              {
+                "name": "stir-fry vegetables",
+                "measure": "1 (12 oz.)"
+              },
+              {
+                "name": "brown rice",
+                "measure": "3 cups"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

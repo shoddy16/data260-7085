@@ -1,0 +1,50 @@
+{
+  "homework": 5,
+  "SID4": 7085,
+  "commit_hash": "fb6884388a43142bf983566125e4fc0070ddf557",
+  "model_configuration": {
+    "provider": "Ollama",
+    "model": "llama3.2:3b",
+    "url": "http://localhost:11434"
+  },
+  "SEED": 7085,
+  "VERIFY_SEED": 267085,
+  "checked_at_utc": "2026-10-03T00:22:42.546007+00:00",
+  "checks": [
+    {
+      "name": "FastAPI app imports with isolated SQLite config",
+      "passed": true,
+      "exit_code": 0,
+      "output_tail": ""
+    },
+    {
+      "name": "Offline assertion runner",
+      "passed": true,
+      "exit_code": 0,
+      "output_tail": "PASS: search valid\nPASS: search invalid blank query\nPASS: detail valid\nPASS: detail invalid id\nPASS: aggregate valid\nPASS: aggregate invalid group\nPASS: safety rule blocks evasion\nPASS: MockModel stops at max_steps\nPASS: MealDB shape and limit (mocked)\nOFFLINE ASSERTIONS: 9/9 passed\nC:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085\\.venv\\Lib\\site-packages\\pydantic_settings\\sources\\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.\n  warnings.warn(\n"
+    },
+    {
+      "name": "Meals server declares four required tools",
+      "passed": true,
+      "tools": [
+        "search_meals_by_name",
+        "meals_by_ingredient",
+        "random_meal",
+        "meal_details"
+      ]
+    },
+    {
+      "name": "Domain server declares exactly three tools",
+      "passed": true,
+      "tools": [
+        "search",
+        "detail_lookup",
+        "aggregate"
+      ]
+    }
+  ],
+  "passed": true,
+  "scope": "Local offline/code-tree smoke verification only. Live MySQL migration/API, TheMealDB, Inspector calls, Postman, screenshots, and four Ollama scenarios are not asserted.",
+  "submission_ready": false,
+  "note": "Regenerate after the final HW5 commit; do not treat this smoke check as the complete submission verification."
+}

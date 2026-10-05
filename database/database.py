@@ -18,6 +18,12 @@ if DATABASE_URL in {"sqlite://", "sqlite:///:memory:"}:
         connect_args={"check_same_thread": False},
         poolclass=StaticPool,
     )
+elif DATABASE_URL.startswith("mysql+"):
+    engine_options["connect_args"] = {
+        "connect_timeout": 3,
+        "read_timeout": 5,
+        "write_timeout": 5,
+    }
 engine = create_engine(DATABASE_URL, **engine_options)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()

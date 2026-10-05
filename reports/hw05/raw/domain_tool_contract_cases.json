@@ -1,0 +1,26 @@
+[
+  {
+    "tool": "search",
+    "expected_input_schema": {"query": "string (non-empty)", "limit": "integer 1..25; optional, default 5"},
+    "valid_fixture_input": {"query": "Harbor", "limit": 5},
+    "invalid_input": {"query": "   ", "limit": 5},
+    "invalid_output": {"ok": false, "data": null, "error": "query must be a non-empty string"},
+    "rejection_reason": "The query contains only whitespace."
+  },
+  {
+    "tool": "detail_lookup",
+    "expected_input_schema": {"inspection_id": "positive integer"},
+    "valid_fixture_input": {"inspection_id": 7},
+    "invalid_input": {"inspection_id": 0},
+    "invalid_output": {"ok": false, "data": null, "error": "inspection_id must be a positive integer"},
+    "rejection_reason": "Zero is not a valid positive inspection identifier."
+  },
+  {
+    "tool": "aggregate",
+    "expected_input_schema": {"group_by": "category or restaurant; optional, default category"},
+    "valid_fixture_input": {"group_by": "category"},
+    "invalid_input": {"group_by": "email"},
+    "invalid_output": {"ok": false, "data": null, "error": "group_by must be 'category' or 'restaurant'"},
+    "rejection_reason": "Email is not an allowed aggregate dimension."
+  }
+]

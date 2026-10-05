@@ -1,0 +1,50 @@
+[
+  {
+    "scenario": "scenario_1_search",
+    "run_id": "f1a4d06c-de38-4919-9dee-4b3a3683d879",
+    "prompt": "Search Restaurant 1 inspections in Mountain View",
+    "step_count": 2,
+    "tool_call_count": 1,
+    "stop_reason": "normal_completion",
+    "tools": [
+      "search"
+    ],
+    "answer": "The inspection records for Restaurant 1 in Mountain View are available. The first inspection record is: id 4, inspection code s7085-i-00000004, score 100, and description Restaurant inspection record 1, created on 2026-10-02T17:29:55."
+  },
+  {
+    "scenario": "scenario_2_detail",
+    "run_id": "b1c9f859-0206-41d9-8ea7-fdc21415ce94",
+    "prompt": "Show details for inspection 4",
+    "step_count": 2,
+    "tool_call_count": 1,
+    "stop_reason": "normal_completion",
+    "tools": [
+      "detail_lookup"
+    ],
+    "answer": "The inspection details for ID 4 are as follows: id: 4, inspection code: s7085-i-00000004, restaurant ID: 4, restaurant name: Restaurant 1, location: Mountain View, CA, category: Sanitation, description: Restaurant inspection record 1, score: 100, and created at: 2026-10-02T17:29:55. The restaurant has a perfect score of 100. "
+  },
+  {
+    "scenario": "scenario_3_aggregate",
+    "run_id": "f968262c-c2ef-4cb1-8d20-f03e315a7598",
+    "prompt": "Count inspections by category",
+    "step_count": 2,
+    "tool_call_count": 1,
+    "stop_reason": "normal_completion",
+    "tools": [
+      "aggregate"
+    ],
+    "answer": "There are 1686 Food Safety inspections, 1683 Health and Safety inspections, and 1631 Sanitation inspections."
+  },
+  {
+    "scenario": "scenario_4_search",
+    "run_id": "78816e65-dd1e-4315-bb13-634a14bb0cd4",
+    "prompt": "Find inspections in the Sanitation category",
+    "step_count": 2,
+    "tool_call_count": 1,
+    "stop_reason": "normal_completion",
+    "tools": [
+      "aggregate"
+    ],
+    "answer": "There are 1631 inspections in the Sanitation category."
+  }
+]

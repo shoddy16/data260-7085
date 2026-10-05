@@ -1,0 +1,16 @@
+[
+  {
+    "prompt": "Find inspections for Restaurant 1 in Mountain View",
+    "step_count": 2,
+    "tool_call_count": 1,
+    "stop_reason": "normal_completion",
+    "answer": "The inspection records for Restaurant 1 in Mountain View are available. The first inspection record is: id 4, inspection code s7085-i-00000004, score 100, and description Restaurant inspection record 1, created on 2026-10-02T17:29:55."
+  },
+  {
+    "prompt": "Get the details for inspection 14",
+    "step_count": 2,
+    "tool_call_count": 1,
+    "stop_reason": "normal_completion",
+    "answer": "The inspection details for ID 14 are as follows: id = 14, inspection code = s7085-i-00000014, restaurant ID = 14, restaurant name = Restaurant 11, location = Mountain View, CA, category = Sanitation, description = Restaurant inspection record 11, score = 100, created at = 2026-10-02T17:29:55"
+  }
+]

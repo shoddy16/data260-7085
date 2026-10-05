@@ -1,0 +1,167 @@
+{
+  "verified_at_utc": "2026-10-03T00:40:03.353857+00:00",
+  "source": "TheMealDB public API",
+  "results": [
+    {
+      "tool": "search_meals_by_name",
+      "input": {
+        "query": "Arrabiata",
+        "limit": 2
+      },
+      "ok": true,
+      "result": {
+        "meals": [
+          {
+            "id": "52771",
+            "name": "Spicy Arrabiata Penne",
+            "thumb": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg",
+            "area": "Italian",
+            "category": "Vegetarian"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "meals_by_ingredient",
+      "input": {
+        "ingredient": "chicken",
+        "limit": 2
+      },
+      "ok": true,
+      "result": {
+        "meals": [
+          {
+            "id": "52940",
+            "name": "Brown Stew Chicken",
+            "thumb": "https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg"
+          },
+          {
+            "id": "53161",
+            "name": "Chicken & chorizo rice pot",
+            "thumb": "https://www.themealdb.com/images/media/meals/fk80jp1763280767.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "random_meal",
+      "input": {},
+      "ok": true,
+      "result": {
+        "id": "53043",
+        "name": "Fish fofos",
+        "category": "Seafood",
+        "area": "Portuguese",
+        "instructions": "STEP 1\r\n\r\nPut the fish into a lidded pan and pour over enough water to cover. Bring to a simmer and gently poach for 10 minutes over a low heat with the lid on. Drain and flake the fish.\r\n\r\nSTEP 2\r\n\r\nPut the fish, potato, green chilli, coriander, cumin, black pepper, garlic and ginger in a large bowl. Season, add the rice flour, mix well and break in 1 egg. Stir the mixture and divide into 15, then form into small logs. Break the remaining eggs into a bowl and whisk lightly. Put the breadcrumbs into another bowl. Dip each fofo in the beaten egg followed by the breadcrumb mixture. Chill for 20 minutes.\r\n\r\nSTEP 3\r\n\r\nHeat 1cm of oil in a large frying pan over a medium heat. Fry the fofos in batches for 2 minutes on each side, turning gently to get an even golden brown colour all over. Drain on kitchen paper and repeat with the remaining fofos.\r\n\r\nSTEP 4\r\n\r\nFor the onion salad, mix together the onion, coriander and lemon juice with a pinch of salt. Serve with the fofos and mango chutney.",
+        "image": "https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg",
+        "source": "https://www.olivemagazine.com/recipes/fish-and-seafood/fish-fofos/",
+        "youtube": "https://www.youtube.com/watch?v=YXUZHK2PrV8",
+        "ingredients": [
+          {
+            "name": "Haddock",
+            "measure": "600g"
+          },
+          {
+            "name": "Potatoes",
+            "measure": "300g"
+          },
+          {
+            "name": "Green Chilli",
+            "measure": "1 chopped"
+          },
+          {
+            "name": "Coriander",
+            "measure": "3 tbs"
+          },
+          {
+            "name": "Cumin Seeds",
+            "measure": "1 tsp"
+          },
+          {
+            "name": "Pepper",
+            "measure": "1/2 tsp"
+          },
+          {
+            "name": "Garlic",
+            "measure": "3 cloves"
+          },
+          {
+            "name": "Ginger",
+            "measure": "2 pieces"
+          },
+          {
+            "name": "Flour",
+            "measure": "2 tbs"
+          },
+          {
+            "name": "Eggs",
+            "measure": "3"
+          },
+          {
+            "name": "Breadcrumbs",
+            "measure": "75g"
+          },
+          {
+            "name": "Vegetable Oil",
+            "measure": "For frying"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "meal_details",
+      "input": {
+        "id": 52772
+      },
+      "ok": true,
+      "result": {
+        "id": "52772",
+        "name": "Teriyaki Chicken Casserole",
+        "category": "Chicken",
+        "area": "Japanese",
+        "instructions": "Preheat oven to 350° F. Spray a 9x13-inch baking pan with non-stick spray.\r\nCombine soy sauce, ½ cup water, brown sugar, ginger and garlic in a small saucepan and cover. Bring to a boil over medium heat. Remove lid and cook for one minute once boiling.\r\nMeanwhile, stir together the corn starch and 2 tablespoons of water in a separate dish until smooth. Once sauce is boiling, add mixture to the saucepan and stir to combine. Cook until the sauce starts to thicken then remove from heat.\r\nPlace the chicken breasts in the prepared pan. Pour one cup of the sauce over top of chicken. Place chicken in oven and bake 35 minutes or until cooked through. Remove from oven and shred chicken in the dish using two forks.\r\n*Meanwhile, steam or cook the vegetables according to package directions.\r\nAdd the cooked vegetables and rice to the casserole dish with the chicken. Add most of the remaining sauce, reserving a bit to drizzle over the top when serving. Gently toss everything together in the casserole dish until combined. Return to oven and cook 15 minutes. Remove from oven and let stand 5 minutes before serving. Drizzle each serving with remaining sauce. Enjoy!",
+        "image": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
+        "source": "",
+        "youtube": "https://www.youtube.com/watch?v=4aZr5hZXP_s",
+        "ingredients": [
+          {
+            "name": "soy sauce",
+            "measure": "3/4 cup"
+          },
+          {
+            "name": "water",
+            "measure": "1/2 cup"
+          },
+          {
+            "name": "brown sugar",
+            "measure": "1/4 cup"
+          },
+          {
+            "name": "ground ginger",
+            "measure": "1/2 teaspoon"
+          },
+          {
+            "name": "minced garlic",
+            "measure": "1/2 teaspoon"
+          },
+          {
+            "name": "cornstarch",
+            "measure": "4 Tablespoons"
+          },
+          {
+            "name": "chicken breasts",
+            "measure": "2"
+          },
+          {
+            "name": "stir-fry vegetables",
+            "measure": "1 (12 oz.)"
+          },
+          {
+            "name": "brown rice",
+            "measure": "3 cups"
+          }
+        ]
+      }
+    }
+  ]
+}

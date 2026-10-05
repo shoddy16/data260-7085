@@ -1,0 +1,18 @@
+DATA 260 HW5 run log
+Project: data260-7085
+Branch: hw5
+Configuration: SID4=7085, PORT_BASE=8785, PREFIX=s7085, SEED=7085, VERIFY_SEED=267085, DOMAIN_ID=5
+Python: 3.12.10 (.venv)
+Model: Ollama llama3.2:3b at http://localhost:11434
+
+2026-10-02 — Initial Python 3.10 shell lacked project dependencies; those import failures were not counted as application test results.
+2026-10-03 — Inspected configured MySQL schema and preserved an export of the pre-migration restaurant and inspection rows at an external temporary path. Reviewed the additive schema changes before migration: add five inspection fields, create/backfill related restaurants, add a non-null restaurant_id FK with ON DELETE RESTRICT, inspection-code uniqueness, and indexes. Applied migrations/hw5_part1.py without dropping tables or truncating data.
+2026-10-03 — Post-migration MySQL checks confirmed 5,000 inspections linked to 5,001 restaurants (including the pre-existing Harbor Cafe row), non-null backfilled fields, unique inspection codes, and the restrictive FK. Live read-only paginated API calls returned HTTP 200; direct domain search/detail/aggregate returned the shared success envelope.
+2026-10-03 — Connected MCP Inspector to meals_server.py and domain_mcp_server.py. Inspector discovered all four Meals tools and exactly three domain tools. Executed all four live TheMealDB calls and six domain calls (one valid and one invalid per tool); raw outputs are in raw/mealdb_live_results.json and raw/mcp_stdio_results.json. UI screenshots still need manual saving.
+2026-10-03 — Ollama /api/tags confirmed llama3.2:3b. Initial live agent traces exposed duplicate tool requests and broad numeric substring matching. Tightened post-tool instructions and search whole-token matching. Four focused scenarios in raw/agent_scenario_summary.json completed normally: each used two model steps and one tool call. An earlier oversized restaurant aggregate timed out and remains recorded in raw/agent_runs.jsonl.
+2026-10-03 — Final post-change Python unittest suite: PASS, 24 tests. Offline assertion runner: PASS, 9/9. These were rerun after the whole-token search and agent prompt fixes.
+2026-10-03 — Frontend production build: PASS (Vite 8.3.1; 96 modules transformed). Consolidated verify_hw5.py also reran the Python suite, offline runner, build, read-only migrated-schema/API checks, and saved live-result checks; all 11 checks passed. verification.json correctly remains final_verification=false and submission_ready=false because screenshots, PDF, and final Git/tag remain pending.
+2026-10-03 — Fault experiment with seed 267085: 150 calls (50 per 0%, 20%, 50% injected failure rate) completed; raw records and measured metrics are in reports/hw05/raw/.
+
+Still pending: final post-change test reruns and verification artifact refresh; all required screenshots; final report PDF; final Git review, commit, and hw5 tag. No final verification or submission-ready claim is made.
+

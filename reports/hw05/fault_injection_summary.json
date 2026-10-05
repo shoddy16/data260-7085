@@ -1,0 +1,67 @@
+{
+  "homework": 5,
+  "prefix": "s7085",
+  "verify_seed": 267085,
+  "started_at_utc": "2026-10-05T09:00:59.207862+00:00",
+  "calls_per_rate": 50,
+  "failure_rates": [
+    0.0,
+    0.2,
+    0.5
+  ],
+  "retry_policy": {
+    "max_attempts": 3,
+    "base_backoff_seconds": 0.05,
+    "max_backoff_seconds": 0.2
+  },
+  "demonstrations": [
+    {
+      "case": "first_attempt_success",
+      "attempts": 1,
+      "result": {
+        "status": "ok"
+      }
+    },
+    {
+      "case": "retry_then_success",
+      "attempts": 2,
+      "result": {
+        "status": "ok"
+      }
+    },
+    {
+      "case": "failure_after_retries",
+      "attempts": 3,
+      "error": "all attempts failed"
+    }
+  ],
+  "metrics": [
+    {
+      "failure_rate": 0.0,
+      "calls": 50,
+      "successes": 50,
+      "success_rate_percent": 100.0,
+      "mean_latency_ms": 3.3442,
+      "p99_latency_ms": 15.9864,
+      "injected_failures": 0
+    },
+    {
+      "failure_rate": 0.2,
+      "calls": 50,
+      "successes": 50,
+      "success_rate_percent": 100.0,
+      "mean_latency_ms": 10.9706,
+      "p99_latency_ms": 116.0853,
+      "injected_failures": 16
+    },
+    {
+      "failure_rate": 0.5,
+      "calls": 50,
+      "successes": 45,
+      "success_rate_percent": 90.0,
+      "mean_latency_ms": 29.1529,
+      "p99_latency_ms": 180.6751,
+      "injected_failures": 44
+    }
+  ]
+}
