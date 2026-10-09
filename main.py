@@ -7,6 +7,7 @@ from routers.auth import router as auth_router
 from routers.inspections import router as inspections_router
 from routers.n_plus_one import router as n_plus_one_router
 from routers.restaurants import router as restaurants_router
+from routers.hw6 import router as hw6_router
 
 
 Base.metadata.create_all(bind=engine)
@@ -29,3 +30,4 @@ app.include_router(auth_router)
 app.include_router(inspections_router)
 app.include_router(restaurants_router)
 app.include_router(n_plus_one_router)
+app.include_router(hw6_router)

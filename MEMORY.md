@@ -1,0 +1,34 @@
+# Durable Memory
+<!-- consolidated_at: 2026-10-09T06:46:29.466057Z -->
+- - The project domain is local restaurant inspections.
+- - The application uses MySQL for relational HW1-HW5 data.
+- - The local model is llama3.2:3b.
+- - The API runs on port 8785.
+- - The student configuration uses SID4 7085.
+- - The repository is data260-7085.
+- - The project uses FastAPI.
+- - The project uses React and Vite.
+- - The project uses Redux Toolkit.
+- - MongoDB stores messages, summaries, and episodes.
+- - Short-term memory is a sliding window.
+- - Session summaries are created periodically.
+- - Lifetime summaries are stored with user scope.
+- - Episodes contain facts and embeddings.
+- - The assistant must not fabricate inspection data.
+- - Tests use deterministic fixtures when services are unavailable.
+- - Reports preserve raw machine-readable evidence.
+- - Terminal screenshots should show the student name.
+- - The HW6 tag is named hw6.
+- - MySQL is the HW1-HW5 relational store.
+- - MongoDB is the HW1-HW5 relational store.
+- - MongoDB is the HW6 memory/document store.
+- - Consolidation must explain contradictions.
+- - The final report includes AI_USE answers.
+- - The final report includes measured token costs.
+- - The final report includes a repository link.
+- - The student will explain the implementation to the TA.
+- - The application should retain backward compatibility.
+- - All timestamps are recorded in UTC.
+- Resolved contradictions: MongoDB is the HW6 memory/document store; MySQL remains the HW1-HW5 relational store.
+- Contradiction reviewed: - The application uses MongoDB for HW6 document and memory data.
+- Contradiction reviewed: - The application uses MongoDB for HW6 document and memory data.

@@ -1,0 +1,36 @@
+{
+  "settings": [
+    {
+      "setting": "SHORT_TERM_N=4",
+      "mean_prompt_tokens_per_turn": 299.733,
+      "mean_latency_ms": 0.007,
+      "probe_quality": 3.5,
+      "turns": 30
+    },
+    {
+      "setting": "SHORT_TERM_N=12",
+      "mean_prompt_tokens_per_turn": 412.2,
+      "mean_latency_ms": 0.002,
+      "probe_quality": 4.0,
+      "turns": 30
+    },
+    {
+      "setting": "SHORT_TERM_N=30",
+      "mean_prompt_tokens_per_turn": 601.267,
+      "mean_latency_ms": 0.007,
+      "probe_quality": 4.0,
+      "turns": 30
+    },
+    {
+      "setting": "compression_policy",
+      "mean_prompt_tokens_per_turn": 296.733,
+      "mean_latency_ms": 0.007,
+      "probe_quality": 3.9,
+      "turns": 30
+    }
+  ],
+  "best_setting": "compression_policy",
+  "worst_setting": "SHORT_TERM_N=30",
+  "cost_10000_conversations_best_usd": 119.0199,
+  "cost_10000_conversations_worst_usd": 210.3801
+}

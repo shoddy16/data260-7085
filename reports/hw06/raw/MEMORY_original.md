@@ -1,0 +1,56 @@
+# Original HW6 consolidation fixture
+
+This file preserves the 55-line contradictory fixture before `/compact`.
+
+- The project domain is local restaurant inspections.
+- The project domain is local restaurant inspections.
+- The application uses MySQL for relational HW1-HW5 data.
+- The application uses MongoDB for HW6 document and memory data.
+- The application uses MongoDB for HW6 document and memory data.
+- The local model is llama3.2:3b.
+- The local model is llama3.2:3b.
+- The API runs on port 8785.
+- The API runs on port 8785.
+- The student configuration uses SID4 7085.
+- The student configuration uses SID4 7085.
+- The repository is data260-7085.
+- The repository is data260-7085.
+- The project uses FastAPI.
+- The project uses FastAPI.
+- The project uses React and Vite.
+- The project uses React and Vite.
+- The project uses Redux Toolkit.
+- The project uses Redux Toolkit.
+- MongoDB stores messages, summaries, and episodes.
+- MongoDB stores messages, summaries, and episodes.
+- Short-term memory is a sliding window.
+- Short-term memory is a sliding window.
+- Session summaries are created periodically.
+- Session summaries are created periodically.
+- Lifetime summaries are stored with user scope.
+- Lifetime summaries are stored with user scope.
+- Episodes contain facts and embeddings.
+- Episodes contain facts and embeddings.
+- The assistant must not fabricate inspection data.
+- The assistant must not fabricate inspection data.
+- Tests use deterministic fixtures when services are unavailable.
+- Tests use deterministic fixtures when services are unavailable.
+- Reports preserve raw machine-readable evidence.
+- Reports preserve raw machine-readable evidence.
+- Terminal screenshots should show the student name.
+- Terminal screenshots should show the student name.
+- The HW6 tag is named hw6.
+- The HW6 tag is named hw6.
+- MySQL is the HW1-HW5 relational store.
+- MongoDB is the HW1-HW5 relational store.
+- MongoDB is the HW6 memory/document store.
+- Consolidation must explain contradictions.
+- Consolidation must explain contradictions.
+- The final report includes AI_USE answers.
+- The final report includes AI_USE answers.
+- The final report includes measured token costs.
+- The final report includes measured token costs.
+- The final report includes a repository link.
+- The final report includes a repository link.
+- The student will explain the implementation to the TA.
+- The student will explain the implementation to the TA.
