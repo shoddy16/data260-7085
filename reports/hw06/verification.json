@@ -1,11 +1,31 @@
 {
   "homework": 6,
   "SID4": 7085,
-  "commit": "bf19dfd17b3c89ab27c6b5827544cf4035fc6f68",
+  "commit": "c8c6dd32250498e0f12ced9fa97f4248989ef0bf",
   "model": "llama3.2:3b",
   "SEED": 7085,
   "VERIFY_SEED": 267085,
   "checks": [
+    {
+      "name": "HEAD matches tagged hw6 commit",
+      "passed": true,
+      "details": {
+        "head": "c8c6dd32250498e0f12ced9fa97f4248989ef0bf",
+        "tagged_commit": "c8c6dd32250498e0f12ced9fa97f4248989ef0bf",
+        "match": true
+      }
+    },
+    {
+      "name": "FastAPI smoke and validation errors",
+      "passed": true,
+      "details": {
+        "docs_status": 200,
+        "missing_required_name": 422,
+        "invalid_enum": 422,
+        "hw6_route_count": 8,
+        "passed": true
+      }
+    },
     {
       "name": "Deterministic chat creates reply and metrics",
       "passed": true,
@@ -32,5 +52,5 @@
       "details": true
     }
   ],
-  "verified_at_utc": "2026-10-09T06:49:32.173324+00:00"
+  "verified_at_utc": "2026-10-09T07:21:38.325210+00:00"
 }

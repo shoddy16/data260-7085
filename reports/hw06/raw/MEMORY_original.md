@@ -1,5 +1,4 @@
 # Original HW6 consolidation fixture
-
 This file preserves the 55-line contradictory fixture before `/compact`.
 
 - The project domain is local restaurant inspections.

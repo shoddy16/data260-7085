@@ -80,7 +80,7 @@ class OllamaChatModel:
         import httpx
         response = httpx.post(
             f"{self.base_url}/api/generate",
-            json={"model": self.model, "prompt": prompt, "stream": False, "options": {"temperature": 0}},
+            json={"model": self.model, "prompt": prompt, "stream": False, "options": {"temperature": 0, "num_predict": 16}},
             timeout=120,
         )
         response.raise_for_status()
