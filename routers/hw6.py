@@ -91,7 +91,7 @@ def delete_document(document_id: str):
 @router.post("/chat")
 def chat(payload: ChatRequest):
     try:
-        return chat_turn(payload)
+        return _json_safe(chat_turn(payload))
     except HTTPException:
         raise
     except Exception as exc:
