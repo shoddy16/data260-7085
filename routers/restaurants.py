@@ -10,6 +10,7 @@ from crud.crud import (
     update_restaurant,
 )
 from database.database import get_db
+from jwt_auth import get_current_user, require_roles
 from schemas.schemas import (
     InspectionResponse,
     RestaurantCreate,
@@ -17,12 +18,13 @@ from schemas.schemas import (
     RestaurantUpdate,
 )
 
-
 router = APIRouter(prefix="/restaurants", tags=["restaurants"])
 
 
 @router.post("/", response_model=RestaurantResponse, status_code=status.HTTP_201_CREATED)
-def create(payload: RestaurantCreate, db: Session = Depends(get_db)):
+def create(
+    payload: RestaurantCreate, db: Session = Depends(get_db), _user=Depends(require_roles("writer", "moderator"))
+):
     return create_restaurant(db, payload)
 
 
@@ -31,6 +33,7 @@ def read_all(
     skip: int = Query(0, ge=0),
     limit: int = Query(50, ge=1, le=200),
     db: Session = Depends(get_db),
+    _user=Depends(get_current_user),
 ):
     return get_restaurants(db, skip=skip, limit=limit)
 
@@ -41,6 +44,7 @@ def read_inspections(
     skip: int = Query(0, ge=0),
     limit: int = Query(50, ge=1, le=200),
     db: Session = Depends(get_db),
+    _user=Depends(get_current_user),
 ):
     if not get_restaurant(db, restaurant_id):
         raise HTTPException(status_code=404, detail="Restaurant not found")
@@ -48,7 +52,7 @@ def read_inspections(
 
 
 @router.get("/{restaurant_id}", response_model=RestaurantResponse)
-def read_one(restaurant_id: int, db: Session = Depends(get_db)):
+def read_one(restaurant_id: int, db: Session = Depends(get_db), _user=Depends(get_current_user)):
     restaurant = get_restaurant(db, restaurant_id)
     if not restaurant:
         raise HTTPException(status_code=404, detail="Restaurant not found")
@@ -60,6 +64,7 @@ def update(
     restaurant_id: int,
     payload: RestaurantUpdate,
     db: Session = Depends(get_db),
+    _user=Depends(require_roles("writer", "moderator")),
 ):
     restaurant = update_restaurant(db, restaurant_id, payload)
     if not restaurant:
@@ -68,7 +73,7 @@ def update(
 
 
 @router.delete("/{restaurant_id}", status_code=status.HTTP_204_NO_CONTENT)
-def delete(restaurant_id: int, db: Session = Depends(get_db)):
+def delete(restaurant_id: int, db: Session = Depends(get_db), _user=Depends(require_roles("moderator"))):
     restaurant = delete_restaurant(db, restaurant_id)
     if not restaurant:
         raise HTTPException(status_code=404, detail="Restaurant not found")

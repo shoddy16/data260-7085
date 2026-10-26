@@ -1,0 +1,11 @@
+DATA 260 HW7 run log
+2026-10-26T19:56:19.631548+00:00 UTC
+Generated deterministic offline evidence with run_hw7_evidence.py.
+PASS: two 500+ row bike scenarios
+PASS: membership and pay-per-use decisions differ
+PASS: 20 reliability attempts
+PASS: prompt injection artifact
+PASS: glob search read integration
+PASS: five allowed and five blocked safety commands
+Commands recorded separately: pytest HW7/API/HW6 regression suite; targeted Ruff; targeted pre-commit; compileall; Uvicorn live API/browser capture.
+Live MySQL, MongoDB, Ollama, full-repository Ruff, and commit-hook screenshots were not completed.

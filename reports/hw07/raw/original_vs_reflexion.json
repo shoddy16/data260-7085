@@ -1,0 +1,377 @@
+{
+  "A": {
+    "original": {
+      "answer": "The first matching inspection is 1.",
+      "stop_reason": "success",
+      "step_count": 3,
+      "tool_call_count": 2,
+      "repairs": 0,
+      "latency_ms": 0.158,
+      "trace": [
+        {
+          "step": 1,
+          "kind": "tool",
+          "tool": "search",
+          "inputs": {
+            "query": "restaurant"
+          },
+          "result": {
+            "ok": true,
+            "data": [
+              {
+                "id": 1
+              },
+              {
+                "id": 2
+              }
+            ]
+          }
+        },
+        {
+          "step": 2,
+          "kind": "tool",
+          "tool": "detail_lookup",
+          "inputs": {
+            "inspection_id": 1
+          },
+          "result": {
+            "ok": true,
+            "data": {
+              "id": 1,
+              "category": "restaurant"
+            }
+          }
+        },
+        {
+          "step": 3,
+          "kind": "final",
+          "answer": "The first matching inspection is 1."
+        }
+      ]
+    },
+    "reflexion": {
+      "answer": "The first matching inspection is 1.",
+      "stop_reason": "success",
+      "step_count": 3,
+      "tool_call_count": 2,
+      "repairs": 0,
+      "latency_ms": 311.571,
+      "trace": [
+        {
+          "step": 1,
+          "kind": "tool",
+          "tool": "search",
+          "inputs": {
+            "query": "restaurant"
+          },
+          "result": {
+            "ok": false,
+            "data": null,
+            "error": "inspection search failed; verify the HW5 database migration has been applied"
+          }
+        },
+        {
+          "step": 2,
+          "kind": "tool",
+          "tool": "detail_lookup",
+          "inputs": {
+            "inspection_id": 1
+          },
+          "result": {
+            "ok": false,
+            "data": null,
+            "error": "inspection lookup failed; verify the HW5 database migration has been applied"
+          }
+        },
+        {
+          "step": 3,
+          "kind": "final",
+          "answer": "The first matching inspection is 1."
+        }
+      ],
+      "reflexion_retries": 1,
+      "reflections": [
+        {
+          "evidence": "[{\"step\": 1, \"kind\": \"tool\", \"tool\": \"search\", \"inputs\": {\"query\": \"restaurant\"}, \"result\": {\"ok\": false, \"data\": null, \"error\": \"inspection search failed; verify the HW5 database migration has been applied\"}}, {\"step\": 2, \"kind\": \"final\", \"answer\": \"incomplete\"}]",
+          "failure": "search then detail lookup required",
+          "strategy": "use the missing distinct tool call before answering"
+        }
+      ]
+    },
+    "original_success": true,
+    "reflexion_success": true
+  },
+  "B": {
+    "original": {
+      "answer": "The aggregate and supporting example agree.",
+      "stop_reason": "success",
+      "step_count": 3,
+      "tool_call_count": 2,
+      "repairs": 0,
+      "latency_ms": 0.136,
+      "trace": [
+        {
+          "step": 1,
+          "kind": "tool",
+          "tool": "aggregate",
+          "inputs": {
+            "group_by": "category"
+          },
+          "result": {
+            "ok": true,
+            "data": [
+              {
+                "category": "restaurant",
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "step": 2,
+          "kind": "tool",
+          "tool": "detail_lookup",
+          "inputs": {
+            "inspection_id": 1
+          },
+          "result": {
+            "ok": true,
+            "data": {
+              "id": 1,
+              "category": "restaurant"
+            }
+          }
+        },
+        {
+          "step": 3,
+          "kind": "final",
+          "answer": "The aggregate and supporting example agree."
+        }
+      ]
+    },
+    "reflexion": {
+      "answer": "The aggregate and supporting example agree.",
+      "stop_reason": "success",
+      "step_count": 3,
+      "tool_call_count": 2,
+      "repairs": 0,
+      "latency_ms": 322.95,
+      "trace": [
+        {
+          "step": 1,
+          "kind": "tool",
+          "tool": "aggregate",
+          "inputs": {
+            "group_by": "category"
+          },
+          "result": {
+            "ok": false,
+            "data": null,
+            "error": "inspection aggregation failed; verify the HW5 database migration has been applied"
+          }
+        },
+        {
+          "step": 2,
+          "kind": "tool",
+          "tool": "detail_lookup",
+          "inputs": {
+            "inspection_id": 1
+          },
+          "result": {
+            "ok": false,
+            "data": null,
+            "error": "inspection lookup failed; verify the HW5 database migration has been applied"
+          }
+        },
+        {
+          "step": 3,
+          "kind": "final",
+          "answer": "The aggregate and supporting example agree."
+        }
+      ],
+      "reflexion_retries": 1,
+      "reflections": [
+        {
+          "evidence": "[{\"step\": 1, \"kind\": \"tool\", \"tool\": \"search\", \"inputs\": {\"query\": \"restaurant\"}, \"result\": {\"ok\": false, \"data\": null, \"error\": \"inspection search failed; verify the HW5 database migration has been applied\"}}, {\"step\": 2, \"kind\": \"final\", \"answer\": \"incomplete\"}]",
+          "failure": "aggregate plus supporting lookup required",
+          "strategy": "use the missing distinct tool call before answering"
+        }
+      ]
+    },
+    "original_success": true,
+    "reflexion_success": true
+  },
+  "C": {
+    "original": {
+      "answer": "The two inspections can be compared.",
+      "stop_reason": "success",
+      "step_count": 4,
+      "tool_call_count": 3,
+      "repairs": 0,
+      "latency_ms": 0.266,
+      "trace": [
+        {
+          "step": 1,
+          "kind": "tool",
+          "tool": "search",
+          "inputs": {
+            "query": "restaurant"
+          },
+          "result": {
+            "ok": true,
+            "data": [
+              {
+                "id": 1
+              },
+              {
+                "id": 2
+              }
+            ]
+          }
+        },
+        {
+          "step": 2,
+          "kind": "tool",
+          "tool": "detail_lookup",
+          "inputs": {
+            "inspection_id": 1
+          },
+          "result": {
+            "ok": true,
+            "data": {
+              "id": 1,
+              "category": "restaurant"
+            }
+          }
+        },
+        {
+          "step": 3,
+          "kind": "tool",
+          "tool": "detail_lookup",
+          "inputs": {
+            "inspection_id": 2
+          },
+          "result": {
+            "ok": true,
+            "data": {
+              "id": 2,
+              "category": "restaurant"
+            }
+          }
+        },
+        {
+          "step": 4,
+          "kind": "final",
+          "answer": "The two inspections can be compared."
+        }
+      ]
+    },
+    "reflexion": {
+      "answer": "The two inspections can be compared.",
+      "stop_reason": "success",
+      "step_count": 4,
+      "tool_call_count": 3,
+      "repairs": 0,
+      "latency_ms": 475.918,
+      "trace": [
+        {
+          "step": 1,
+          "kind": "tool",
+          "tool": "search",
+          "inputs": {
+            "query": "restaurant"
+          },
+          "result": {
+            "ok": false,
+            "data": null,
+            "error": "inspection search failed; verify the HW5 database migration has been applied"
+          }
+        },
+        {
+          "step": 2,
+          "kind": "tool",
+          "tool": "detail_lookup",
+          "inputs": {
+            "inspection_id": 1
+          },
+          "result": {
+            "ok": false,
+            "data": null,
+            "error": "inspection lookup failed; verify the HW5 database migration has been applied"
+          }
+        },
+        {
+          "step": 3,
+          "kind": "tool",
+          "tool": "detail_lookup",
+          "inputs": {
+            "inspection_id": 2
+          },
+          "result": {
+            "ok": false,
+            "data": null,
+            "error": "inspection lookup failed; verify the HW5 database migration has been applied"
+          }
+        },
+        {
+          "step": 4,
+          "kind": "final",
+          "answer": "The two inspections can be compared."
+        }
+      ],
+      "reflexion_retries": 1,
+      "reflections": [
+        {
+          "evidence": "[{\"step\": 1, \"kind\": \"tool\", \"tool\": \"search\", \"inputs\": {\"query\": \"restaurant\"}, \"result\": {\"ok\": false, \"data\": null, \"error\": \"inspection search failed; verify the HW5 database migration has been applied\"}}, {\"step\": 2, \"kind\": \"final\", \"answer\": \"incomplete\"}]",
+          "failure": "search plus two detail lookups required",
+          "strategy": "use the missing distinct tool call before answering"
+        }
+      ]
+    },
+    "original_success": true,
+    "reflexion_success": true
+  },
+  "_measurement_notes": {
+    "unsupported_claims": "Unavailable: the deterministic harness has no claim extractor or ground-truth claim ledger.",
+    "tokens": "Unavailable: ScriptedActionModel exposes no token counts; no live model call was run.",
+    "verifier_false_rejections": "0 in A/B/C: each final Reflexion result was accepted; first-attempt failures were intentionally incomplete traces.",
+    "comparison_metrics": {
+      "A": {
+        "original_success": true,
+        "reflexion_success": true,
+        "original_tool_calls": 2,
+        "reflexion_tool_calls": 2,
+        "reflexion_retries": 1,
+        "original_latency_ms": 0.158,
+        "reflexion_latency_ms": 311.571,
+        "unsupported_claims": null,
+        "tokens": null,
+        "verifier_false_rejection": false
+      },
+      "B": {
+        "original_success": true,
+        "reflexion_success": true,
+        "original_tool_calls": 2,
+        "reflexion_tool_calls": 2,
+        "reflexion_retries": 1,
+        "original_latency_ms": 0.136,
+        "reflexion_latency_ms": 322.95,
+        "unsupported_claims": null,
+        "tokens": null,
+        "verifier_false_rejection": false
+      },
+      "C": {
+        "original_success": true,
+        "reflexion_success": true,
+        "original_tool_calls": 3,
+        "reflexion_tool_calls": 3,
+        "reflexion_retries": 1,
+        "original_latency_ms": 0.266,
+        "reflexion_latency_ms": 475.918,
+        "unsupported_claims": null,
+        "tokens": null,
+        "verifier_false_rejection": false
+      }
+    }
+  }
+}

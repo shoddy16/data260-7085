@@ -63,38 +63,28 @@ class Inspection(Base):
 
     restaurant = relationship("Restaurant", back_populates="inspections")
 
-    related_records = relationship(
-        "InspectionRelated",
-        back_populates="inspection",
-        cascade="all, delete-orphan"
-    )
+    related_records = relationship("InspectionRelated", back_populates="inspection", cascade="all, delete-orphan")
 
 
 class InspectionRelated(Base):
     __tablename__ = "inspection_related"
 
     id = Column(Integer, primary_key=True, index=True)
-    inspection_id = Column(
-        Integer,
-        ForeignKey("inspections.id"),
-        nullable=False,
-        index=True
-    )
+    inspection_id = Column(Integer, ForeignKey("inspections.id"), nullable=False, index=True)
     note = Column(String(255), nullable=False)
 
-    inspection = relationship(
-        "Inspection",
-        back_populates="related_records"
-    )
+    inspection = relationship("Inspection", back_populates="related_records")
 
 
 class User(Base):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
+    username = Column(String(255), unique=True, nullable=False, index=True)
     name = Column(String(255), nullable=False)
     email = Column(String(255), unique=True, nullable=False, index=True)
     password_hash = Column(String(255), nullable=False)
+    role = Column(String(20), nullable=False, default="reader", server_default="reader")
 
 
 class Session(Base):

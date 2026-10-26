@@ -1,0 +1,130 @@
+{
+  "membership_wins": {
+    "decision": "Buy Monthly Membership",
+    "costs": {
+      "pay_per_use": 7480.0,
+      "membership_plus_residual": 2669.0
+    },
+    "break_even_rides": 47.9,
+    "ride_count": 600,
+    "total_minutes": 36000.0,
+    "weekly": [
+      {
+        "week": 1,
+        "ride_count": 150,
+        "average_duration": 60.0,
+        "pay_per_use_spend": 1870.0
+      },
+      {
+        "week": 2,
+        "ride_count": 150,
+        "average_duration": 60.0,
+        "pay_per_use_spend": 1870.0
+      },
+      {
+        "week": 3,
+        "ride_count": 150,
+        "average_duration": 60.0,
+        "pay_per_use_spend": 1870.0
+      },
+      {
+        "week": 4,
+        "ride_count": 150,
+        "average_duration": 60.0,
+        "pay_per_use_spend": 1870.0
+      }
+    ],
+    "citations": [
+      {
+        "text": ",\"header\":\"Extra Fees\",\"content\":\"The first 45 minutes of each ride on a classic Citi Bike are included in the annual membership price.\\n\\nWhen you upgrade your ride to an ebike, it will be an extra $0.27/min, capped at $5.40 for rides 45 minutes or less that enter or exit Manhattan.\\n\\nIf you keep a bike out for longe",
+        "source": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+        "score": 0.6923076923076923
+      },
+      {
+        "text": "},\\\"78ff3b91cc8b68c30850612ce361018e\\\":{\\\"s\\\":\\\"Go to the first page\\\"},\\\"1f94484d2c99a7e0aab1f70881599c8d\\\":{\\\"s\\\":\\\"Go to the last page\\\"},\\\"61643b64446127fc6d9e3bedc005db18\\\":{\\\"s\\\":\\\"of {numberOfPages}\\\"},\\\"6b3f3031e176f52d7c712f4e67c6f071\\\":{\\\"s\\\":\\\"contains\\\"},\\\"0a022251b4a3dfa50ecc419fd9134aa2\\\":{\\\"s\\\":\\\"does no",
+        "source": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+        "score": 0.5384615384615384
+      },
+      {
+        "text": "rship price. When you upgrade your ride to an ebike, it will be an extra $0.27/min, capped at $5.40 for rides 45 minutes or less that enter or exit Manhattan. If you keep a bike out for longer than 45 minutes at a time, regardless of the type, it's $0.27 per minute. If you incur any extra time or ebike upgrade fees, yo",
+        "source": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+        "score": 0.5384615384615384
+      },
+      {
+        "text": "enter or exit Manhattan.\\n\\nIf you keep a bike out for longer than 45 minutes at a time, regardless of the type, it's $0.27 per minute.\\n\\nIf you incur any extra time or ebike upgrade fees, your card on file will be charged. The fee for a lost or stolen bike is $1200 (+ tax).\",\"useGreyBackground\":true}],\"microsite\":{\"i",
+        "source": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+        "score": 0.5384615384615384
+      }
+    ],
+    "source_url": "https://citibikenyc.com/pricing/annual",
+    "accessed_at": "2026-10-26T19:56:17.931147+00:00",
+    "steps": 4,
+    "stop_reason": "success",
+    "pricing_snapshot": "reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+    "pricing_sha256": "8a1c1952ab94c6a3820c3d7ee2aac7c9b5d9fd6ebc52d69937e2996785b5a9de"
+  },
+  "pay_per_use_wins": {
+    "decision": "Pay Per Ride/Minute",
+    "costs": {
+      "pay_per_use": 100.0,
+      "membership_plus_residual": 239.0
+    },
+    "break_even_rides": 47.9,
+    "ride_count": 500,
+    "total_minutes": 2500.0,
+    "weekly": [
+      {
+        "week": 1,
+        "ride_count": 125,
+        "average_duration": 5.0,
+        "pay_per_use_spend": 25.0
+      },
+      {
+        "week": 2,
+        "ride_count": 125,
+        "average_duration": 5.0,
+        "pay_per_use_spend": 25.0
+      },
+      {
+        "week": 3,
+        "ride_count": 125,
+        "average_duration": 5.0,
+        "pay_per_use_spend": 25.0
+      },
+      {
+        "week": 4,
+        "ride_count": 125,
+        "average_duration": 5.0,
+        "pay_per_use_spend": 25.0
+      }
+    ],
+    "citations": [
+      {
+        "text": ",\"header\":\"Extra Fees\",\"content\":\"The first 45 minutes of each ride on a classic Citi Bike are included in the annual membership price.\\n\\nWhen you upgrade your ride to an ebike, it will be an extra $0.27/min, capped at $5.40 for rides 45 minutes or less that enter or exit Manhattan.\\n\\nIf you keep a bike out for longe",
+        "source": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+        "score": 0.6923076923076923
+      },
+      {
+        "text": "},\\\"78ff3b91cc8b68c30850612ce361018e\\\":{\\\"s\\\":\\\"Go to the first page\\\"},\\\"1f94484d2c99a7e0aab1f70881599c8d\\\":{\\\"s\\\":\\\"Go to the last page\\\"},\\\"61643b64446127fc6d9e3bedc005db18\\\":{\\\"s\\\":\\\"of {numberOfPages}\\\"},\\\"6b3f3031e176f52d7c712f4e67c6f071\\\":{\\\"s\\\":\\\"contains\\\"},\\\"0a022251b4a3dfa50ecc419fd9134aa2\\\":{\\\"s\\\":\\\"does no",
+        "source": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+        "score": 0.5384615384615384
+      },
+      {
+        "text": "rship price. When you upgrade your ride to an ebike, it will be an extra $0.27/min, capped at $5.40 for rides 45 minutes or less that enter or exit Manhattan. If you keep a bike out for longer than 45 minutes at a time, regardless of the type, it's $0.27 per minute. If you incur any extra time or ebike upgrade fees, yo",
+        "source": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+        "score": 0.5384615384615384
+      },
+      {
+        "text": "enter or exit Manhattan.\\n\\nIf you keep a bike out for longer than 45 minutes at a time, regardless of the type, it's $0.27 per minute.\\n\\nIf you incur any extra time or ebike upgrade fees, your card on file will be charged. The fee for a lost or stolen bike is $1200 (+ tax).\",\"useGreyBackground\":true}],\"microsite\":{\"i",
+        "source": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+        "score": 0.5384615384615384
+      }
+    ],
+    "source_url": "https://citibikenyc.com/pricing/annual",
+    "accessed_at": "2026-10-26T19:56:17.964552+00:00",
+    "steps": 4,
+    "stop_reason": "success",
+    "pricing_snapshot": "reports\\hw07\\raw\\citi_bike_pricing_snapshot.txt",
+    "pricing_sha256": "8a1c1952ab94c6a3820c3d7ee2aac7c9b5d9fd6ebc52d69937e2996785b5a9de"
+  }
+}

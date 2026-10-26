@@ -1,0 +1,35 @@
+{
+  "homework": 7,
+  "SID4": 7085,
+  "commit": "working-tree",
+  "model": "llama3.2:3b",
+  "SEED": 7085,
+  "VERIFY_SEED": 267085,
+  "checks": [
+    {
+      "name": "two 500+ row bike scenarios",
+      "passed": true
+    },
+    {
+      "name": "membership and pay-per-use decisions differ",
+      "passed": true
+    },
+    {
+      "name": "20 reliability attempts",
+      "passed": true
+    },
+    {
+      "name": "prompt injection artifact",
+      "passed": true
+    },
+    {
+      "name": "glob search read integration",
+      "passed": true
+    },
+    {
+      "name": "five allowed and five blocked safety commands",
+      "passed": true
+    }
+  ],
+  "checked_at_utc": "2026-10-26T19:56:19.631548+00:00"
+}

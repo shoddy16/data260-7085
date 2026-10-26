@@ -1,0 +1,98 @@
+{
+  "integration": {
+    "glob": [
+      "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\tmp\\hw7_evidence_tmp\\tmpt21wj0dl\\one.py",
+      "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\tmp\\hw7_evidence_tmp\\tmpt21wj0dl\\two.py"
+    ],
+    "search": [
+      {
+        "path": "C:\\Users\\Bhushan Waingankar\\Desktop\\sjsu assignments\\fall 2026\\Agentic ai 260\\Homeworks\\assignment 1\\data260-7085-hw7\\tmp\\hw7_evidence_tmp\\tmpt21wj0dl\\one.py",
+        "line": 1,
+        "text": "DEBUG = True"
+      }
+    ],
+    "read": "DEBUG = True\n"
+  },
+  "commands": [
+    {
+      "command": "python -c \"print(1)\"",
+      "destructive": false,
+      "result": {
+        "allowed": true,
+        "reason": "command matches SAFE_PREFIXES"
+      }
+    },
+    {
+      "command": "dir",
+      "destructive": false,
+      "result": {
+        "allowed": true,
+        "reason": "command matches SAFE_PREFIXES"
+      }
+    },
+    {
+      "command": "type file.txt",
+      "destructive": false,
+      "result": {
+        "allowed": true,
+        "reason": "command matches SAFE_PREFIXES"
+      }
+    },
+    {
+      "command": "rg DEBUG .",
+      "destructive": false,
+      "result": {
+        "allowed": true,
+        "reason": "command matches SAFE_PREFIXES"
+      }
+    },
+    {
+      "command": "python --version",
+      "destructive": false,
+      "result": {
+        "allowed": true,
+        "reason": "command matches SAFE_PREFIXES"
+      }
+    },
+    {
+      "command": "rm -rf sandbox",
+      "destructive": true,
+      "result": {
+        "allowed": false,
+        "reason": "destructive command requires explicit confirmation"
+      }
+    },
+    {
+      "command": "sudo chmod 777 file",
+      "destructive": true,
+      "result": {
+        "allowed": false,
+        "reason": "destructive command requires explicit confirmation"
+      }
+    },
+    {
+      "command": "format C:",
+      "destructive": true,
+      "result": {
+        "allowed": false,
+        "reason": "destructive command requires explicit confirmation"
+      }
+    },
+    {
+      "command": "dd if=x of=/dev/sda",
+      "destructive": true,
+      "result": {
+        "allowed": false,
+        "reason": "destructive command requires explicit confirmation"
+      }
+    },
+    {
+      "command": "echo x > /etc/x",
+      "destructive": true,
+      "result": {
+        "allowed": false,
+        "reason": "destructive command requires explicit confirmation"
+      }
+    }
+  ]
+}

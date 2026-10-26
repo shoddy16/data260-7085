@@ -1,85 +1,27 @@
-from fastapi import APIRouter, Depends, Request, Form
-from fastapi.responses import JSONResponse
+from fastapi import APIRouter, Depends, Form, HTTPException, Request
 from sqlalchemy.orm import Session
 
 from database.database import get_db
-from auth import (
-    login_user,
-    logout_user,
-    get_current_user,
-    SESSION_TIMEOUT
-)
+from jwt_auth import authenticate_user, create_access_token, get_current_user
 
 router = APIRouter()
 
 
 @router.post("/login")
-def login(
-    request: Request,
-    username: str = Form(...),
-    password: str = Form(...),
-    db: Session = Depends(get_db)
-):
-    token = login_user(db, request, username, password)
-
-    if not token:
-        return JSONResponse(
-            status_code=401,
-            content={"detail": "Invalid username or password"}
+def login(username: str = Form(...), password: str = Form(...), db: Session = Depends(get_db)):
+    user = authenticate_user(db, username, password)
+    if user is None:
+        raise HTTPException(
+            status_code=401, detail="Invalid username or password", headers={"WWW-Authenticate": "Bearer"}
         )
-
-    response = JSONResponse(
-        content={
-            "message": "Login successful",
-            "username": username
-        }
-    )
-
-    response.set_cookie(
-        key="session",
-        value=token,
-        httponly=True,
-        samesite="lax",
-        max_age=SESSION_TIMEOUT
-    )
-
-    return response
+    return {"access_token": create_access_token(user.username, user.role), "token_type": "bearer"}
 
 
 @router.post("/logout")
-def logout(
-    request: Request,
-    db: Session = Depends(get_db)
-):
-    token = request.cookies.get("session")
-
-    if token:
-        logout_user(db, token)
-
-    response = JSONResponse(
-        content={"message": "Logged out successfully"}
-    )
-
-    response.delete_cookie("session")
-
-    return response
+def logout(request: Request, db: Session = Depends(get_db)):
+    return {"message": "JWT logout is client-side; discard the bearer token."}
 
 
-@router.get("/session")
-def session(
-    request: Request,
-    db: Session = Depends(get_db)
-):
-    token = request.cookies.get("session")
-    user = get_current_user(db, token)
-
-    if not user:
-        return JSONResponse(
-            status_code=401,
-            content={"authenticated": False}
-        )
-
-    return {
-        "authenticated": True,
-        "username": user.email
-    }
+@router.get("/me")
+def me(user=Depends(get_current_user)):
+    return {"id": user.id, "username": user.username, "role": user.role}
