@@ -8,7 +8,7 @@ Source: `DATA260_HW7_final.docx`, seven pages, inspected before implementation.
 - [x] Use the existing repository and root-level application folders.
 - [x] Create `reports/hw07/` with `RUN_LOG.txt`, `raw/`, `METRICS.md`, `AI_USE.md`, `Parab_HW7.pdf`, and `verification.json`.
 - [x] Include the repository link in the report; collaborator access remains unverified.
-- [ ] Tag the submitted state `hw7` (deferred until final review/approval).
+- [x] Tag the submitted packaging commit `hw7` after final review.
 
 ## Part 1
 

@@ -72,7 +72,7 @@ story = [
     p("Repository: https://github.com/shoddy16/data260-7085"),
     p("Configuration: SID4=7085; PORT_BASE=8785; PREFIX=s7085; SEED=7085; VERIFY_SEED=267085; DOMAIN_ID=5"),
     p("Hardware: Windows 10; Intel Core i5-6200U at 2.30 GHz; 4 logical CPUs; approximately 7.8 GB RAM (recorded in the existing HW5/HW6 report artifacts)."),
-    p("Local model: Ollama llama3.2:3b. This report describes the current working tree; no HW7 commit or tag has been created yet. The existing hw6 tag remains unchanged."),
+    p("Local model: Ollama llama3.2:3b. Validated implementation/evidence commit: 85d98f4. A separate packaging commit will carry this metadata before the hw7 tag is created. The existing hw6 tag remains unchanged."),
     p("Implementation, verification, evidence, and limitations", "sub"),
     p("This report separates deterministic offline evidence, live local FastAPI/browser evidence, and checks that were not possible because MySQL, MongoDB, Ollama, repository-wide lint, or final Git submission was unavailable."),
     p("1. Source materials and requirements", "main"),
@@ -130,10 +130,10 @@ for name, caption in [
 
 story += [PageBreak(), p("5. Raw artifacts and command record", "main")]
 story += [p("The following artifacts are included under reports/hw07/raw/: agent_reliability_20.csv, original_vs_reflexion.json, bike_share_scenarios.json, membership_wins.csv, pay_per_use_wins.csv, citi_bike_pricing_snapshot.txt, hostile_pricing_fixture.html, prompt_injection_before_after.json, and file_tools_and_safety.json.")]
-story += [p("RUN_LOG.txt records deterministic evidence generation, targeted tests, lint/pre-commit checks, compileall, and live local browser capture. METRICS.md records measured values and explicitly labels unavailable token and unsupported-claim metrics. AI_USE.md answers the four required disclosure questions. verification.json contains SID4, seeds, model, checks, and the truthful working-tree commit state.")]
+story += [p("RUN_LOG.txt records deterministic evidence generation, targeted tests, lint/pre-commit checks, compileall, and live local browser capture. METRICS.md records measured values and explicitly labels unavailable token and unsupported-claim metrics. AI_USE.md answers the four required disclosure questions. verification.json contains SID4, seeds, model, checks, and the validated implementation commit 85d98f4.")]
 story += [p("6. Limitations and submission sequencing", "main")]
-story += [p("The current report is generated from the working tree and is not itself evidence of a final commit. Because the user requested no commit, push, or tag in this phase, verification.json correctly retains commit=working-tree and the hw7 tag does not yet exist. Live MySQL, MongoDB, and Ollama/model verification remains unavailable. The professor-required lint-failure-before-commit and successful-commit terminal screenshots are also not captured because no commit was authorized and native terminal screenshot capture is unavailable in this environment.")]
-story += [p("Recommended sequence: review this report and remaining blockers; create one final HW7 commit; run the smoke verifier on that commit; update verification.json and the report with that exact hash; create hw7 pointing to the same commit; then perform a final status/tag/diff review before pushing.")]
+story += [p("The report records the validated implementation/evidence commit 85d98f4. The final packaging commit contains only the verified commit metadata and regenerated report; the hw7 tag will point to that packaging commit. This two-commit sequence avoids claiming that a commit contains its own unknowable hash. Live MySQL, MongoDB, and Ollama/model verification remains unavailable. The professor-required lint-failure-before-commit terminal screenshot remains unavailable because native terminal screenshot capture is unavailable.")]
+story += [p("After the packaging commit, Git verification must confirm that hw7 points to the packaging commit and that origin/hw6 still points to 0307ac55b1ec9d6e48561a43e5671e21c09fd708.")]
 story += [p("Evidence manifest", "sub"), p("Screenshots and supporting files are enumerated in reports/hw07/EVIDENCE_MANIFEST.md. The report does not claim that unavailable live services or unperformed commit/tag actions succeeded.")]
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
