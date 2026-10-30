@@ -1,0 +1,5 @@
+HW8 run log
+Student: Shoury Parab | SID4=7085
+Configuration: PORT_BASE=8085 PREFIX=s7085 SEED=7085 VERIFY_SEED=267085 DOMAIN_ID=5
+
+Focused unit tests and the offline smoke test were run in the isolated hw8 worktree. Live Docker/Kafka, JMeter, and collaborator checks remain not run unless appended from genuine executions.

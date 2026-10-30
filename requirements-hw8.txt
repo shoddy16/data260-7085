@@ -1,0 +1,2 @@
+-r requirements-hw5.txt
+aiokafka>=0.10,<1

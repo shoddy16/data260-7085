@@ -1,0 +1,31 @@
+{
+  "homework": 8,
+  "SID4": 7085,
+  "commit": "b78001eaa5c0f071eaf1788702c019d67983860a",
+  "model": "llama3.2:3b",
+  "configuration": {
+    "PREFIX": "s7085",
+    "DOMAIN_ID": 5,
+    "SEED": 7085,
+    "VERIFY_SEED": 267085
+  },
+  "checked_at_utc": "2026-10-30T19:25:17.585084+00:00",
+  "checks": [
+    {
+      "name": "CREATE_ENTITY returns UUID",
+      "passed": true
+    },
+    {
+      "name": "GET_ENTITY round trip",
+      "passed": true
+    },
+    {
+      "name": "correlation preserved",
+      "passed": true
+    },
+    {
+      "name": "pipeline final JSON",
+      "passed": true
+    }
+  ]
+}

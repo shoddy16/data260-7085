@@ -5,6 +5,7 @@ from database.database import Base, engine
 from routers.auth import router as auth_router
 from routers.hw6 import router as hw6_router
 from routers.hw7 import router as hw7_router
+from routers.hw8 import router as hw8_router
 from routers.inspections import router as inspections_router
 from routers.n_plus_one import router as n_plus_one_router
 from routers.restaurants import router as restaurants_router
@@ -31,3 +32,4 @@ app.include_router(restaurants_router)
 app.include_router(n_plus_one_router)
 app.include_router(hw6_router)
 app.include_router(hw7_router)
+app.include_router(hw8_router)

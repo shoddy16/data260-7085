@@ -1,0 +1,66 @@
+{
+  "duplicate_delivery": {
+    "before": 2,
+    "after": 1,
+    "idempotent": true
+  },
+  "consumer_death": {
+    "before": "redelivered after restart",
+    "after": "processed then committed",
+    "commit_after_success": true
+  },
+  "poison_message": {
+    "retries": 3,
+    "dead_letter_topic": "s7085_dead_letter",
+    "valid_following_message_processed": true
+  },
+  "ordering": {
+    "verify_seed": 267085,
+    "partitions": 2,
+    "without_key": [
+      14,
+      2,
+      6,
+      7,
+      9,
+      10,
+      5,
+      18,
+      11,
+      17,
+      8,
+      3,
+      15,
+      1,
+      19,
+      16,
+      12,
+      0,
+      13,
+      4
+    ],
+    "with_entity_key": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "keyed_preserves_order": true
+  }
+}
