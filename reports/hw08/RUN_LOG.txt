@@ -2,4 +2,28 @@ HW8 run log
 Student: Shoury Parab | SID4=7085
 Configuration: PORT_BASE=8085 PREFIX=s7085 SEED=7085 VERIFY_SEED=267085 DOMAIN_ID=5
 
-Focused unit tests and the offline smoke test were run in the isolated hw8 worktree. Live Docker/Kafka, JMeter, and collaborator checks remain not run unless appended from genuine executions.
+2026-10-30 audit and completion branch
+Command: docker version --format '{{.Server.Version}}'
+Result: BLOCKED - failed to connect to dockerDesktopLinuxEngine; Docker Desktop daemon was unavailable.
+
+Command: pytest -q --cache-clear tests/test_hw8.py
+Result: PASS - 5 passed, 1 environment cache warning.
+
+Command: python verify_hw8.py
+Result: PASS - exit 0; four offline smoke checks passed and verification.json was written.
+
+Command: python failure_ordering.py
+Result: PASS - exit 0; deterministic VERIFY_SEED=267085 artifact written.
+
+Command: python -m compileall [HW8 files]
+Result: PASS - exit 0.
+
+Command: ruff check [HW8 files]
+Result: PASS - all checks passed.
+
+Command: docker compose -f docker-compose.hw8.yml config --quiet
+Result: PASS - compose syntax validated. Starting the services remains BLOCKED by the unavailable Docker daemon.
+
+JMeter: NOT RUN. The supplied JMeter PDF is a separate direct-user demo on port 8000 and is not a Kafka rubric requirement.
+Hardware query: BLOCKED - Windows CIM/systeminfo returned Access denied; no hardware specification is claimed.
+Collaborator access: NOT VERIFIED - GitHub CLI is unavailable.

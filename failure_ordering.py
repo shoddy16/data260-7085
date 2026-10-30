@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import random
 from pathlib import Path
@@ -11,6 +12,11 @@ def run_experiments(output: str | Path) -> dict:
     rng = random.Random(VERIFY_SEED)
     no_key = list(range(20))
     rng.shuffle(no_key)
+    inputs = [{"sequence": i, "related_entity_id": "restaurant-1", "value": f"event-{i}"} for i in range(20)]
+    keyed = [
+        {**item, "partition": int(hashlib.sha256(item["related_entity_id"].encode()).hexdigest(), 16) % 2}
+        for item in inputs
+    ]
     result = {
         "duplicate_delivery": {"before": 2, "after": 1, "idempotent": True},
         "consumer_death": {
@@ -22,8 +28,9 @@ def run_experiments(output: str | Path) -> dict:
         "ordering": {
             "verify_seed": VERIFY_SEED,
             "partitions": 2,
+            "inputs": inputs,
             "without_key": no_key,
-            "with_entity_key": list(range(20)),
+            "with_entity_key": keyed,
             "keyed_preserves_order": True,
         },
     }

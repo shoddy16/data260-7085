@@ -8,3 +8,5 @@
 | Duplicate side effects | 1 after replay | Offline unit verified |
 | Poison retries | 3 | Offline artifact recorded |
 | JMeter metrics | unavailable | Not measured |
+
+Live-service metrics are intentionally absent because the Docker Desktop engine was unavailable. The 20-message ordering artifact is deterministic and records inputs plus a stable keyed partition calculation; it is not a Kafka broker measurement.

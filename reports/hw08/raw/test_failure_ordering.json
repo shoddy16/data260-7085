@@ -17,6 +17,108 @@
   "ordering": {
     "verify_seed": 267085,
     "partitions": 2,
+    "inputs": [
+      {
+        "sequence": 0,
+        "related_entity_id": "restaurant-1",
+        "value": "event-0"
+      },
+      {
+        "sequence": 1,
+        "related_entity_id": "restaurant-1",
+        "value": "event-1"
+      },
+      {
+        "sequence": 2,
+        "related_entity_id": "restaurant-1",
+        "value": "event-2"
+      },
+      {
+        "sequence": 3,
+        "related_entity_id": "restaurant-1",
+        "value": "event-3"
+      },
+      {
+        "sequence": 4,
+        "related_entity_id": "restaurant-1",
+        "value": "event-4"
+      },
+      {
+        "sequence": 5,
+        "related_entity_id": "restaurant-1",
+        "value": "event-5"
+      },
+      {
+        "sequence": 6,
+        "related_entity_id": "restaurant-1",
+        "value": "event-6"
+      },
+      {
+        "sequence": 7,
+        "related_entity_id": "restaurant-1",
+        "value": "event-7"
+      },
+      {
+        "sequence": 8,
+        "related_entity_id": "restaurant-1",
+        "value": "event-8"
+      },
+      {
+        "sequence": 9,
+        "related_entity_id": "restaurant-1",
+        "value": "event-9"
+      },
+      {
+        "sequence": 10,
+        "related_entity_id": "restaurant-1",
+        "value": "event-10"
+      },
+      {
+        "sequence": 11,
+        "related_entity_id": "restaurant-1",
+        "value": "event-11"
+      },
+      {
+        "sequence": 12,
+        "related_entity_id": "restaurant-1",
+        "value": "event-12"
+      },
+      {
+        "sequence": 13,
+        "related_entity_id": "restaurant-1",
+        "value": "event-13"
+      },
+      {
+        "sequence": 14,
+        "related_entity_id": "restaurant-1",
+        "value": "event-14"
+      },
+      {
+        "sequence": 15,
+        "related_entity_id": "restaurant-1",
+        "value": "event-15"
+      },
+      {
+        "sequence": 16,
+        "related_entity_id": "restaurant-1",
+        "value": "event-16"
+      },
+      {
+        "sequence": 17,
+        "related_entity_id": "restaurant-1",
+        "value": "event-17"
+      },
+      {
+        "sequence": 18,
+        "related_entity_id": "restaurant-1",
+        "value": "event-18"
+      },
+      {
+        "sequence": 19,
+        "related_entity_id": "restaurant-1",
+        "value": "event-19"
+      }
+    ],
     "without_key": [
       14,
       2,
@@ -40,26 +142,126 @@
       4
     ],
     "with_entity_key": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
+      {
+        "sequence": 0,
+        "related_entity_id": "restaurant-1",
+        "value": "event-0",
+        "partition": 1
+      },
+      {
+        "sequence": 1,
+        "related_entity_id": "restaurant-1",
+        "value": "event-1",
+        "partition": 1
+      },
+      {
+        "sequence": 2,
+        "related_entity_id": "restaurant-1",
+        "value": "event-2",
+        "partition": 1
+      },
+      {
+        "sequence": 3,
+        "related_entity_id": "restaurant-1",
+        "value": "event-3",
+        "partition": 1
+      },
+      {
+        "sequence": 4,
+        "related_entity_id": "restaurant-1",
+        "value": "event-4",
+        "partition": 1
+      },
+      {
+        "sequence": 5,
+        "related_entity_id": "restaurant-1",
+        "value": "event-5",
+        "partition": 1
+      },
+      {
+        "sequence": 6,
+        "related_entity_id": "restaurant-1",
+        "value": "event-6",
+        "partition": 1
+      },
+      {
+        "sequence": 7,
+        "related_entity_id": "restaurant-1",
+        "value": "event-7",
+        "partition": 1
+      },
+      {
+        "sequence": 8,
+        "related_entity_id": "restaurant-1",
+        "value": "event-8",
+        "partition": 1
+      },
+      {
+        "sequence": 9,
+        "related_entity_id": "restaurant-1",
+        "value": "event-9",
+        "partition": 1
+      },
+      {
+        "sequence": 10,
+        "related_entity_id": "restaurant-1",
+        "value": "event-10",
+        "partition": 1
+      },
+      {
+        "sequence": 11,
+        "related_entity_id": "restaurant-1",
+        "value": "event-11",
+        "partition": 1
+      },
+      {
+        "sequence": 12,
+        "related_entity_id": "restaurant-1",
+        "value": "event-12",
+        "partition": 1
+      },
+      {
+        "sequence": 13,
+        "related_entity_id": "restaurant-1",
+        "value": "event-13",
+        "partition": 1
+      },
+      {
+        "sequence": 14,
+        "related_entity_id": "restaurant-1",
+        "value": "event-14",
+        "partition": 1
+      },
+      {
+        "sequence": 15,
+        "related_entity_id": "restaurant-1",
+        "value": "event-15",
+        "partition": 1
+      },
+      {
+        "sequence": 16,
+        "related_entity_id": "restaurant-1",
+        "value": "event-16",
+        "partition": 1
+      },
+      {
+        "sequence": 17,
+        "related_entity_id": "restaurant-1",
+        "value": "event-17",
+        "partition": 1
+      },
+      {
+        "sequence": 18,
+        "related_entity_id": "restaurant-1",
+        "value": "event-18",
+        "partition": 1
+      },
+      {
+        "sequence": 19,
+        "related_entity_id": "restaurant-1",
+        "value": "event-19",
+        "partition": 1
+      }
     ],
     "keyed_preserves_order": true
   }

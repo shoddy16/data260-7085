@@ -3,15 +3,34 @@
 import asyncio
 import json
 import logging
+import os
 
 from hw8_config import ENTITY_REQUESTS, ENTITY_RESPONSES
 from kafka_protocol import EntityWorker, new_correlation_id
+from kafka_rpc import KafkaRPC
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
 log = logging.getLogger("homework_demo")
 
 
 async def main():
+    if os.getenv("HW8_LIVE_KAFKA") == "1":
+        rpc = KafkaRPC()
+        created = await rpc.request(
+            "CREATE_ENTITY",
+            {
+                "restaurantName": "Demo Cafe",
+                "location": "San Jose",
+                "email": "demo@example.com",
+                "description": "Routine inspection",
+                "category": "restaurant",
+                "score": 94,
+            },
+        )
+        log.info("CLIENT live CREATE response=%s", json.dumps(created))
+        retrieved = await rpc.request("GET_ENTITY", {"entity_id": created["entity_id"]})
+        log.info("CLIENT live GET response=%s", json.dumps(retrieved))
+        return {"create": created, "get": retrieved}
     worker = EntityWorker()
     correlation_id = new_correlation_id()
     create = {
