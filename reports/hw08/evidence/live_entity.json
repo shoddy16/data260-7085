@@ -1,0 +1,26 @@
+{
+  "captured_utc": "2026-11-02T10:55:09.427340+00:00",
+  "create": {
+    "correlation_id": "47dcdd1c-8933-46df-9c1a-12b6ebbafb31",
+    "success": true,
+    "entity_id": "8378f5e2-978f-4dd0-826a-0cd8908dda3f",
+    "message": "Entity created",
+    "request_topic": "s7085_entity_requests",
+    "response_topic": "s7085_entity_responses"
+  },
+  "get": {
+    "correlation_id": "caf760ad-0abd-4277-beb5-5c9e224ba57d",
+    "success": true,
+    "entity": {
+      "entity_id": "8378f5e2-978f-4dd0-826a-0cd8908dda3f",
+      "restaurantName": "Live Evidence Cafe",
+      "location": "San Jose",
+      "email": "live@example.com",
+      "description": "live Kafka RPC evidence",
+      "category": "restaurant",
+      "score": 91
+    },
+    "request_topic": "s7085_entity_requests",
+    "response_topic": "s7085_entity_responses"
+  }
+}

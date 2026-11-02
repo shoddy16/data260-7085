@@ -1,0 +1,9 @@
+Captured UTC: 2026-10-31T00:17:10.295467+00:00
+Command: docker compose -f docker-compose.hw8.yml logs --tail 80 api worker planner writer reviewer
+Exit: 0
+
+api-1  | INFO:     Started server process [1]
+api-1  | INFO:     Waiting for application startup.
+api-1  | INFO:     Application startup complete.
+api-1  | INFO:     Uvicorn running on http://0.0.0.0:8085 (Press CTRL+C to quit)
+api-1  | INFO:     172.19.0.1:42534 - "GET /hw8/health HTTP/1.1" 200 OK

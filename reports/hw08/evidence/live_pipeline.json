@@ -1,0 +1,42 @@
+{
+  "captured_utc": "2026-10-31T00:32:55.293587+00:00",
+  "correlation_id": "live-eb43449d-3365-4a52-a95e-98d46ee6c853",
+  "records": {
+    "task": {
+      "topic": "s7085_tasks",
+      "partition": 0,
+      "offset": 3,
+      "body": {
+        "correlation_id": "live-eb43449d-3365-4a52-a95e-98d46ee6c853",
+        "question": "Which restaurant inspections scored below 70?",
+        "plan": [
+          "search inspections",
+          "summarize evidence"
+        ],
+        "stage": "planner"
+      }
+    },
+    "draft": {
+      "topic": "s7085_drafts",
+      "partition": 0,
+      "offset": 4,
+      "body": {
+        "correlation_id": "live-eb43449d-3365-4a52-a95e-98d46ee6c853",
+        "question": "Which restaurant inspections scored below 70?",
+        "draft": "Inspection evidence for: Which restaurant inspections scored below 70?",
+        "stage": "writer"
+      }
+    },
+    "final": {
+      "topic": "s7085_final",
+      "partition": 0,
+      "offset": 4,
+      "body": {
+        "correlation_id": "live-eb43449d-3365-4a52-a95e-98d46ee6c853",
+        "status": "approved",
+        "answer": "Inspection evidence for: Which restaurant inspections scored below 70?",
+        "stage": "reviewer"
+      }
+    }
+  }
+}

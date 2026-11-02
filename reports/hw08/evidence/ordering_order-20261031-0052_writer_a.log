@@ -1,0 +1,201 @@
+2026-10-31 02:25:09,894 INFO Updating subscribed topics to: frozenset({'s7085_tasks'})
+2026-10-31 02:25:10,288 INFO Discovered coordinator 1 for group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:10,289 INFO Revoking previously assigned partitions set() for group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:10,289 INFO (Re-)joining group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:13,378 INFO Joined group 'hw8-order-group-order-20261031-0052' (generation 1) with member_id aiokafka-0.15.0-d7b3146e-3589-4ce8-b6c1-a15be80066ba
+2026-10-31 02:25:13,378 INFO Elected group leader -- performing partition assignments using roundrobin
+2026-10-31 02:25:13,421 INFO Successfully synced group hw8-order-group-order-20261031-0052 with generation 1
+2026-10-31 02:25:13,423 INFO Setting newly assigned partitions {TopicPartition(topic='s7085_tasks', partition=0), TopicPartition(topic='s7085_tasks', partition=1)} for group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:13,487 INFO writer received correlation_id=6810fa38-8354-45ea-b893-c3597990fcc9 input=s7085_tasks partition=1 offset=0
+2026-10-31 02:25:13,526 INFO writer correlation_id=6810fa38-8354-45ea-b893-c3597990fcc9 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,551 INFO writer received correlation_id=poison-ee66cb88-9626-4b80-8c97-b01d42729cb1 input=s7085_tasks partition=1 offset=1
+2026-10-31 02:25:13,551 WARNING writer retry correlation_id=poison-ee66cb88-9626-4b80-8c97-b01d42729cb1 attempt=1 error=poison message requested for failure experiment
+2026-10-31 02:25:13,554 WARNING writer retry correlation_id=poison-ee66cb88-9626-4b80-8c97-b01d42729cb1 attempt=2 error=poison message requested for failure experiment
+2026-10-31 02:25:13,554 WARNING writer retry correlation_id=poison-ee66cb88-9626-4b80-8c97-b01d42729cb1 attempt=3 error=poison message requested for failure experiment
+2026-10-31 02:25:13,606 INFO writer received correlation_id=poison-81fbe9a8-cbf2-4e5c-990f-b2a79c865227 input=s7085_tasks partition=1 offset=2
+2026-10-31 02:25:13,606 WARNING writer retry correlation_id=poison-81fbe9a8-cbf2-4e5c-990f-b2a79c865227 attempt=1 error=poison message requested for failure experiment
+2026-10-31 02:25:13,607 WARNING writer retry correlation_id=poison-81fbe9a8-cbf2-4e5c-990f-b2a79c865227 attempt=2 error=poison message requested for failure experiment
+2026-10-31 02:25:13,607 WARNING writer retry correlation_id=poison-81fbe9a8-cbf2-4e5c-990f-b2a79c865227 attempt=3 error=poison message requested for failure experiment
+2026-10-31 02:25:13,614 INFO writer received correlation_id=valid-after-poison-2ef7ef56-60db-4365-b067-5ff12b051a7a input=s7085_tasks partition=1 offset=3
+2026-10-31 02:25:13,657 INFO writer correlation_id=valid-after-poison-2ef7ef56-60db-4365-b067-5ff12b051a7a attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,673 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-14 input=s7085_tasks partition=1 offset=4
+2026-10-31 02:25:13,676 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-14 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,690 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-02 input=s7085_tasks partition=1 offset=5
+2026-10-31 02:25:13,693 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-02 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,711 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-06 input=s7085_tasks partition=1 offset=6
+2026-10-31 02:25:13,728 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-06 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,736 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-05 input=s7085_tasks partition=1 offset=7
+2026-10-31 02:25:13,770 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-05 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,815 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-17 input=s7085_tasks partition=1 offset=8
+2026-10-31 02:25:13,818 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-17 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,823 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-08 input=s7085_tasks partition=1 offset=9
+2026-10-31 02:25:13,858 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-08 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,873 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-03 input=s7085_tasks partition=1 offset=10
+2026-10-31 02:25:13,892 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-03 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,905 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-01 input=s7085_tasks partition=1 offset=11
+2026-10-31 02:25:13,908 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-01 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,938 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-19 input=s7085_tasks partition=1 offset=12
+2026-10-31 02:25:13,960 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-19 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,971 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-00 input=s7085_tasks partition=1 offset=13
+2026-10-31 02:25:13,975 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-00 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:13,999 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-04 input=s7085_tasks partition=1 offset=14
+2026-10-31 02:25:14,014 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-04 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,026 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-14 input=s7085_tasks partition=1 offset=15
+2026-10-31 02:25:14,036 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-14 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,064 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-02 input=s7085_tasks partition=1 offset=16
+2026-10-31 02:25:14,080 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-02 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,233 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-06 input=s7085_tasks partition=1 offset=17
+2026-10-31 02:25:14,236 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-06 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,250 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-07 input=s7085_tasks partition=1 offset=18
+2026-10-31 02:25:14,286 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-07 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,295 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-09 input=s7085_tasks partition=1 offset=19
+2026-10-31 02:25:14,298 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-09 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,315 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-10 input=s7085_tasks partition=1 offset=20
+2026-10-31 02:25:14,332 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-10 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,337 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-05 input=s7085_tasks partition=1 offset=21
+2026-10-31 02:25:14,358 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-05 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,371 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-18 input=s7085_tasks partition=1 offset=22
+2026-10-31 02:25:14,391 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-18 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,425 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-11 input=s7085_tasks partition=1 offset=23
+2026-10-31 02:25:14,444 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-11 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,478 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-17 input=s7085_tasks partition=1 offset=24
+2026-10-31 02:25:14,490 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-17 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,493 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-08 input=s7085_tasks partition=1 offset=25
+2026-10-31 02:25:14,507 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-08 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,516 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-03 input=s7085_tasks partition=1 offset=26
+2026-10-31 02:25:14,520 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-03 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,533 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-15 input=s7085_tasks partition=1 offset=27
+2026-10-31 02:25:14,550 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-15 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,589 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-01 input=s7085_tasks partition=1 offset=28
+2026-10-31 02:25:14,636 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-01 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,640 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-19 input=s7085_tasks partition=1 offset=29
+2026-10-31 02:25:14,654 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-19 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,657 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-16 input=s7085_tasks partition=1 offset=30
+2026-10-31 02:25:14,700 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-16 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,719 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-12 input=s7085_tasks partition=1 offset=31
+2026-10-31 02:25:14,722 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-12 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,754 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-00 input=s7085_tasks partition=1 offset=32
+2026-10-31 02:25:14,785 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-00 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,795 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-13 input=s7085_tasks partition=1 offset=33
+2026-10-31 02:25:14,810 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-13 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,832 INFO writer received correlation_id=hw8-order-order-20261031-0042-keyed-04 input=s7085_tasks partition=1 offset=34
+2026-10-31 02:25:14,835 INFO writer correlation_id=hw8-order-order-20261031-0042-keyed-04 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,956 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-14 input=s7085_tasks partition=1 offset=35
+2026-10-31 02:25:14,959 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-14 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:14,986 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-07 input=s7085_tasks partition=1 offset=36
+2026-10-31 02:25:14,991 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-07 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,003 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-10 input=s7085_tasks partition=1 offset=37
+2026-10-31 02:25:15,011 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-10 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,020 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-03 input=s7085_tasks partition=1 offset=38
+2026-10-31 02:25:15,023 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-03 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,040 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-01 input=s7085_tasks partition=1 offset=39
+2026-10-31 02:25:15,054 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-01 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,088 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-19 input=s7085_tasks partition=1 offset=40
+2026-10-31 02:25:15,127 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-19 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,154 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-00 input=s7085_tasks partition=1 offset=41
+2026-10-31 02:25:15,173 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-00 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,177 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-13 input=s7085_tasks partition=1 offset=42
+2026-10-31 02:25:15,222 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-13 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,238 INFO writer received correlation_id=live-22856d31-a35e-4b30-b7f7-e4e919cd8042 input=s7085_tasks partition=0 offset=0
+2026-10-31 02:25:15,254 INFO writer correlation_id=live-22856d31-a35e-4b30-b7f7-e4e919cd8042 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,320 INFO writer received correlation_id=valid-after-poison-c4781fd7-fc73-48ab-a5b3-143ef7ec7cbe input=s7085_tasks partition=0 offset=1
+2026-10-31 02:25:15,323 INFO writer correlation_id=valid-after-poison-c4781fd7-fc73-48ab-a5b3-143ef7ec7cbe attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,348 INFO writer received correlation_id=valid-after-poison-05c9efac-0adf-45a1-bb79-0475c96aaf54 input=s7085_tasks partition=0 offset=2
+2026-10-31 02:25:15,397 INFO writer correlation_id=valid-after-poison-05c9efac-0adf-45a1-bb79-0475c96aaf54 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,429 INFO writer received correlation_id=live-eb43449d-3365-4a52-a95e-98d46ee6c853 input=s7085_tasks partition=0 offset=3
+2026-10-31 02:25:15,525 INFO writer correlation_id=live-eb43449d-3365-4a52-a95e-98d46ee6c853 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,547 INFO writer received correlation_id=poison-eded538c-9f7e-427b-8bc7-ebf7fc8ee09b input=s7085_tasks partition=0 offset=4
+2026-10-31 02:25:15,547 WARNING writer retry correlation_id=poison-eded538c-9f7e-427b-8bc7-ebf7fc8ee09b attempt=1 error=poison message requested for failure experiment
+2026-10-31 02:25:15,548 WARNING writer retry correlation_id=poison-eded538c-9f7e-427b-8bc7-ebf7fc8ee09b attempt=2 error=poison message requested for failure experiment
+2026-10-31 02:25:15,548 WARNING writer retry correlation_id=poison-eded538c-9f7e-427b-8bc7-ebf7fc8ee09b attempt=3 error=poison message requested for failure experiment
+2026-10-31 02:25:15,605 INFO writer received correlation_id=hw8-death-death-20261031-0035 input=s7085_tasks partition=0 offset=5
+2026-10-31 02:25:15,608 INFO writer correlation_id=hw8-death-death-20261031-0035 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,622 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-07 input=s7085_tasks partition=0 offset=6
+2026-10-31 02:25:15,626 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-07 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,644 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-09 input=s7085_tasks partition=0 offset=7
+2026-10-31 02:25:15,674 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-09 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,693 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-10 input=s7085_tasks partition=0 offset=8
+2026-10-31 02:25:15,697 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-10 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,755 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-18 input=s7085_tasks partition=0 offset=9
+2026-10-31 02:25:15,774 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-18 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,790 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-11 input=s7085_tasks partition=0 offset=10
+2026-10-31 02:25:15,819 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-11 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,822 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-15 input=s7085_tasks partition=0 offset=11
+2026-10-31 02:25:15,853 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-15 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,915 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-16 input=s7085_tasks partition=0 offset=12
+2026-10-31 02:25:15,933 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-16 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,947 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-12 input=s7085_tasks partition=0 offset=13
+2026-10-31 02:25:15,963 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-12 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:15,966 INFO writer received correlation_id=hw8-order-order-20261031-0038-unkeyed-13 input=s7085_tasks partition=0 offset=14
+2026-10-31 02:25:15,996 INFO writer correlation_id=hw8-order-order-20261031-0038-unkeyed-13 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,012 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-02 input=s7085_tasks partition=0 offset=15
+2026-10-31 02:25:16,025 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-02 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,045 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-06 input=s7085_tasks partition=0 offset=16
+2026-10-31 02:25:16,076 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-06 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,083 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-09 input=s7085_tasks partition=0 offset=17
+2026-10-31 02:25:16,116 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-09 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,122 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-05 input=s7085_tasks partition=0 offset=18
+2026-10-31 02:25:16,155 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-05 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,193 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-18 input=s7085_tasks partition=0 offset=19
+2026-10-31 02:25:16,212 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-18 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,231 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-11 input=s7085_tasks partition=0 offset=20
+2026-10-31 02:25:16,258 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-11 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,289 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-17 input=s7085_tasks partition=0 offset=21
+2026-10-31 02:25:16,292 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-17 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,305 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-08 input=s7085_tasks partition=0 offset=22
+2026-10-31 02:25:16,322 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-08 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,337 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-15 input=s7085_tasks partition=0 offset=23
+2026-10-31 02:25:16,353 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-15 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,356 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-16 input=s7085_tasks partition=0 offset=24
+2026-10-31 02:25:16,371 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-16 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,397 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-12 input=s7085_tasks partition=0 offset=25
+2026-10-31 02:25:16,401 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-12 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:16,417 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-04 input=s7085_tasks partition=0 offset=26
+2026-10-31 02:25:16,421 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-04 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:19,434 WARNING Heartbeat failed for group hw8-order-group-order-20261031-0052 because it is rebalancing
+2026-10-31 02:25:19,434 INFO Revoking previously assigned partitions frozenset({TopicPartition(topic='s7085_tasks', partition=0), TopicPartition(topic='s7085_tasks', partition=1)}) for group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:19,434 INFO (Re-)joining group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:19,458 INFO Joined group 'hw8-order-group-order-20261031-0052' (generation 2) with member_id aiokafka-0.15.0-d7b3146e-3589-4ce8-b6c1-a15be80066ba
+2026-10-31 02:25:19,458 INFO Elected group leader -- performing partition assignments using roundrobin
+2026-10-31 02:25:19,470 INFO Successfully synced group hw8-order-group-order-20261031-0052 with generation 2
+2026-10-31 02:25:19,471 INFO Setting newly assigned partitions {TopicPartition(topic='s7085_tasks', partition=1)} for group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:33,957 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-14 input=s7085_tasks partition=1 offset=43
+2026-10-31 02:25:33,960 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-14 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:33,979 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-02 input=s7085_tasks partition=1 offset=44
+2026-10-31 02:25:33,987 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-02 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,002 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-06 input=s7085_tasks partition=1 offset=45
+2026-10-31 02:25:34,005 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-06 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,054 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-07 input=s7085_tasks partition=1 offset=46
+2026-10-31 02:25:34,057 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-07 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,070 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-09 input=s7085_tasks partition=1 offset=47
+2026-10-31 02:25:34,092 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-09 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,096 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-10 input=s7085_tasks partition=1 offset=48
+2026-10-31 02:25:34,104 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-10 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,188 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-05 input=s7085_tasks partition=1 offset=49
+2026-10-31 02:25:34,193 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-05 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,198 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-18 input=s7085_tasks partition=1 offset=50
+2026-10-31 02:25:34,226 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-18 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,245 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-11 input=s7085_tasks partition=1 offset=51
+2026-10-31 02:25:34,259 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-11 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,262 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-17 input=s7085_tasks partition=1 offset=52
+2026-10-31 02:25:34,278 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-17 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,291 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-08 input=s7085_tasks partition=1 offset=53
+2026-10-31 02:25:34,306 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-08 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,311 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-03 input=s7085_tasks partition=1 offset=54
+2026-10-31 02:25:34,316 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-03 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,333 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-15 input=s7085_tasks partition=1 offset=55
+2026-10-31 02:25:34,348 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-15 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,372 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-01 input=s7085_tasks partition=1 offset=56
+2026-10-31 02:25:34,406 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-01 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,435 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-19 input=s7085_tasks partition=1 offset=57
+2026-10-31 02:25:34,438 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-19 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,489 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-16 input=s7085_tasks partition=1 offset=58
+2026-10-31 02:25:34,497 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-16 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,504 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-12 input=s7085_tasks partition=1 offset=59
+2026-10-31 02:25:34,509 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-12 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,517 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-00 input=s7085_tasks partition=1 offset=60
+2026-10-31 02:25:34,522 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-00 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,547 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-13 input=s7085_tasks partition=1 offset=61
+2026-10-31 02:25:34,550 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-13 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:25:34,561 INFO writer received correlation_id=hw8-order-order-20261031-0052-keyed-04 input=s7085_tasks partition=1 offset=62
+2026-10-31 02:25:34,566 INFO writer correlation_id=hw8-order-order-20261031-0052-keyed-04 attempt=1 in=s7085_tasks out=s7085_drafts

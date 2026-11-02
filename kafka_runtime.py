@@ -12,24 +12,30 @@ from kafka_protocol import EntityWorker
 
 log = logging.getLogger(__name__)
 MAX_RETRIES = 3
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 
 def transform(stage: str, body: dict) -> dict:
+    if body.get("poison"):
+        raise ValueError("poison message requested for failure experiment")
     correlation_id = body.get("correlation_id")
+    trace_fields = {name: body[name] for name in ("related_entity_id", "sequence") if name in body}
     if stage == "planner":
         return {
             "correlation_id": correlation_id,
             "question": body.get("question", ""),
             "plan": ["search inspections", "summarize evidence"],
+            **trace_fields,
         }
     if stage == "writer":
         return {
             "correlation_id": correlation_id,
             "question": body.get("question", ""),
             "draft": f"Inspection evidence for: {body.get('question', '')}",
+            **trace_fields,
         }
     if stage == "reviewer":
-        return {"correlation_id": correlation_id, "status": "approved", "answer": body.get("draft", "")}
+        return {"correlation_id": correlation_id, "status": "approved", "answer": body.get("draft", ""), **trace_fields}
     raise ValueError(f"unknown stage: {stage}")
 
 
@@ -80,6 +86,17 @@ async def run_stage(stage: str, input_topic: str, output_topic: str, bootstrap_s
         async for message in consumer:
             raw = json.loads(message.value.decode("utf-8"))
             correlation_id = raw.get("correlation_id")
+            log.info(
+                "%s received correlation_id=%s input=%s partition=%s offset=%s",
+                stage,
+                correlation_id,
+                input_topic,
+                message.partition,
+                message.offset,
+            )
+            if correlation_id == os.getenv("HW8_CRASH_BEFORE_PROCESSING_CORRELATION"):
+                log.error("%s controlled crash before processing correlation_id=%s", stage, correlation_id)
+                raise SystemExit("controlled test crash before processing")
             for attempt in range(1, MAX_RETRIES + 1):
                 try:
                     body = transform(stage, raw)

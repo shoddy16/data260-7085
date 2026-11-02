@@ -1,0 +1,28 @@
+{
+  "captured_utc": "2026-10-31T00:33:02.351548+00:00",
+  "poison": {
+    "topic": "s7085_dead_letter",
+    "partition": 0,
+    "offset": 2,
+    "body": {
+      "correlation_id": "poison-eded538c-9f7e-427b-8bc7-ebf7fc8ee09b",
+      "error": "poison message requested for failure experiment",
+      "attempts": 3,
+      "original": {
+        "correlation_id": "poison-eded538c-9f7e-427b-8bc7-ebf7fc8ee09b",
+        "poison": true
+      }
+    }
+  },
+  "valid_after_poison": {
+    "topic": "s7085_drafts",
+    "partition": 0,
+    "offset": 5,
+    "body": {
+      "correlation_id": "valid-after-poison-2ef7ef56-60db-4365-b067-5ff12b051a7a",
+      "question": "valid after poison",
+      "draft": "Inspection evidence for: valid after poison",
+      "stage": "writer"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "captured_utc": "2026-10-31T00:17:10.295467+00:00",
+  "results": {
+    "docker_ps": {
+      "command": "docker compose -f docker-compose.hw8.yml ps",
+      "returncode": 0,
+      "stdout": "NAME                            IMAGE                       COMMAND                  SERVICE      CREATED              STATUS                    PORTS\ndata260-7085-hw8-api-1          data260-7085-hw8-api        \"uvicorn main:app --\u00e2\u20ac\u00a6\"   api          8 minutes ago        Up 8 minutes              0.0.0.0:8085->8085/tcp, [::]:8085->8085/tcp\ndata260-7085-hw8-kafka-init-1   apache/kafka:3.9.2          \"/bin/sh -c 'for t i\u00e2\u20ac\u00a6\"   kafka-init   About a minute ago   Up About a minute         9092/tcp\ndata260-7085-hw8-planner-1      data260-7085-hw8-planner    \"python planner.py\"      planner      About a minute ago   Up About a minute         \ndata260-7085-hw8-reviewer-1     data260-7085-hw8-reviewer   \"python reviewer.py\"     reviewer     About a minute ago   Up About a minute         \ndata260-7085-hw8-worker-1       data260-7085-hw8-worker     \"python kafka_runtim\u00e2\u20ac\u00a6\"   worker       About a minute ago   Up About a minute         \ndata260-7085-hw8-writer-1       data260-7085-hw8-writer     \"python writer.py\"       writer       About a minute ago   Up About a minute         \ns7085-kafka                     apache/kafka:3.9.2          \"/__cacert_entrypoin\u00e2\u20ac\u00a6\"   kafka        12 minutes ago       Up 12 minutes (healthy)   0.0.0.0:9092->9092/tcp, [::]:9092->9092/tcp, 0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp\n",
+      "stderr": ""
+    },
+    "topics": {
+      "command": "docker exec s7085-kafka /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list",
+      "returncode": 0,
+      "stdout": "__consumer_offsets\ns7085_dead_letter\ns7085_drafts\ns7085_entity_requests\ns7085_entity_responses\ns7085_final\ns7085_inbox\ns7085_tasks\n",
+      "stderr": ""
+    },
+    "tasks_description": {
+      "command": "docker exec s7085-kafka /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic s7085_tasks",
+      "returncode": 0,
+      "stdout": "Topic: s7085_tasks\tTopicId: ZRmLb-j5R76SQ-uf_pYYSw\tPartitionCount: 2\tReplicationFactor: 1\tConfigs: \n\tTopic: s7085_tasks\tPartition: 0\tLeader: 1\tReplicas: 1\tIsr: 1\tElr: \tLastKnownElr: \n\tTopic: s7085_tasks\tPartition: 1\tLeader: 1\tReplicas: 1\tIsr: 1\tElr: \tLastKnownElr: \n",
+      "stderr": ""
+    },
+    "service_logs": {
+      "command": "docker compose -f docker-compose.hw8.yml logs --tail 80 api worker planner writer reviewer",
+      "returncode": 0,
+      "stdout": "api-1  | INFO:     Started server process [1]\napi-1  | INFO:     Waiting for application startup.\napi-1  | INFO:     Application startup complete.\napi-1  | INFO:     Uvicorn running on http://0.0.0.0:8085 (Press CTRL+C to quit)\napi-1  | INFO:     172.19.0.1:42534 - \"GET /hw8/health HTTP/1.1\" 200 OK\n",
+      "stderr": ""
+    },
+    "final_message": {
+      "command": "docker exec s7085-kafka /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic s7085_final --from-beginning --group hw8-evidence-capture --max-messages 1 --timeout-ms 5000",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "[2026-10-31 00:17:08,686] ERROR Error processing message, terminating consumer process:  (org.apache.kafka.tools.consumer.ConsoleConsumer)\norg.apache.kafka.common.errors.TimeoutException\nProcessed a total of 0 messages\n"
+    }
+  }
+}

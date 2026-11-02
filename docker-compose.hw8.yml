@@ -15,8 +15,9 @@ services:
     healthcheck:
       test: ["CMD-SHELL", "/opt/kafka/bin/kafka-broker-api-versions.sh --bootstrap-server localhost:9092 >/dev/null 2>&1"]
       interval: 5s
-      timeout: 5s
-      retries: 20
+      timeout: 15s
+      start_period: 10s
+      retries: 30
   kafka-init:
     image: apache/kafka:3.9.2
     depends_on:
@@ -31,8 +32,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.hw8
-    command: uvicorn main:app --host 127.0.0.1 --port 8085
+    command: uvicorn main:app --host 0.0.0.0 --port 8085
     ports: ["8085:8085"]
+    environment:
+      DATABASE_URL: sqlite:///./hw8.sqlite3
     depends_on: [kafka-init]
   worker:
     build:

@@ -1,0 +1,7 @@
+2026-10-31 02:25:17,762 INFO Updating subscribed topics to: frozenset({'s7085_tasks'})
+2026-10-31 02:25:17,945 INFO Discovered coordinator 1 for group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:17,946 INFO Revoking previously assigned partitions set() for group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:17,946 INFO (Re-)joining group hw8-order-group-order-20261031-0052
+2026-10-31 02:25:19,466 INFO Joined group 'hw8-order-group-order-20261031-0052' (generation 2) with member_id aiokafka-0.15.0-c75eadef-1076-4ceb-8e00-270804d9c654
+2026-10-31 02:25:19,468 INFO Successfully synced group hw8-order-group-order-20261031-0052 with generation 2
+2026-10-31 02:25:19,468 INFO Setting newly assigned partitions {TopicPartition(topic='s7085_tasks', partition=0)} for group hw8-order-group-order-20261031-0052

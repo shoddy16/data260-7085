@@ -1,0 +1,478 @@
+{
+  "status": "PASS",
+  "captured_utc": "2026-10-31T02:25:34.600955+00:00",
+  "run_id": "order-20261031-0052",
+  "mode": "keyed",
+  "verify_seed": 267085,
+  "topic": "s7085_tasks",
+  "output_topic": "s7085_drafts",
+  "partitions": 2,
+  "inputs": [
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-14",
+      "question": "ordering event 14",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 14,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 43
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-02",
+      "question": "ordering event 2",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 2,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 44
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-06",
+      "question": "ordering event 6",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 6,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 45
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-07",
+      "question": "ordering event 7",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 7,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 46
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-09",
+      "question": "ordering event 9",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 9,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 47
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-10",
+      "question": "ordering event 10",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 10,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 48
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-05",
+      "question": "ordering event 5",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 5,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 49
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-18",
+      "question": "ordering event 18",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 18,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 50
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-11",
+      "question": "ordering event 11",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 11,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 51
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-17",
+      "question": "ordering event 17",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 17,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 52
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-08",
+      "question": "ordering event 8",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 8,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 53
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-03",
+      "question": "ordering event 3",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 3,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 54
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-15",
+      "question": "ordering event 15",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 15,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 55
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-01",
+      "question": "ordering event 1",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 1,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 56
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-19",
+      "question": "ordering event 19",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 19,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 57
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-16",
+      "question": "ordering event 16",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 16,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 58
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-12",
+      "question": "ordering event 12",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 12,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 59
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-00",
+      "question": "ordering event 0",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 0,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 60
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-13",
+      "question": "ordering event 13",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 13,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 61
+    },
+    {
+      "correlation_id": "hw8-order-order-20261031-0052-keyed-04",
+      "question": "ordering event 4",
+      "related_entity_id": "restaurant-order-test",
+      "sequence": 4,
+      "key": "restaurant-order-test",
+      "partition": 1,
+      "offset": 62
+    }
+  ],
+  "outputs": [
+    {
+      "partition": 0,
+      "offset": 282,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-14",
+        "question": "ordering event 14",
+        "draft": "Inspection evidence for: ordering event 14",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 14,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 283,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-02",
+        "question": "ordering event 2",
+        "draft": "Inspection evidence for: ordering event 2",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 2,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 284,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-06",
+        "question": "ordering event 6",
+        "draft": "Inspection evidence for: ordering event 6",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 6,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 285,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-07",
+        "question": "ordering event 7",
+        "draft": "Inspection evidence for: ordering event 7",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 7,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 286,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-09",
+        "question": "ordering event 9",
+        "draft": "Inspection evidence for: ordering event 9",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 9,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 287,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-10",
+        "question": "ordering event 10",
+        "draft": "Inspection evidence for: ordering event 10",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 10,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 288,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-05",
+        "question": "ordering event 5",
+        "draft": "Inspection evidence for: ordering event 5",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 5,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 289,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-18",
+        "question": "ordering event 18",
+        "draft": "Inspection evidence for: ordering event 18",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 18,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 290,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-11",
+        "question": "ordering event 11",
+        "draft": "Inspection evidence for: ordering event 11",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 11,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 291,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-17",
+        "question": "ordering event 17",
+        "draft": "Inspection evidence for: ordering event 17",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 17,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 292,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-08",
+        "question": "ordering event 8",
+        "draft": "Inspection evidence for: ordering event 8",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 8,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 293,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-03",
+        "question": "ordering event 3",
+        "draft": "Inspection evidence for: ordering event 3",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 3,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 294,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-15",
+        "question": "ordering event 15",
+        "draft": "Inspection evidence for: ordering event 15",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 15,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 295,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-01",
+        "question": "ordering event 1",
+        "draft": "Inspection evidence for: ordering event 1",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 1,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 296,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-19",
+        "question": "ordering event 19",
+        "draft": "Inspection evidence for: ordering event 19",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 19,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 297,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-16",
+        "question": "ordering event 16",
+        "draft": "Inspection evidence for: ordering event 16",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 16,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 298,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-12",
+        "question": "ordering event 12",
+        "draft": "Inspection evidence for: ordering event 12",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 12,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 299,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-00",
+        "question": "ordering event 0",
+        "draft": "Inspection evidence for: ordering event 0",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 0,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 300,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-13",
+        "question": "ordering event 13",
+        "draft": "Inspection evidence for: ordering event 13",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 13,
+        "stage": "writer"
+      }
+    },
+    {
+      "partition": 0,
+      "offset": 301,
+      "body": {
+        "correlation_id": "hw8-order-order-20261031-0052-keyed-04",
+        "question": "ordering event 4",
+        "draft": "Inspection evidence for: ordering event 4",
+        "related_entity_id": "restaurant-order-test",
+        "sequence": 4,
+        "stage": "writer"
+      }
+    }
+  ],
+  "output_sequence": [
+    14,
+    2,
+    6,
+    7,
+    9,
+    10,
+    5,
+    18,
+    11,
+    17,
+    8,
+    3,
+    15,
+    1,
+    19,
+    16,
+    12,
+    0,
+    13,
+    4
+  ],
+  "same_key_output_sequence": [
+    14,
+    2,
+    6,
+    7,
+    9,
+    10,
+    5,
+    18,
+    11,
+    17,
+    8,
+    3,
+    15,
+    1,
+    19,
+    16,
+    12,
+    0,
+    13,
+    4
+  ]
+}

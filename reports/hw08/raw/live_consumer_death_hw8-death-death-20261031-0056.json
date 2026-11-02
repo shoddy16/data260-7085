@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "captured_utc": "2026-10-31T02:28:50.823461+00:00",
+  "correlation_id": "hw8-death-death-20261031-0056",
+  "topic": "s7085_drafts",
+  "partition": 0,
+  "offset": 409,
+  "body": {
+    "correlation_id": "hw8-death-death-20261031-0056",
+    "question": "consumer death recovery test 2",
+    "draft": "Inspection evidence for: consumer death recovery test 2",
+    "stage": "writer"
+  }
+}

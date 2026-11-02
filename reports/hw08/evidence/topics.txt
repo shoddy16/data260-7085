@@ -1,0 +1,12 @@
+Captured UTC: 2026-10-31T00:17:10.295467+00:00
+Command: docker exec s7085-kafka /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+Exit: 0
+
+__consumer_offsets
+s7085_dead_letter
+s7085_drafts
+s7085_entity_requests
+s7085_entity_responses
+s7085_final
+s7085_inbox
+s7085_tasks

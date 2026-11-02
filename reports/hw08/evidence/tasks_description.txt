@@ -1,0 +1,7 @@
+Captured UTC: 2026-10-31T00:17:10.295467+00:00
+Command: docker exec s7085-kafka /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic s7085_tasks
+Exit: 0
+
+Topic: s7085_tasks	TopicId: ZRmLb-j5R76SQ-uf_pYYSw	PartitionCount: 2	ReplicationFactor: 1	Configs:
+	Topic: s7085_tasks	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr:
+	Topic: s7085_tasks	Partition: 1	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr:

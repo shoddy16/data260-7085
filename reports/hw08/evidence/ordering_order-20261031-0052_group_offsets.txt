@@ -1,0 +1,4 @@
+
+GROUP                               TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                          HOST            CLIENT-ID
+hw8-order-group-order-20261031-0052 s7085_tasks     1          63              63              0               aiokafka-0.15.0-d7b3146e-3589-4ce8-b6c1-a15be80066ba /172.19.0.8     aiokafka-0.15.0
+hw8-order-group-order-20261031-0052 s7085_tasks     0          27              27              0               aiokafka-0.15.0-c75eadef-1076-4ceb-8e00-270804d9c654 /172.19.0.9     aiokafka-0.15.0

@@ -1,0 +1,8 @@
+Captured UTC: 2026-10-31T00:17:10.295467+00:00
+Command: docker exec s7085-kafka /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic s7085_final --from-beginning --group hw8-evidence-capture --max-messages 1 --timeout-ms 5000
+Exit: 0
+
+
+[2026-10-31 00:17:08,686] ERROR Error processing message, terminating consumer process:  (org.apache.kafka.tools.consumer.ConsoleConsumer)
+org.apache.kafka.common.errors.TimeoutException
+Processed a total of 0 messages

@@ -2,9 +2,27 @@ HW8 run log
 Student: Shoury Parab | SID4=7085
 Configuration: PORT_BASE=8085 PREFIX=s7085 SEED=7085 VERIFY_SEED=267085 DOMAIN_ID=5
 
-2026-10-30 audit and completion branch
+2026-10-31 live completion validation
 Command: docker version --format '{{.Server.Version}}'
-Result: BLOCKED - failed to connect to dockerDesktopLinuxEngine; Docker Desktop daemon was unavailable.
+Result: PASS - Docker Desktop 4.97.0 / Engine 29.9.2.
+
+Command: docker compose -f docker-compose.hw8.yml up -d --build
+Result: PASS - image build completed and seven services started after self-contained requirements and API SQLite/bind fixes.
+
+Command: docker compose -f docker-compose.hw8.yml ps
+Result: PASS - Kafka healthy; API, kafka-init, planner, reviewer, worker, writer running. Captured in evidence/docker_ps.txt.
+
+Command: docker exec s7085-kafka kafka-topics.sh --describe --topic s7085_tasks
+Result: PASS - PartitionCount: 2. Captured in evidence/tasks_description.txt.
+
+Command: docker compose exec api python run_live_entity_capture.py
+Result: PASS - live CREATE_ENTITY returned UUID 297246d8-f461-4b01-a33c-6a775efe0b78 and live GET returned the same entity. Raw JSON: evidence/live_entity.json.
+
+Command: docker compose exec api python run_live_pipeline_capture.py
+Result: PASS - one correlation ID traced through task, draft, and final with live partition/offset data. Raw JSON: evidence/live_pipeline.json.
+
+Command: docker compose exec api python run_live_poison_capture.py
+Result: PASS - live poison message retried 3 times to s7085_dead_letter and later valid message reached s7085_drafts. Raw JSON: evidence/live_poison.json.
 
 Command: pytest -q --cache-clear tests/test_hw8.py
 Result: PASS - 5 passed, 1 environment cache warning.
@@ -18,12 +36,65 @@ Result: PASS - exit 0; deterministic VERIFY_SEED=267085 artifact written.
 Command: python -m compileall [HW8 files]
 Result: PASS - exit 0.
 
+Command: docker compose exec api sh -lc 'PYTHONPATH=/app python -m pytest -q /app/tests/test_hw8.py'
+Result: PASS - 5 passed in 0.34s in the final rebuilt validation container.
+
+Command: docker compose exec api ruff check [scoped HW8 files]
+Result: PASS - All checks passed in the final rebuilt validation container.
+
+Command: isolated Writer crash/recovery experiment, run `death-20261031-0035`
+Result: PASS - correlation_id=hw8-death-death-20261031-0035 was published to s7085_tasks partition 0 offset 5. Writer crashed before processing with no successful publication. A restarted Writer with the same group consumed partition 0 offset 5 and published the draft to s7085_drafts offset 12. Post-recovery group offsets were current=6/log-end=6 on partition 0 and current=4/log-end=4 on partition 1.
+
+Repeat capture command: isolated Writer crash/recovery experiment, run `death-20261031-0056`
+Result: PASS - correlation_id=hw8-death-death-20261031-0056 was published to s7085_tasks partition 1 offset 63. The crash log records controlled exit before processing; the restarted same-group Writer republished the record as s7085_drafts partition 0 offset 409. Logs and post-recovery offsets are saved with the run ID.
+
+Command: two Writer unkeyed experiment, run `order-20261031-0048`
+Result: PASS - exactly 20 messages generated with VERIFY_SEED=267085, no key, both task partitions used, two Writer members observed, all 20 outputs committed with zero lag. Raw JSON and Writer logs are under reports/hw08/raw/ and reports/hw08/evidence/.
+
+Command: two Writer keyed experiment, run `order-20261031-0052`
+Result: PASS - exactly 20 messages generated with VERIFY_SEED=267085 and key restaurant-order-test. All 20 inputs went to partition 1, output sequence matched the input sequence, two Writer members were observed, and both partitions had zero lag after processing.
+
+Final post-experiment checks: container pytest `5 passed in 0.25s`; scoped container Ruff `All checks passed`; host compileall exit 0; Compose config exit 0; git diff --check produced no whitespace errors; normal seven-service Compose stack restored.
+
 Command: ruff check [HW8 files]
 Result: PASS - all checks passed.
 
 Command: docker compose -f docker-compose.hw8.yml config --quiet
-Result: PASS - compose syntax validated. Starting the services remains BLOCKED by the unavailable Docker daemon.
+Result: PASS - compose syntax validated.
+
+Command: pytest -q --cache-clear tests/test_hw8.py (host)
+Result: BLOCKED - host Python reports No module named pytest; prior committed run had 5 passed with an environment cache warning.
+
+Command: ruff check [HW8 files] (host)
+Result: BLOCKED - host Python reports No module named ruff.
+
+Command: python -m compileall [HW8 files]
+Result: PASS - exit 0.
 
 JMeter: NOT RUN. The supplied JMeter PDF is a separate direct-user demo on port 8000 and is not a Kafka rubric requirement.
 Hardware query: BLOCKED - Windows CIM/systeminfo returned Access denied; no hardware specification is claimed.
 Collaborator access: NOT VERIFIED - GitHub CLI is unavailable.
+
+2026-11-02 final audit validation
+Command: docker compose -f docker-compose.hw8.yml up -d --build
+Result: PASS - rebuilt the self-contained HW8 image after adding pytest and Ruff; no HW8 volumes were deleted.
+
+Command: docker compose -f docker-compose.hw8.yml ps -a
+Result: PASS - Kafka healthy, API, planner, reviewer, worker, and writer running; kafka-init exited 0 after topic initialization.
+
+Command: docker exec s7085-kafka /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic s7085_tasks
+Result: PASS - PartitionCount: 2.
+
+Command: docker compose -f docker-compose.hw8.yml exec -T api sh -lc 'PYTHONPATH=/app python -m pytest -q /app/tests/test_hw8.py'
+Result: PASS - 5 passed in 0.32s.
+
+Command: docker compose -f docker-compose.hw8.yml exec -T api sh -lc 'ruff check [scoped HW8 files]'
+Result: PASS - All checks passed.
+
+Command: docker compose -f docker-compose.hw8.yml config --quiet
+Result: PASS - exit 0.
+
+Command: python -m compileall [HW8 files]
+Result: PASS - exit 0.
+
+Report audit: Parab_HW8.pdf regenerated locally as a separate submission artifact, rendered to 11 PNG pages, and visually sampled for layout. It is intentionally excluded from the GitHub staging plan.

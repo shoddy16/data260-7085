@@ -1,0 +1,31 @@
+2026-10-31 02:23:52,538 INFO Updating subscribed topics to: frozenset({'s7085_tasks'})
+2026-10-31 02:23:52,674 INFO Discovered coordinator 1 for group hw8-order-group-order-20261031-0048
+2026-10-31 02:23:52,675 INFO Revoking previously assigned partitions set() for group hw8-order-group-order-20261031-0048
+2026-10-31 02:23:52,675 INFO (Re-)joining group hw8-order-group-order-20261031-0048
+2026-10-31 02:23:54,511 INFO Joined group 'hw8-order-group-order-20261031-0048' (generation 2) with member_id aiokafka-0.15.0-419fec65-bf46-4029-99bc-55b62f2e2e15
+2026-10-31 02:23:54,550 INFO Successfully synced group hw8-order-group-order-20261031-0048 with generation 2
+2026-10-31 02:23:54,551 INFO Setting newly assigned partitions {TopicPartition(topic='s7085_tasks', partition=0)} for group hw8-order-group-order-20261031-0048
+2026-10-31 02:24:07,497 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-02 input=s7085_tasks partition=0 offset=15
+2026-10-31 02:24:07,563 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-02 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:07,580 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-06 input=s7085_tasks partition=0 offset=16
+2026-10-31 02:24:07,596 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-06 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:07,668 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-09 input=s7085_tasks partition=0 offset=17
+2026-10-31 02:24:07,694 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-09 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:07,722 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-05 input=s7085_tasks partition=0 offset=18
+2026-10-31 02:24:07,759 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-05 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:07,792 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-18 input=s7085_tasks partition=0 offset=19
+2026-10-31 02:24:07,797 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-18 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:07,847 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-11 input=s7085_tasks partition=0 offset=20
+2026-10-31 02:24:07,851 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-11 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:07,881 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-17 input=s7085_tasks partition=0 offset=21
+2026-10-31 02:24:07,902 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-17 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:07,905 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-08 input=s7085_tasks partition=0 offset=22
+2026-10-31 02:24:07,920 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-08 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:07,948 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-15 input=s7085_tasks partition=0 offset=23
+2026-10-31 02:24:07,989 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-15 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:08,006 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-16 input=s7085_tasks partition=0 offset=24
+2026-10-31 02:24:08,037 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-16 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:08,053 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-12 input=s7085_tasks partition=0 offset=25
+2026-10-31 02:24:08,083 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-12 attempt=1 in=s7085_tasks out=s7085_drafts
+2026-10-31 02:24:08,134 INFO writer received correlation_id=hw8-order-order-20261031-0048-unkeyed-04 input=s7085_tasks partition=0 offset=26
+2026-10-31 02:24:08,180 INFO writer correlation_id=hw8-order-order-20261031-0048-unkeyed-04 attempt=1 in=s7085_tasks out=s7085_drafts

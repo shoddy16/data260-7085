@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "verify_seed": 267085,
+  "unkeyed_run": "order-20261031-0048",
+  "keyed_run": "order-20261031-0052",
+  "unkeyed": {
+    "messages": 20,
+    "task_partitions_observed": [0, 1],
+    "two_writer_group": "hw8-order-group-order-20261031-0048",
+    "global_order_claim": false,
+    "evidence": "live_ordering_order-20261031-0048_unkeyed.json"
+  },
+  "keyed": {
+    "messages": 20,
+    "key": "restaurant-order-test",
+    "task_partition_observed": 1,
+    "output_matches_input_order": true,
+    "two_writer_group": "hw8-order-group-order-20261031-0052",
+    "global_order_claim": false,
+    "evidence": "live_ordering_order-20261031-0052_keyed.json"
+  }
+}

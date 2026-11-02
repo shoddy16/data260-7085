@@ -1,0 +1,12 @@
+Captured UTC: 2026-10-31T00:17:10.295467+00:00
+Command: docker compose -f docker-compose.hw8.yml ps
+Exit: 0
+
+NAME                            IMAGE                       COMMAND                  SERVICE      CREATED              STATUS                    PORTS
+data260-7085-hw8-api-1          data260-7085-hw8-api        "uvicorn main:app --â€¦"   api          8 minutes ago        Up 8 minutes              0.0.0.0:8085->8085/tcp, [::]:8085->8085/tcp
+data260-7085-hw8-kafka-init-1   apache/kafka:3.9.2          "/bin/sh -c 'for t iâ€¦"   kafka-init   About a minute ago   Up About a minute         9092/tcp
+data260-7085-hw8-planner-1      data260-7085-hw8-planner    "python planner.py"      planner      About a minute ago   Up About a minute
+data260-7085-hw8-reviewer-1     data260-7085-hw8-reviewer   "python reviewer.py"     reviewer     About a minute ago   Up About a minute
+data260-7085-hw8-worker-1       data260-7085-hw8-worker     "python kafka_runtimâ€¦"   worker       About a minute ago   Up About a minute
+data260-7085-hw8-writer-1       data260-7085-hw8-writer     "python writer.py"       writer       About a minute ago   Up About a minute
+s7085-kafka                     apache/kafka:3.9.2          "/__cacert_entrypoinâ€¦"   kafka        12 minutes ago       Up 12 minutes (healthy)   0.0.0.0:9092->9092/tcp, [::]:9092->9092/tcp, 0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp

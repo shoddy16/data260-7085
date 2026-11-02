@@ -1,0 +1,4 @@
+
+GROUP                               TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                          HOST            CLIENT-ID
+hw8-death-group-death-20261031-0056 s7085_tasks     0          27              27              0               aiokafka-0.15.0-2ffeb438-d753-4e4e-a413-d6ab738c0643 /172.19.0.3     aiokafka-0.15.0
+hw8-death-group-death-20261031-0056 s7085_tasks     1          64              64              0               aiokafka-0.15.0-2ffeb438-d753-4e4e-a413-d6ab738c0643 /172.19.0.3     aiokafka-0.15.0
