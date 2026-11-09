@@ -1,0 +1,23 @@
+{
+  "initial": {
+    "answer": "65",
+    "is_cached": false,
+    "similarity": 0.0,
+    "lookup_latency_ms": 0.018500000805943273,
+    "agent_latency_ms": 0.0008999995770864189,
+    "total_latency_ms": 0.12240000069141388,
+    "agent_executed": true,
+    "cache_id": "d216835c901b47d1a923cddea762fe94"
+  },
+  "after_version_increment": {
+    "answer": "60",
+    "is_cached": false,
+    "similarity": 0.0,
+    "lookup_latency_ms": 0.05900000178371556,
+    "agent_latency_ms": 0.0010000003385357559,
+    "total_latency_ms": 0.13299999955052044,
+    "agent_executed": true,
+    "cache_id": "8d7446553f0d4ffb879cf3478ca93c6f"
+  },
+  "old_answer_reused": false
+}

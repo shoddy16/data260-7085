@@ -1,0 +1,2 @@
+-r requirements-hw8.txt
+redis>=5,<7

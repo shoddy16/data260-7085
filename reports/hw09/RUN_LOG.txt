@@ -1,0 +1,74 @@
+HW9 run log
+==========
+
+2026-11-05 14:06: python -m pytest tests/test_hw9.py -q --basetemp=reports/pytest_tmp_hw9
+PASS: 4 passed in 9.45s
+
+2026-11-05 14:06: python -m compileall -q hw9_cache.py hw9_agents.py routers/hw9.py data/hw9 verify_hw9.py
+PASS: exit 0
+
+2026-11-05 14:06: ruff check hw9_cache.py hw9_agents.py hw9_config.py routers/hw9.py data/hw9 tests/test_hw9.py verify_hw9.py
+PASS: All checks passed!
+
+2026-11-05 14:07: python -m data.hw9.experiments
+PASS: wrote raw/threshold_sweep.json and raw/self_improvement_variants.json
+
+2026-11-05 14:07: python verify_hw9.py
+PASS: four offline checks; verification.json records commit 6253e76ad9b4c49fa552fc39c179ae8015f5e2f7 (base commit; rerun after final commit)
+
+2026-11-05 14:08: docker compose -f docker-compose.hw9.yml config --quiet
+PASS: exit 0
+
+2026-11-05 14:08: docker compose -f docker-compose.hw9.yml up -d --build
+BLOCKED: Docker API pipe dockerDesktopLinuxEngine was unavailable in this environment.
+
+2026-11-05 14:09: $env:DATABASE_URL='sqlite://'; python run_hw9_smoke.py
+PASS/OFFLINE: /hw9/health 200; first /hw9/ask 200 with is_cached=false; duplicate /hw9/ask 200 with is_cached=true. Redis backend was MemoryRedis; no live service claim.
+
+2026-11-05 14:10: pdfinfo reports/hw09/Parab_HW9.pdf
+PASS: five-page PDF opened by Poppler and all five pages rendered to reports/hw09/rendered/.
+
+2026-11-05 15:05: docker compose -f docker-compose.hw9.yml up -d --build
+PASS: Redis healthy; API started on 0.0.0.0:8086 after correcting Dockerfile dependency copying.
+
+2026-11-05 15:12: live Redis/API cache requests
+PASS: health backend Redis; first ask is_cached=false and agent_executed=true; duplicate is_cached=true and agent_executed=false. RedisJSON HNSW/COSINE index reports one document and zero indexing failures.
+
+2026-11-05 15:22: MYSQL_PWD environment-only run_hw9_live_validation.py
+PASS: MySQL authentication, counts 1/2/10/20/21, database sync at 20, and 20-request concurrent Redis/database count.
+
+2026-11-05 15:25: run_hw9_live_invalidation.py
+PASS: actual database update reused stale cache before invalidation; version increment returned updated answer uncached.
+
+2026-11-05 15:28: run_hw9_agent_validation.py
+PASS: bounded repair 2 attempts, lesson reuse use_count=1, rejected lesson not written, and four variants recorded.
+
+2026-11-05 15:30: browser screenshot capture
+BLOCKED: Windows Computer Use screenshot backend timed out; no screenshot files are claimed.
+
+2026-11-05 15:38: ollama pull nomic-embed-text
+PASS: installed the separate local embedding model; chat model remains llama3.2:3b.
+
+2026-11-05 15:39: Ollama /api/embeddings probe
+PASS: nomic-embed-text returned numeric vectors with dimension 768; direct cosine for the recorded paraphrase was 0.9385986732. Raw: raw/embedding_probe_nomic.json.
+
+2026-11-05 15:44: application embedding timeout correction and Docker rebuild
+PASS: changed the embedding request timeout from 1.5 seconds to configurable OLLAMA_EMBEDDING_TIMEOUT (default 30 seconds); API image rebuilt and restarted successfully.
+
+2026-11-05 15:56: live semantic API cases
+PASS: exact duplicate similarity 1.0 and paraphrase similarity 0.9385986732 were cache hits with agent_executed=false; above-70 logical variant and unrelated binary-search question were misses. Raw: raw/live_semantic_cases.json.
+
+2026-11-05 15:48: live threshold sweep
+PASS: 40 frozen cases ran at thresholds 0.75, 0.80, 0.85, 0.90, and 0.95 using nomic-embed-text/768; raw: raw/threshold_sweep.json. Lowest observed total cost was 51 at 0.95; false-hit rate was 0.075.
+
+2026-11-05 16:03: Redis embedding-index migration
+PASS: removed stale isolated 64-dimensional index and recreated s7085:semantic_cache_idx_v768. FT.INFO reports DIM=768, COSINE/HNSW, and zero current indexing failures. Raw: raw/redis_index_info_v768.txt and raw/redis_keys_v768.txt.
+
+2026-11-09 01:20: Docker restart and genuine browser capture
+PASS: Docker Engine 29.9.2 running; isolated Redis/API stack healthy; captured live Swagger UI, focused HW9 endpoint view, and /hw9/health response under reports/hw09/evidence/.
+
+2026-11-09 01:24: report evidence integration
+PASS: rebuilt the report with dark VS Code-like code panels and adjacent live application figures. Terminal/source-editor screenshots remain unavailable through the current Windows automation path and are not claimed.
+
+2026-11-09T10:06:26-08:00: qualifying threshold sweep after dataset freeze
+PASS: commit a7533e7d5eb1df286b77450ce7999d0ad6a5a12d contains only cache_cases.yaml. Ran all five thresholds with live nomic-embed-text 768-dimensional embeddings and Redis HNSW KNN; every row reported redis_knn=true. Raw: raw/threshold_sweep_qualifying_knn.json. Lowest modeled cost was 51 at threshold 0.95; a live false hit was recorded at every threshold.

@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "dataset_commit": "a7533e7d5eb1df286b77450ce7999d0ad6a5a12d",
+  "dataset": "cache_cases.yaml",
+  "qualifying": true,
+  "method": "live Ollama nomic-embed-text embeddings and Redis HNSW KNN",
+  "thresholds": [
+    {
+      "threshold": 0.75,
+      "cases": 40,
+      "expected_hits": 20,
+      "expected_misses": 20,
+      "cache_hits": 29,
+      "cache_misses": 11,
+      "correct_hits": 20,
+      "false_hits": 9,
+      "missed_expected_hits": 0,
+      "hit_rate": 0.725,
+      "false_hit_rate": 0.45,
+      "false_hit_rate_all_cases": 0.225,
+      "mean_latency_ms": 2537.921332500082,
+      "total_cost": 83.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      },
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "live_embeddings": true,
+      "redis_knn": true,
+      "backend_values": [
+        "redis_knn"
+      ],
+      "false_hit_examples": [
+        {
+          "cached_query": "Which restaurant scored above 90?",
+          "incoming_query": "Which restaurants scored above 70?",
+          "similarity": 0.869723975658,
+          "threshold": 0.75,
+          "cached_answer": "verified answer for Which restaurant scored above 90?",
+          "correct_answer": "miss by frozen label"
+        }
+      ]
+    },
+    {
+      "threshold": 0.8,
+      "cases": 40,
+      "expected_hits": 20,
+      "expected_misses": 20,
+      "cache_hits": 28,
+      "cache_misses": 12,
+      "correct_hits": 20,
+      "false_hits": 8,
+      "missed_expected_hits": 0,
+      "hit_rate": 0.7,
+      "false_hit_rate": 0.4,
+      "false_hit_rate_all_cases": 0.2,
+      "mean_latency_ms": 103.61364750006032,
+      "total_cost": 76.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      },
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "live_embeddings": true,
+      "redis_knn": true,
+      "backend_values": [
+        "redis_knn"
+      ],
+      "false_hit_examples": [
+        {
+          "cached_query": "Which restaurant scored above 90?",
+          "incoming_query": "Which restaurants scored above 70?",
+          "similarity": 0.869723975658,
+          "threshold": 0.8,
+          "cached_answer": "verified answer for Which restaurant scored above 90?",
+          "correct_answer": "miss by frozen label"
+        }
+      ]
+    },
+    {
+      "threshold": 0.85,
+      "cases": 40,
+      "expected_hits": 20,
+      "expected_misses": 20,
+      "cache_hits": 27,
+      "cache_misses": 13,
+      "correct_hits": 19,
+      "false_hits": 8,
+      "missed_expected_hits": 1,
+      "hit_rate": 0.675,
+      "false_hit_rate": 0.4,
+      "false_hit_rate_all_cases": 0.2,
+      "mean_latency_ms": 151.57476249969477,
+      "total_cost": 77.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      },
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "live_embeddings": true,
+      "redis_knn": true,
+      "backend_values": [
+        "redis_knn"
+      ],
+      "false_hit_examples": [
+        {
+          "cached_query": "Which restaurant scored above 90?",
+          "incoming_query": "Which restaurants scored above 70?",
+          "similarity": 0.869723975658,
+          "threshold": 0.85,
+          "cached_answer": "verified answer for Which restaurant scored above 90?",
+          "correct_answer": "miss by frozen label"
+        }
+      ]
+    },
+    {
+      "threshold": 0.9,
+      "cases": 40,
+      "expected_hits": 20,
+      "expected_misses": 20,
+      "cache_hits": 22,
+      "cache_misses": 18,
+      "correct_hits": 16,
+      "false_hits": 6,
+      "missed_expected_hits": 4,
+      "hit_rate": 0.55,
+      "false_hit_rate": 0.3,
+      "false_hit_rate_all_cases": 0.15,
+      "mean_latency_ms": 184.14651999937632,
+      "total_cost": 66.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      },
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "live_embeddings": true,
+      "redis_knn": true,
+      "backend_values": [
+        "redis_knn"
+      ],
+      "false_hit_examples": [
+        {
+          "cached_query": "Which restaurants scored below 70?",
+          "incoming_query": "Which restaurants scored below 90?",
+          "similarity": 0.932844042778,
+          "threshold": 0.9,
+          "cached_answer": "verified answer for Which restaurants scored below 70?",
+          "correct_answer": "miss by frozen label"
+        }
+      ]
+    },
+    {
+      "threshold": 0.95,
+      "cases": 40,
+      "expected_hits": 20,
+      "expected_misses": 20,
+      "cache_hits": 13,
+      "cache_misses": 27,
+      "correct_hits": 10,
+      "false_hits": 3,
+      "missed_expected_hits": 10,
+      "hit_rate": 0.325,
+      "false_hit_rate": 0.15,
+      "false_hit_rate_all_cases": 0.075,
+      "mean_latency_ms": 240.44021749996318,
+      "total_cost": 51.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      },
+      "embedding_model": "nomic-embed-text",
+      "embedding_dim": 768,
+      "live_embeddings": true,
+      "redis_knn": true,
+      "backend_values": [
+        "redis_knn"
+      ],
+      "false_hit_examples": [
+        {
+          "cached_query": "What is the score for Harbor Grill?",
+          "incoming_query": "What is the current score for Harbor Grill?",
+          "similarity": 0.96346616745,
+          "threshold": 0.95,
+          "cached_answer": "verified answer for What is the score for Harbor Grill?",
+          "correct_answer": "miss by frozen label"
+        }
+      ]
+    }
+  ]
+}

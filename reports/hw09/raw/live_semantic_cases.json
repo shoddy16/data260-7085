@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-11-06T00:03:42.746479+00:00",
+  "embedding_model": "nomic-embed-text",
+  "dimension": 768,
+  "cases": [
+    {
+      "category": "exact_seed",
+      "question": "Which restaurants scored below 70?",
+      "status_code": 200,
+      "body": {
+        "answer": "Sunrise Deli scored 65",
+        "is_cached": false,
+        "similarity": 0.0,
+        "lookup_latency_ms": 465.0217739999789,
+        "agent_latency_ms": 22557.243448999998,
+        "total_latency_ms": 23041.92332499997,
+        "agent_executed": true
+      }
+    },
+    {
+      "category": "exact_duplicate",
+      "question": "Which restaurants scored below 70?",
+      "status_code": 200,
+      "body": {
+        "answer": "Sunrise Deli scored 65",
+        "is_cached": true,
+        "similarity": 1.0,
+        "lookup_latency_ms": 8.777109000220662,
+        "agent_latency_ms": 0.0,
+        "total_latency_ms": 8.784810000179277,
+        "agent_executed": false
+      }
+    },
+    {
+      "category": "paraphrase",
+      "question": "List restaurants with scores under 70",
+      "status_code": 200,
+      "body": {
+        "answer": "Sunrise Deli scored 65",
+        "is_cached": true,
+        "similarity": 0.9385986731644422,
+        "lookup_latency_ms": 524.5283290000771,
+        "agent_latency_ms": 0.0,
+        "total_latency_ms": 524.5341300001201,
+        "agent_executed": false
+      }
+    },
+    {
+      "category": "similar_different_answer",
+      "question": "Which restaurants scored above 70?",
+      "status_code": 200,
+      "body": {
+        "answer": "None",
+        "is_cached": false,
+        "similarity": 0.0,
+        "lookup_latency_ms": 487.6625729998523,
+        "agent_latency_ms": 11272.037254000224,
+        "total_latency_ms": 11791.024508999726,
+        "agent_executed": true
+      }
+    },
+    {
+      "category": "unrelated",
+      "question": "Explain binary search",
+      "status_code": 200,
+      "body": {
+        "answer": "None",
+        "is_cached": false,
+        "similarity": 0.0,
+        "lookup_latency_ms": 541.1424019998776,
+        "agent_latency_ms": 83137.25093499989,
+        "total_latency_ms": 83685.53417799967,
+        "agent_executed": true
+      }
+    }
+  ]
+}

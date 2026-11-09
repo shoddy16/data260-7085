@@ -1,0 +1,44 @@
+{
+  "first": {
+    "answer": "location=San Jose",
+    "is_cached": false,
+    "similarity": 0.0,
+    "lookup_latency_ms": 40.689800000109244,
+    "agent_latency_ms": 43.56290000032459,
+    "total_latency_ms": 90.773399999307,
+    "agent_executed": true,
+    "cache_id": "a4e64720d247438cb3519b6f921b5125"
+  },
+  "stale_before_invalidation": {
+    "answer": "location=San Jose",
+    "is_cached": true,
+    "similarity": 1.0,
+    "lookup_latency_ms": 11.806600000454637,
+    "agent_latency_ms": 0.0,
+    "total_latency_ms": 11.808900000687572,
+    "agent_executed": false,
+    "cache_id": "a4e64720d247438cb3519b6f921b5125"
+  },
+  "stale_after_database_update": {
+    "answer": "location=San Jose",
+    "is_cached": true,
+    "similarity": 1.0,
+    "lookup_latency_ms": 30.561600000510225,
+    "agent_latency_ms": 0.0,
+    "total_latency_ms": 30.56410000044707,
+    "agent_executed": false,
+    "cache_id": "a4e64720d247438cb3519b6f921b5125"
+  },
+  "fresh_after_invalidation": {
+    "answer": "location=HW9-Updated-City",
+    "is_cached": false,
+    "similarity": 0.0,
+    "lookup_latency_ms": 14.149300000099174,
+    "agent_latency_ms": 5.908300000555755,
+    "total_latency_ms": 25.32840000003489,
+    "agent_executed": true,
+    "cache_id": "b8777d764a74480babc1897b69cc4de5"
+  },
+  "old_answer_reused_without_invalidation": true,
+  "updated_answer_after_invalidation": true
+}

@@ -1,0 +1,6 @@
+{
+  "model": "nomic-embed-text",
+  "dimension": 768,
+  "numeric": true,
+  "paraphrase_similarity": 0.9385986731644432
+}

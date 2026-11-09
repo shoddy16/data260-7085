@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED",
+  "error": "Response status code does not indicate success: 500 (Internal Server Error).",
+  "model": "llama3.2:3b"
+}

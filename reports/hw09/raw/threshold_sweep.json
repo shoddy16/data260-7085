@@ -1,0 +1,87 @@
+[
+  {
+    "threshold": 0.75,
+    "cases": 40,
+    "cache_hits": 29,
+    "false_hits": 9,
+    "hit_rate": 0.725,
+    "false_hit_rate": 0.225,
+    "mean_latency_ms": 2312.2865774999354,
+    "total_cost": 83.0,
+    "cost_model": {
+      "cache_miss": 1.0,
+      "false_hit": 8.0
+    },
+    "embedding_model": "nomic-embed-text",
+    "embedding_dim": 768,
+    "live_embeddings": true
+  },
+  {
+    "threshold": 0.8,
+    "cases": 40,
+    "cache_hits": 28,
+    "false_hits": 8,
+    "hit_rate": 0.7,
+    "false_hit_rate": 0.2,
+    "mean_latency_ms": 47.15242249994844,
+    "total_cost": 76.0,
+    "cost_model": {
+      "cache_miss": 1.0,
+      "false_hit": 8.0
+    },
+    "embedding_model": "nomic-embed-text",
+    "embedding_dim": 768,
+    "live_embeddings": true
+  },
+  {
+    "threshold": 0.85,
+    "cases": 40,
+    "cache_hits": 27,
+    "false_hits": 8,
+    "hit_rate": 0.675,
+    "false_hit_rate": 0.2,
+    "mean_latency_ms": 57.588284999928874,
+    "total_cost": 77.0,
+    "cost_model": {
+      "cache_miss": 1.0,
+      "false_hit": 8.0
+    },
+    "embedding_model": "nomic-embed-text",
+    "embedding_dim": 768,
+    "live_embeddings": true
+  },
+  {
+    "threshold": 0.9,
+    "cases": 40,
+    "cache_hits": 22,
+    "false_hits": 6,
+    "hit_rate": 0.55,
+    "false_hit_rate": 0.15,
+    "mean_latency_ms": 73.85698000007324,
+    "total_cost": 66.0,
+    "cost_model": {
+      "cache_miss": 1.0,
+      "false_hit": 8.0
+    },
+    "embedding_model": "nomic-embed-text",
+    "embedding_dim": 768,
+    "live_embeddings": true
+  },
+  {
+    "threshold": 0.95,
+    "cases": 40,
+    "cache_hits": 13,
+    "false_hits": 3,
+    "hit_rate": 0.325,
+    "false_hit_rate": 0.075,
+    "mean_latency_ms": 88.49013000003652,
+    "total_cost": 51.0,
+    "cost_model": {
+      "cache_miss": 1.0,
+      "false_hit": 8.0
+    },
+    "embedding_model": "nomic-embed-text",
+    "embedding_dim": 768,
+    "live_embeddings": true
+  }
+]

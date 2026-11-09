@@ -1,0 +1,55 @@
+{
+  "bounded_repair": {
+    "question": "Which restaurants scored below 70?",
+    "initial_answer": "incorrect answer",
+    "evaluation": "REVISE",
+    "feedback": "Use this verified fact: Sunrise Deli scored 65",
+    "revised_answer": "Sunrise Deli scored 65",
+    "final_evaluation": "PASS",
+    "attempts": 2,
+    "latency_ms": 16.251
+  },
+  "lesson_count_after_repair": 1,
+  "lesson_use_count_after_reuse": 1,
+  "rejected_lesson_result": {
+    "question": "Which restaurants scored below 70?",
+    "initial_answer": "incorrect answer",
+    "evaluation": "REVISE",
+    "feedback": "Use this verified fact: rejected lesson",
+    "revised_answer": "rejected lesson",
+    "final_evaluation": "REVISE",
+    "attempts": 2,
+    "latency_ms": 0.029
+  },
+  "rejected_lesson_file_exists": false,
+  "variants": [
+    {
+      "variant": "baseline",
+      "correct_answers": 1,
+      "incorrect_answers": 1,
+      "average_attempts": 1.0,
+      "average_latency_ms": 0.013
+    },
+    {
+      "variant": "evaluator_repair",
+      "correct_answers": 2,
+      "incorrect_answers": 0,
+      "average_attempts": 1.5,
+      "average_latency_ms": 0.016
+    },
+    {
+      "variant": "lesson_memory",
+      "correct_answers": 2,
+      "incorrect_answers": 0,
+      "average_attempts": 1.5,
+      "average_latency_ms": 3.4715000000000003
+    },
+    {
+      "variant": "validated_improvement",
+      "correct_answers": 2,
+      "incorrect_answers": 0,
+      "average_attempts": 1.5,
+      "average_latency_ms": 8.083499999999999
+    }
+  ]
+}

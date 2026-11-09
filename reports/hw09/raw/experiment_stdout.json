@@ -1,0 +1,108 @@
+{
+  "thresholds": [
+    {
+      "threshold": 0.75,
+      "cases": 40,
+      "cache_hits": 12,
+      "false_hits": 8,
+      "hit_rate": 0.3,
+      "false_hit_rate": 0.2,
+      "mean_latency_ms": 2946.545572500032,
+      "total_cost": 92.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      }
+    },
+    {
+      "threshold": 0.8,
+      "cases": 40,
+      "cache_hits": 9,
+      "false_hits": 6,
+      "hit_rate": 0.225,
+      "false_hit_rate": 0.15,
+      "mean_latency_ms": 3034.733255000026,
+      "total_cost": 79.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      }
+    },
+    {
+      "threshold": 0.85,
+      "cases": 40,
+      "cache_hits": 5,
+      "false_hits": 4,
+      "hit_rate": 0.125,
+      "false_hit_rate": 0.1,
+      "mean_latency_ms": 3149.0480349999534,
+      "total_cost": 67.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      }
+    },
+    {
+      "threshold": 0.9,
+      "cases": 40,
+      "cache_hits": 5,
+      "false_hits": 4,
+      "hit_rate": 0.125,
+      "false_hit_rate": 0.1,
+      "mean_latency_ms": 3114.9617750000184,
+      "total_cost": 67.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      }
+    },
+    {
+      "threshold": 0.95,
+      "cases": 40,
+      "cache_hits": 2,
+      "false_hits": 2,
+      "hit_rate": 0.05,
+      "false_hit_rate": 0.05,
+      "mean_latency_ms": 3199.4461650000167,
+      "total_cost": 54.0,
+      "cost_model": {
+        "cache_miss": 1.0,
+        "false_hit": 8.0
+      }
+    }
+  ],
+  "variants": [
+    {
+      "variant": "baseline",
+      "correct_answers": 10,
+      "incorrect_answers": 0,
+      "average_attempts": 1.0,
+      "average_latency_ms": 0.0037000000000000006
+    },
+    {
+      "variant": "evaluator_repair",
+      "correct_answers": 10,
+      "incorrect_answers": 0,
+      "average_attempts": 1.0,
+      "average_latency_ms": 0.0038000000000000004
+    },
+    {
+      "variant": "lesson_memory",
+      "correct_answers": 10,
+      "incorrect_answers": 0,
+      "average_attempts": 1.0,
+      "average_latency_ms": 0.0036
+    },
+    {
+      "variant": "validated_improvement",
+      "correct_answers": 10,
+      "incorrect_answers": 0,
+      "average_attempts": 1.0,
+      "average_latency_ms": 0.0036
+    }
+  ]
+}
+00000001
+    }
+  ]
+}

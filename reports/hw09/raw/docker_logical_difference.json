@@ -1,0 +1,9 @@
+{
+  "answer": "Harbor Grill scored 95",
+  "is_cached": false,
+  "similarity": 0.0,
+  "lookup_latency_ms": 212.27359899990006,
+  "agent_latency_ms": 6363.724171999934,
+  "total_latency_ms": 6598.718494999957,
+  "agent_executed": true
+}

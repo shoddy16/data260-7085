@@ -1,0 +1,8 @@
+{
+  "cached_query": "Which restaurant had a sanitation issue?",
+  "incoming_query": "What is the historical score for Harbor Grill?",
+  "similarity": 0.8688100133560825,
+  "threshold": 0.75,
+  "cached_answer": "answer for Which restaurant had a sanitation issue?",
+  "correct_answer": "miss by frozen label"
+}

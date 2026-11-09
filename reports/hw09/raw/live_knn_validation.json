@@ -1,0 +1,83 @@
+{
+  "backend": "redis_knn",
+  "index_name": "s7085:semantic_cache_idx_v768",
+  "vector_attribute": {
+    "identifier": "$.embedding",
+    "attribute": "embedding_vector",
+    "type": "VECTOR",
+    "algorithm": "HNSW",
+    "data_type": "FLOAT32",
+    "dim": 768,
+    "distance_metric": "COSINE",
+    "M": 16,
+    "ef_construction": 200
+  },
+  "embedding_dimension": 768,
+  "cases": [
+    {
+      "label": "exact",
+      "query": "Which restaurants scored below 70?",
+      "signature": "knn_exact",
+      "is_cached": true,
+      "similarity": 1.0,
+      "backend": "redis_knn",
+      "matched_query": "Which restaurants scored below 70?"
+    },
+    {
+      "label": "paraphrase",
+      "query": "List restaurants with scores under 70",
+      "signature": "knn_exact",
+      "is_cached": true,
+      "similarity": 0.9385986328125,
+      "backend": "redis_knn",
+      "matched_query": "Which restaurants scored below 70?"
+    },
+    {
+      "label": "logical_difference",
+      "query": "Which restaurants scored above 70?",
+      "signature": "knn_no_match",
+      "is_cached": false,
+      "similarity": 0.0,
+      "backend": "redis_knn",
+      "matched_query": null
+    },
+    {
+      "label": "unrelated",
+      "query": "Explain binary search",
+      "signature": "knn_no_match",
+      "is_cached": false,
+      "similarity": 0.0,
+      "backend": "redis_knn",
+      "matched_query": null
+    }
+  ],
+  "stale_guard": {
+    "before_cached": true,
+    "before_similarity": 1.0,
+    "new_version": "1",
+    "after_cached": false,
+    "after_similarity": 0.0
+  },
+  "concurrent": {
+    "workers": 4,
+    "queries": 8,
+    "all_backend_knn": true,
+    "all_cached": true,
+    "similarities": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "empty_index": {
+    "is_cached": false,
+    "similarity": 0.0,
+    "backend": "redis_knn"
+  },
+  "status": "PASS"
+}

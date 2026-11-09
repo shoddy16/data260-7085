@@ -1,0 +1,16 @@
+{
+  "health": {
+    "status": "ok",
+    "redis_backend": "Redis"
+  },
+  "first": {
+    "answer": "Sunrise Deli scored 65",
+    "is_cached": false,
+    "similarity": 0.0,
+    "lookup_latency_ms": 96.03911099998186,
+    "agent_latency_ms": 22388.504846000047,
+    "total_latency_ms": 22613.922896999953,
+    "agent_executed": true
+  },
+  "duplicate": null
+}

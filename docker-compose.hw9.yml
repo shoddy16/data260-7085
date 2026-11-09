@@ -1,0 +1,25 @@
+services:
+  redis:
+    image: redis/redis-stack-server:latest
+    ports:
+      - "6380:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.hw9
+    ports:
+      - "8086:8086"
+    environment:
+      DATABASE_URL: sqlite:///./hw9.sqlite3
+      REDIS_URL: redis://redis:6379/0
+      OLLAMA_URL: http://host.docker.internal:11434
+      HW9_PORT: 8086
+    command: uvicorn main:app --host 0.0.0.0 --port 8086
+    depends_on:
+      redis:
+        condition: service_healthy

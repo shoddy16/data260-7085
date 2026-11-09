@@ -16,6 +16,7 @@ class Restaurant(Base):
     name = Column(String(255), nullable=False, index=True)
     location = Column(String(500), nullable=False)
     code = Column(String(32), nullable=False, index=True)
+    views = Column(Integer, nullable=False, default=0, server_default="0")
     created_at = Column(
         DateTime(timezone=True),
         default=lambda: datetime.now(timezone.utc),

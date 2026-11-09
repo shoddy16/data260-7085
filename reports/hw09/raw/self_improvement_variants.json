@@ -1,0 +1,30 @@
+[
+  {
+    "variant": "baseline",
+    "correct_answers": 9,
+    "incorrect_answers": 1,
+    "average_attempts": 1.0,
+    "average_latency_ms": 0.007600000000000001
+  },
+  {
+    "variant": "evaluator_repair",
+    "correct_answers": 10,
+    "incorrect_answers": 0,
+    "average_attempts": 1.1,
+    "average_latency_ms": 0.0103
+  },
+  {
+    "variant": "lesson_memory",
+    "correct_answers": 10,
+    "incorrect_answers": 0,
+    "average_attempts": 1.1,
+    "average_latency_ms": 2.4555999999999996
+  },
+  {
+    "variant": "validated_improvement",
+    "correct_answers": 10,
+    "incorrect_answers": 0,
+    "average_attempts": 1.1,
+    "average_latency_ms": 1.8157000000000003
+  }
+]

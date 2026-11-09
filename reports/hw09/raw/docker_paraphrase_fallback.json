@@ -1,0 +1,9 @@
+{
+  "answer": "None",
+  "is_cached": false,
+  "similarity": 0.3689323936863109,
+  "lookup_latency_ms": 3.1113970001115376,
+  "agent_latency_ms": 35084.73901699995,
+  "total_latency_ms": 35091.95909300001,
+  "agent_executed": true
+}

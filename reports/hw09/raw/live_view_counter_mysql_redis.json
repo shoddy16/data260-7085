@@ -1,0 +1,21 @@
+{
+  "redis": "PASS",
+  "mysql": "PASS",
+  "prefix": "s7085",
+  "timestamp": "2026-11-05T23:22:46.572718+00:00",
+  "restaurant_id": 1,
+  "counts_1_2_10_20_21": [
+    1,
+    2,
+    10,
+    20,
+    21
+  ],
+  "database_views_after_21": 20,
+  "redis_key": "s7085:views:restaurant:1",
+  "tenth_sync": true,
+  "concurrent_restaurant_id": 2,
+  "concurrent_redis_count": 20,
+  "concurrent_database_views": 20,
+  "concurrent_unique_counts": 20
+}

@@ -1,0 +1,3 @@
+NAME                       IMAGE                             COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+data260-7085-hw9-api-1     data260-7085-hw9-api              "uvicorn main:app --…"   api       9 minutes ago    Up 9 minutes              0.0.0.0:8086->8086/tcp, [::]:8086->8086/tcp
+data260-7085-hw9-redis-1   redis/redis-stack-server:latest   "/entrypoint.sh"         redis     15 minutes ago   Up 14 minutes (healthy)   0.0.0.0:6380->6379/tcp, [::]:6380->6379/tcp
