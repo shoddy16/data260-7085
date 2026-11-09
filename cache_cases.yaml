@@ -1,0 +1,45 @@
+metadata:
+  domain: local restaurant inspections
+  seed: 7085
+  labels_frozen_before_sweep: true
+cases:
+  - {id: exact-01, category: exact_duplicate, query: "Which restaurants scored below 70?", expected: hit}
+  - {id: exact-02, category: exact_duplicate, query: "Which restaurant scored above 90?", expected: hit}
+  - {id: exact-03, category: exact_duplicate, query: "What is the current score for Sunrise Deli?", expected: hit}
+  - {id: exact-04, category: exact_duplicate, query: "What is the historical score for Sunrise Deli?", expected: hit}
+  - {id: exact-05, category: exact_duplicate, query: "Which category had the lowest inspection result?", expected: hit}
+  - {id: exact-06, category: exact_duplicate, query: "Where is Harbor Grill located?", expected: hit}
+  - {id: exact-07, category: exact_duplicate, query: "What was inspected on 2026-10-01?", expected: hit}
+  - {id: exact-08, category: exact_duplicate, query: "How many inspections are recorded?", expected: hit}
+  - {id: exact-09, category: exact_duplicate, query: "Which restaurant had a sanitation issue?", expected: hit}
+  - {id: exact-10, category: exact_duplicate, query: "What is the score for Harbor Grill?", expected: hit}
+  - {id: paraphrase-01, category: paraphrase, query: "List restaurants with scores under 70", expected: hit}
+  - {id: paraphrase-02, category: paraphrase, query: "Name a restaurant scoring over 90", expected: hit}
+  - {id: paraphrase-03, category: paraphrase, query: "Give me Sunrise Deli's current score", expected: hit}
+  - {id: paraphrase-04, category: paraphrase, query: "Tell me Sunrise Deli's prior score", expected: hit}
+  - {id: paraphrase-05, category: paraphrase, query: "Which inspection category performed worst?", expected: hit}
+  - {id: paraphrase-06, category: paraphrase, query: "What city is Harbor Grill in?", expected: hit}
+  - {id: paraphrase-07, category: paraphrase, query: "What was checked on October 1 2026?", expected: hit}
+  - {id: paraphrase-08, category: paraphrase, query: "How many inspection records exist?", expected: hit}
+  - {id: paraphrase-09, category: paraphrase, query: "Which place had a sanitation problem?", expected: hit}
+  - {id: paraphrase-10, category: paraphrase, query: "How did Harbor Grill score?", expected: hit}
+  - {id: similar-01, category: similar_different_answer, query: "Which restaurants scored above 70?", expected: miss}
+  - {id: similar-02, category: similar_different_answer, query: "Which restaurants scored below 90?", expected: miss}
+  - {id: similar-03, category: similar_different_answer, query: "What is the historical score for Harbor Grill?", expected: miss}
+  - {id: similar-04, category: similar_different_answer, query: "What is the current score for Harbor Grill?", expected: miss}
+  - {id: similar-05, category: similar_different_answer, query: "Which category had the highest inspection result?", expected: miss}
+  - {id: similar-06, category: similar_different_answer, query: "Where is Sunrise Deli located?", expected: miss}
+  - {id: similar-07, category: similar_different_answer, query: "What was inspected on 2026-10-02?", expected: miss}
+  - {id: similar-08, category: similar_different_answer, query: "How many restaurants are recorded?", expected: miss}
+  - {id: similar-09, category: similar_different_answer, query: "Which restaurant had a cleanliness issue?", expected: miss}
+  - {id: similar-10, category: similar_different_answer, query: "What is the score for Sunrise Deli?", expected: miss}
+  - {id: unrelated-01, category: unrelated, query: "What is the weather today?", expected: miss}
+  - {id: unrelated-02, category: unrelated, query: "Explain binary search", expected: miss}
+  - {id: unrelated-03, category: unrelated, query: "Who wrote Hamlet?", expected: miss}
+  - {id: unrelated-04, category: unrelated, query: "How do I bake bread?", expected: miss}
+  - {id: unrelated-05, category: unrelated, query: "What is a Python list?", expected: miss}
+  - {id: unrelated-06, category: unrelated, query: "What is the capital of France?", expected: miss}
+  - {id: unrelated-07, category: unrelated, query: "How does TCP work?", expected: miss}
+  - {id: unrelated-08, category: unrelated, query: "What are photosynthesis steps?", expected: miss}
+  - {id: unrelated-09, category: unrelated, query: "Tell me a joke", expected: miss}
+  - {id: unrelated-10, category: unrelated, query: "What is a database index?", expected: miss}
